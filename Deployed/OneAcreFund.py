@@ -81,5 +81,5 @@ def oafTag():
                     break
             if vegan:
                 auxilary.tag(loanid, "10")
-oafTag()
+
 

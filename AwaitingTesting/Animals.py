@@ -19,6 +19,7 @@ System and testing for tagging loans with #Animals
 
 
 import csv
+import re
 
 looking = ["goat", "dairy", "cow", "calf", "calves", "chicken", "chicks", "buffalo", "rabbit", "sheep", "duck", "pig",
            "duckling", "lamb", "cattle", "bull", "ram", "poultry", "honey", "bee", "animal", "livestock",
@@ -33,10 +34,10 @@ ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 for loan in loans:
-    use = loan["use"]
+    use = loan["Use"]
     escape = True
     for match in looking:
-        if match in use:
+        if len(re.findall(" " + match + "[^A-z]", use)) > 0:
             escape = False
             break
     if escape:
@@ -47,8 +48,12 @@ for loan in loans:
             continue
     if loan["Activity"] == "Butcher Shop":
         continue
-    if "#Animals" in loan["tags"]:
+    if "slaughter" in use:
+        continue
+    if "#Animals" in loan["Tags"]:
         correct += 1
     else:
-        print(loan["Raw Link"])
+        print(loan["Raw Link"], use)
     total += 1
+print(correct, total)
+
