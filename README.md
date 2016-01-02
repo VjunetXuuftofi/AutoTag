@@ -27,7 +27,9 @@ General #WomanOwnedBiz
 
 ###In Development:
  #Animals
+ 
  #Elderly (includes getting borrower age)
+ 
  #Refugee
 
 
