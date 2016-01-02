@@ -16,7 +16,6 @@ limitations under the License.
 System and testing for tagging loans from the partner One Acre Fund. Currently deployed.
 """
 
-import requests
 import json
 import re
 from Other import auxilary
@@ -35,8 +34,7 @@ def oafTag():
                "goats", "cows", "chickens", "chicks", "buffalos", "rabbits", "ducks", "pigs", "ducklings", "lambs",
                "bulls", "rams", "bees", "animals", "oxen", "steers", "heifers", "turkeys", "sows", "hens", "piglets"]
 
-    loans = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
-    loans = json.loads(loans)
+    loanlist = auxilary.getquery(form)
 
     conversions = {
         "one" : "1",
@@ -60,18 +58,9 @@ def oafTag():
         "nineteen" : "19"
     }
 
-    for i in range(1, int(loans["paging"]["pages"])):
-        page = str(i)
-        form = {
-        "status" : "fundraising",
-        "partner" : "202",
-        "page" : page,
-        "app_id" : "com.woodside.autotag"
-        }
-        loans = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
-        loans = json.loads(loans)
-        for a in loans["loans"]:
-            loanid = str(a["id"])
+    for loans in loanlist:
+        for loan in loans:
+            loanid = str(loan["id"])
             auxilary.tag(loanid, "8")
             info = json.loads(auxilary.getinfo(loanid).text)
             description = info["loans"][0]["description"]["texts"]["en"]
@@ -92,5 +81,5 @@ def oafTag():
                     break
             if vegan:
                 auxilary.tag(loanid, "10")
-
+oafTag()
 

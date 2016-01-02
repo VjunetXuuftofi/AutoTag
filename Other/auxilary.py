@@ -92,3 +92,15 @@ def tag(loanID, tagID):
                 headers = heads,
                 data = form
                 )
+
+
+def getquery(form):
+    toreturn = []
+    info = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
+    info = json.loads(info)
+    for i in range(1, int(info["paging"]["pages"])):
+        form["page"] = str(i)
+        loans = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
+        loans = json.loads(loans)["loans"]
+        toreturn.append(loans)
+    return toreturn
