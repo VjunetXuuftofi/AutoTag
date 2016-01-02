@@ -16,7 +16,7 @@ Pull requests on existing systems will be accepted if they pass this test and id
 ##Current Status:
 
 ###Implemented:
-One Acre Fund- taggs #SustainableAg, #Eco-friendly, #Technology, #Vegan
+One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology, #Vegan
 
 ###Awaiting Approval from Loan Taggers Team Captians:
 None
@@ -26,8 +26,8 @@ General #Eco-friendly
 General #WomanOwnedBiz
 
 ###In Development:
-#Animals
-#Elderly (includes getting borrower age)
-#Refugee
+ #Animals
+ #Elderly (includes getting borrower age)
+ #Refugee
 
 
