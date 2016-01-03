@@ -95,4 +95,3 @@ def oafTag():
                 auxilary.tag(loanid, "10")
 
 
-oafTag()
