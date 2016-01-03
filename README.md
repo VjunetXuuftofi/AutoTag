@@ -26,8 +26,9 @@ General #Eco-friendly
 
 General #WomanOwnedBiz
 
+General #Animals
+
 ###In Development:
- #Animals
  
  #Elderly (includes getting borrower age)
  
