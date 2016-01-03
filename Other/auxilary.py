@@ -23,7 +23,7 @@ import time
 
 
 def getinfo(IDs):
-    """Pulls data about a specific loan from the Kiva API.
+    """Pulls data about a specific loans from the Kiva API.
     Includes a time sleep to ensure that usage limits aren't exceeded."""
     response = requests.get("http://api.kivaws.org/v1/loans/" + IDs + ".json",
                  params = {"appid" : "com.woodside.autotag"})
