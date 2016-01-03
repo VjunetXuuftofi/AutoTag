@@ -13,7 +13,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-System and testing for tagging loans with #FemaleEducation.
+System and testing for tagging loans with #FirstLoan.
+Caution: almost all loans that weren't tagged identified by this system should have been tagged.
 """
 
 import csv
@@ -46,23 +47,17 @@ total = 0
 correct = 0
 for loangroup in everyloan:
     for loan in loangroup:
-        if loan["sector"] != "Education":
+        description = loan["description"]["texts"]["en"]
+        if "first loan" not in description:
             continue
-        print(loan)
-        borrowers = loan["borrowers"]
-        valid = True
-        for borrower in borrowers:
-            if borrower["gender"] == "M":
-                valid = False
-                break
-        if not valid and loan["activity"]:
+        if "previous loan" in description:
             continue
         contains = False
         for tag in loan["tags"]:
-            if tag["name"] == "#FemaleEducation":
+            if tag["name"] == "#FirstLoan":
                 correct += 1
                 contains = True
         if not contains:
-            print(loan["id"])
+            print("https://www.kiva.org/lend/" + str(loan["id"]))
         total += 1
         print(correct, total)
