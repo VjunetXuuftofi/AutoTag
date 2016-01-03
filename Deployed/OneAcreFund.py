@@ -58,13 +58,25 @@ def oafTag():
         "nineteen" : "19"
     }
 
+    loanids = ""
+    total = 0
+    everyloan = []
     for loans in loanlist:
         for loan in loans:
+            loanids += str(loan["id"]) + ","
+            total += 1
+            if total == 100:
+                total = 0
+                loanids = loanids[:-1]
+                everyloan.append(auxilary.getinfo(loanids))
+                loanids = ""
+
+    for loanlist in everyloan:
+        for loan in loanlist:
             loanid = str(loan["id"])
             auxilary.tag(loanid, "8")
-            info = json.loads(auxilary.getinfo(loanid).text)
-            description = info["loans"][0]["description"]["texts"]["en"]
-            numborrowers = len(info["loans"][0]["borrowers"])
+            description = loan["description"]["texts"]["en"]
+            numborrowers = loan["borrowers"]
             try:
                 pos = re.findall("a total of ([^ ]*?) solar lights.?", description)[0]
                 if pos in conversions:
@@ -83,3 +95,4 @@ def oafTag():
                 auxilary.tag(loanid, "10")
 
 
+oafTag()

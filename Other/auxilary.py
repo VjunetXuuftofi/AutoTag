@@ -22,15 +22,15 @@ import time
 
 
 
-def getinfo(ID):
+def getinfo(IDs):
     """Pulls data about a specific loan from the Kiva API.
     Includes a time sleep to ensure that usage limits aren't exceeded."""
-    ID = str(ID)
-    response = requests.get("http://api.kivaws.org/v1/loans/" + ID + ".json",
-                 params = {"ids" : ID, "appid" : "com.woodside.autotag"})
+    response = requests.get("http://api.kivaws.org/v1/loans/" + IDs + ".json",
+                 params = {"appid" : "com.woodside.autotag"})
     headers = response.headers
     time.sleep(60/(int(headers["X-RateLimit-Overall-Limit"])-5))
-    return response
+    loans = json.loads(response.text)["loans"]
+    return loans
 
 
 def explorer(FP):
@@ -95,12 +95,21 @@ def tag(loanID, tagID):
 
 
 def getquery(form):
+    """Returns a list of dictionaries containing every loan matching a given query."""
     toreturn = []
     info = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
     info = json.loads(info)
     for i in range(1, int(info["paging"]["pages"])):
         form["page"] = str(i)
-        loans = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
-        loans = json.loads(loans)["loans"]
+        response = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form)
+        time.sleep(60/(int(response.headers["X-RateLimit-Overall-Limit"])-5))
+        loans = json.loads(response.text)["loans"]
         toreturn.append(loans)
     return toreturn
+
+def partnertoid(partnername):
+    mapping = json.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/Other/partnermapping.json", "r"))
+    return mapping[partnername]
+
+
+
