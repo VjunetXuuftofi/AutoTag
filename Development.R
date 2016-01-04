@@ -35,39 +35,32 @@ test = function(data){
   colnames(summary2) <- c("Variable", "mean", "n")
   summarized <- rbind(summarized, summary2)
   
+  if ("husband" %in% colnames(data)) {
   data <- ungroup(data)
   data <- group_by(data, husband)
   summary2 <- summarise(data, mean = mean(TRUE.), n = n())
   colnames(summary2) <- c("Variable", "mean", "n")
   summarized <- rbind(summarized, summary2)
-  
+  }
   data <- ungroup(data)
-  summarized <- summarized[with(summarized, order(mean, -n)), ]
-  
-  #forbiddenpartners = c('Cooperativa de Ahorro y Credito Mujeres Unidas (CACMU)',
-  #                      'Hekima, a partner of World Relief',
-  #                      'Urwego Opportunity Bank, a partner of Opportunity International and HOPE International',
-  #                      'Partners in Health', 'Kashf Foundation', 'ID Ghana',
-  #                      'Paglaum Multi-Purpose Cooperative (PMPC)',
-  #                      'CAURIE Microfinance, a partner of Catholic Relief Services',
-  #                      'Ibdaa Microfinance SAL', 'ADIM', 'Fundacion Paraguaya',
-  #                     'CIDRE', 'MiCredito', 'National Microfinance Bank')
-  #forbiddenactivities = c('Milk Sales', 'Motorcycle Transport', 'Home Energy',
-  #                        'Used Shoes', 'Hardware', 'Property', 'Services', 'Bakery',
-  #                        'Dairy', 'Poultry', 'Clothing')
-  #for (a in 1:1000) {
+  summarized$value = (1-summarized$mean)*sqrt(summarized$n) 
+  #This creates a more simple model that still detects a good amount of loans
+  summarized <- summarized[with(summarized, order(-value)), ]
+
   toremove <- as.character(summarized[1,1])
-  #if (!(toremove %in% forbiddenpartners | toremove %in% forbiddenactivities))
-  #{
-  #  break
-  #}
-  #}
   print(toremove)
   if (substring(toremove, 1, 1) == "a") {
     data <- subset(data, Activity != substring(toremove, 3))
   }
   else {
-    data <- subset(data, Sector != toremove & Country != toremove & PartnerName != toremove & husband != toremove)
+    if (toremove == "1" | toremove == "0") 
+    {
+      data <- subset(data, husband != toremove)
+      data$husband <- NULL
+    }
+    else {
+    data <- subset(data, Sector != toremove & Country != toremove & PartnerName != toremove)
+    }
   }
   return (test(data))
 }
@@ -84,7 +77,7 @@ extract = function (id) {
   }
 }
 
-data <- read.csv("output.csv")
+data <- read.csv("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/output.csv")
 data <- test(data)
 mean(data$TRUE.)
 subsetted <- subset(data, TRUE. == 0)

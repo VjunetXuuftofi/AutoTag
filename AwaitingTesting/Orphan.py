@@ -48,7 +48,7 @@ correct = 0
 for loangroup in everyloan:
     for loan in loangroup:
         description = loan["description"]["texts"]["en"]
-        if re.findall(" orphans?[^A-z]", description):
+        if len(re.findall(" orphans?[^A-z]", description)) > 0:
             continue
         contains = False
         for tag in loan["tags"]:
