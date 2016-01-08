@@ -9,8 +9,8 @@ All of the testing and implementation are done in Python 3.5, with some developm
 
 
 ##Requirements:
-All systems must be 99% accurate. This is tested using the assigned loans list at least 30 days after the system was last modified.
-Pull requests on existing systems will be accepted if they pass this test and identify a larger percentage of loans than the current system.
+All systems must be 99% accurate. This is tested using the assigned loans list using a list of loans the earliest of which was posted later than the latest-posted loan used for testing.
+Pull requests on existing systems will be accepted if they pass this test and identify a larger percentage of loans than any current systems.
 
 ##Current Status:
 
@@ -28,10 +28,25 @@ General #WomanOwnedBiz
 
 General #Animals
 
-###In Development:
- 
- #Elderly (includes getting borrower age)
- 
- #Refugee
+General #FemaleEducation
+
+General #FirstLoan
+
+General #Elderly 
+
+General #HealthAndSanitation
+
+General #JobCreator
+
+General #Orphan
+
+General #Refugee
+
+
+###In Development (HELP NEEDED!):
+
+General #Parent and #SingleParent
+
+
 
 
