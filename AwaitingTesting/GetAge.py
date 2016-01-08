@@ -21,45 +21,55 @@ import csv
 from Other import auxilary
 import re
 
-ids = []
+def tagElderly():
+    ids = []
 
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
+    loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 
-loanids = ""
+    loanids = ""
 
-everyloan = []
-total = 0
-for loan in loans:
-    loanids += loan["Loan ID"] + ","
-    total += 1
-    if total == 100:
-        total = 0
-        loanids = loanids[:-1]
-        loanlist = auxilary.getinfo(loanids)
-        loanids = ""
-        everyloan.append(loanlist)
-
-
-correct = 0
-total = 0
-for loanlist in everyloan:
-    for loan in loanlist:
-        description = loan["description"]["texts"]["en"]
-        match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
-        if len(match) == 0:
-            continue
-        try:
-            if int(match[0][0]) < 50:
-                continue
-        except:
-            continue
-        contains = False
-        for tag in loan["tags"]:
-            if tag["name"] == "#Elderly":
-                contains = True
-                correct += 1
-                break
-        if not contains:
-            print("https://www.kiva.org/lend/" + str(loan["id"]))
+    everyloan = []
+    total = 0
+    for loan in loans:
+        loanids += loan["Loan ID"] + ","
         total += 1
-        print(correct, total, match)
+        if total == 100:
+            total = 0
+            loanids = loanids[:-1]
+            loanlist = auxilary.getinfo(loanids)
+            loanids = ""
+            everyloan.append(loanlist)
+
+
+    correct = 0
+    total = 0
+    for loanlist in everyloan:
+        for loan in loanlist:
+            description = loan["description"]["texts"]["en"]
+            match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
+            if len(match) == 0:
+                continue
+            try:
+                if int(match[0][0]) < 50:
+                    continue
+            except:
+                continue
+            contains = False
+            for tag in loan["tags"]:
+                if tag["name"] == "#Elderly":
+                    contains = True
+                    correct += 1
+                    break
+            if not contains:
+                print("https://www.kiva.org/lend/" + str(loan["id"]))
+            total += 1
+            print(correct, total, match)
+
+def GetAge(description):
+    match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
+    if len(match) == 0:
+        return None
+    try:
+        return int(match[0][0])
+    except:
+        return None

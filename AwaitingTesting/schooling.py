@@ -13,15 +13,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-System and testing for tagging loans with #Orphan.
-Note: Very few loans have this tag.
+System and testing for tagging loans with #Refugee.
 """
 
 import csv
 import re
 from Other import auxilary
 import json
-
 
 
 ids = []
@@ -47,15 +45,14 @@ total = 0
 correct = 0
 for loangroup in everyloan:
     for loan in loangroup:
-        description = loan["description"]["texts"]["en"]
-        if len(re.findall(" orphans?[^A-z]", description)) > 0:
+        if loan["sector"] != "Education":
             continue
         contains = False
         for tag in loan["tags"]:
-            if tag["name"] == "#Orphan":
+            if tag["name"] == "#Schooling":
                 correct += 1
                 contains = True
         if not contains:
-            print("https://www.kiva.org/lend/" + str(loan["id"]))
+            print(loan["id"])
         total += 1
         print(correct, total)
