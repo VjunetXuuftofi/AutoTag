@@ -28,11 +28,11 @@ def oafTag():
         "app_id" : "com.woodside.autotag"
     }
 
-    veganforbidden = ["goat", "dairy", "cow", "calf", "calves", "chicken", "chicks", "buffalo", "rabbit", "sheep", "duck", "pig",
-               "duckling", "lamb", "cattle", "bull", "ram", "poultry", "honey", "bee", "animal", "livestock",
-               "ox", "steer", "heifer", "turkey", "hen", "piglet",
-               "goats", "cows", "chickens", "chicks", "buffalos", "rabbits", "ducks", "pigs", "ducklings", "lambs",
-               "bulls", "rams", "bees", "animals", "oxen", "steers", "heifers", "turkeys", "sows", "hens", "piglets"]
+    #veganforbidden = ["goat", "dairy", "cow", "calf", "calves", "chicken", "chicks", "buffalo", "rabbit", "sheep", "duck", "pig",
+    #           "duckling", "lamb", "cattle", "bull", "ram", "poultry", "honey", "bee", "animal", "livestock",
+    #           "ox", "steer", "heifer", "turkey", "hen", "piglet",
+    #          "goats", "cows", "chickens", "chicks", "buffalos", "rabbits", "ducks", "pigs", "ducklings", "lambs",
+    #           "bulls", "rams", "bees", "animals", "oxen", "steers", "heifers", "turkeys", "sows", "hens", "piglets"]
 
     loanlist = auxilary.getquery(form)
 
@@ -81,7 +81,7 @@ def oafTag():
                 pos = re.findall("a total of ([^ ]*?) solar lights.?", description)[0]
                 if pos in conversions:
                     pos = conversions[pos]
-                if int(pos) / int(numborrowers) > 0.5:
+                if int(pos) > 0:
                     auxilary.tag(loanid, "9")
                     auxilary.tag(loanid, "38")
             except:
