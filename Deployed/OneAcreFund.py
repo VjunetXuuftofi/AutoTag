@@ -86,6 +86,7 @@ def oafTag():
                     auxilary.tag(loanid, "38")
             except:
                 pass
+            '''
             vegan = True
             for forbidden in veganforbidden:
                 if len(re.findall(" " + forbidden + "[^a-z]", description)) != 0:
@@ -93,5 +94,6 @@ def oafTag():
                     break
             if vegan:
                 auxilary.tag(loanid, "10")
+                '''
 
 

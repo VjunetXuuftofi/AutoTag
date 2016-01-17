@@ -27,7 +27,7 @@ correct = 0
 total = 0
 
 ids = []
-loans = csv.DictReader(open("loans_assigned_for_tagging.csv"))
+loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 for loan in loans:
     escape = True
     for keyword in looking:
@@ -35,8 +35,6 @@ for loan in loans:
             escape = False
             break
     if escape:
-        continue
-    if loan["Tags"] == "":
         continue
     if loan["Partner Name"] == "One Acre Fund":
         continue
