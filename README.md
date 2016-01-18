@@ -65,9 +65,9 @@ General #Orphan (very few loans)
 
 General #Parent (mainly definition requires children to be dependent).
 
-General #SustainableAg (almost all loans with this tag are from One Acre Fund currently)
-
 General #SingleParent and #Single (because of inability to tag for parent, I would not be able to distinguish between #SingleParent and #Single)
+
+General #SustainableAg (almost all loans with this tag are from One Acre Fund currently)
 
 General #Unique (subjective)
 
