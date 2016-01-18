@@ -15,38 +15,60 @@ Pull requests on existing systems will be accepted if they pass this test and id
 ##Current Status:
 
 ###Implemented:
-One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology, #Vegan
+One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology on loans from the One Acre Fund partner
 
 ###Awaiting Approval from Loan Taggers Team Captians:
 None
 
 ###Awaiting Testing on Jan 31:
 
+General #Animals
+
 General #Eco-friendly
 
-General #WomanOwnedBiz
-
-General #Animals
+General #Fabrics
 
 General #FemaleEducation
 
 General #FirstLoan
 
-General #Elderly 
+General #Elderly
 
 General #HealthAndSanitation
 
 General #JobCreator
 
-General #Orphan
-
 General #Refugee
 
+General #RepeatBorrower
 
-###In Development (HELP NEEDED!):
+General #Schooling
 
-General #Parent and #SingleParent
+General #Technology
+
+General #Trees
+
+General #Widowed
+
+General #WomanOwnedBiz
 
 
+###No Development Planned (reasons why):
 
+General #IncomeProducingDurableAsset (requires real human intuition to identify)
 
+General #InspiringStory (subjective)
+
+General #InterestingPhoto (subjective)
+
+General #Orphan (very few loans)
+
+General #Parent (mainly definition requires children to be dependent).
+
+General #SingleParent and #Single (because of inability to tag for parent, I would not be able to distinguish between #SingleParent and #Single)
+
+General #SustainableAg (almost all loans with this tag are from One Acre Fund currently)
+
+General #Unique (subjective)
+
+General #Vegan (very strict definition, not many loans)
