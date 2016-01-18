@@ -15,38 +15,39 @@ Pull requests on existing systems will be accepted if they pass this test and id
 ##Current Status:
 
 ###Implemented:
-One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology, #Vegan
+One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology on loans from the One Acre Fund partner
 
 ###Awaiting Approval from Loan Taggers Team Captians:
 None
 
 ###Awaiting Testing on Jan 31:
 
+General #Animals
 General #Eco-friendly
-
+General #Fabrics
+General #FemaleEducation
+General #FirstLoan
+General #Elderly
+General #HealthAndSanitation
+General #JobCreator
+General #Refugee
+General #RepeatBorrower
+General #Schooling
+General #Technology
+General #Trees
+General #Widowed
 General #WomanOwnedBiz
 
-General #Animals
+### Development Planned:
+General #SustainableAg
 
-General #FemaleEducation
-
-General #FirstLoan
-
-General #Elderly 
-
-General #HealthAndSanitation
-
-General #JobCreator
-
+###No Development Planned:
+General #IncomeProducingDurableAsset
+General #InspiringStory
+General #InterestingPhoto
 General #Orphan
-
-General #Refugee
-
-
-###In Development (HELP NEEDED!):
-
-General #Parent and #SingleParent
-
-
-
-
+General #Parent
+General #SingleParent
+General #Single
+General #Unique
+General #Vegan
