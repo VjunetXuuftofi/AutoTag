@@ -23,31 +23,55 @@ None
 ###Awaiting Testing on Jan 31:
 
 General #Animals
+
 General #Eco-friendly
+
 General #Fabrics
+
 General #FemaleEducation
+
 General #FirstLoan
+
 General #Elderly
+
 General #HealthAndSanitation
+
 General #JobCreator
+
 General #Refugee
+
 General #RepeatBorrower
+
 General #Schooling
+
 General #Technology
+
 General #Trees
+
 General #Widowed
+
 General #WomanOwnedBiz
 
 ### Development Planned:
+
 General #SustainableAg
 
 ###No Development Planned:
+
 General #IncomeProducingDurableAsset
+
 General #InspiringStory
+
 General #InterestingPhoto
+
 General #Orphan
+
 General #Parent
+
 General #SingleParent
+
 General #Single
+
 General #Unique
+
 General #Vegan
