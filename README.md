@@ -52,26 +52,23 @@ General #Widowed
 
 General #WomanOwnedBiz
 
-### Development Planned:
 
-General #SustainableAg
+###No Development Planned (reasons why):
 
-###No Development Planned:
+General #IncomeProducingDurableAsset (requires real human intuition to identify)
 
-General #IncomeProducingDurableAsset
+General #InspiringStory (subjective)
 
-General #InspiringStory
+General #InterestingPhoto (subjective)
 
-General #InterestingPhoto
+General #Orphan (very few loans)
 
-General #Orphan
+General #Parent (mainly definition requires children to be dependent).
 
-General #Parent
+General #SustainableAg (almost all loans with this tag are from One Acre Fund currently)
 
-General #SingleParent
+General #SingleParent and #Single (because of inability to tag for parent, I would not be able to distinguish between #SingleParent and #Single)
 
-General #Single
+General #Unique (subjective)
 
-General #Unique
-
-General #Vegan
+General #Vegan (very strict definition, not many loans)
