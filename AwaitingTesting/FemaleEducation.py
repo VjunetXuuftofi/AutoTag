@@ -48,7 +48,6 @@ for loangroup in everyloan:
     for loan in loangroup:
         if loan["sector"] != "Education":
             continue
-        print(loan)
         borrowers = loan["borrowers"]
         valid = True
         for borrower in borrowers:

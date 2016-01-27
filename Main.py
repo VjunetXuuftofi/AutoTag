@@ -15,6 +15,53 @@ limitations under the License.
 
 Runs all of the implemented systems
 """
+from Other import auxilary
 from Deployed import OneAcreFund
+import time
+from datetime import timedelta
+from datetime import datetime
+from pync import Notifier
 
-OneAcreFund.oafTag()
+while True:
+    lasttried = open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/time.txt", "r")
+    for line in lasttried:
+        lasttime = datetime.fromtimestamp(time.mktime(time.strptime(line, "%d %b %Y %H:%M:%S")))
+    lasttried.close()
+    form = {
+            "status" : "fundraising",
+            "partner" : "202",
+            "page" : "1",
+            "app_id" : "com.woodside.autotag"
+        }
+
+    loanlist = auxilary.getquery(form)
+    loanids = ""
+    total = 0
+    everyloan = []
+    passed = False
+    timetowrite = lasttime
+
+    for loans in loanlist:
+        for loan in loans:
+            postedtime = datetime.fromtimestamp(time.mktime(time.strptime(loan["posted_date"], "%Y-%m-%dT%H:%M:%SZ")))
+            if postedtime - timetowrite > timedelta(microseconds = 1):
+                timetowrite = postedtime
+            if lasttime - postedtime > timedelta(microseconds = 1):
+                continue
+            loanids += str(loan["id"]) + ","
+            total += 1
+            if total == 100:
+                total = 0
+                loanids = loanids[:-1]
+                everyloan.append(auxilary.getinfo(loanids))
+                loanids = ""
+        if passed:
+            break
+
+    lasttried = open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/time.txt", "w+")
+    lasttried.write(time.strftime("%d %b %Y %H:%M:%S", timetowrite.timetuple()))
+    lasttried.close()
+
+    OneAcreFund.oafTag(everyloan)
+    Notifier.notify("Tagging Complete.")
+    time.sleep(86400)

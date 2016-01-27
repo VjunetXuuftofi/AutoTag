@@ -21,8 +21,8 @@ import csv
 import re
 from Other import auxilary
 import json
-
-
+from pync import Notifier
+Notifier.notify("Hello World")
 
 ids = []
 

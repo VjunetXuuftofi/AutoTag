@@ -20,13 +20,8 @@ import json
 import re
 from Other import auxilary
 
-def oafTag():
-    form = {
-        "status" : "fundraising",
-        "partner" : "202",
-        "page" : "1",
-        "app_id" : "com.woodside.autotag"
-    }
+def oafTag(everyloan):
+
 
     #veganforbidden = ["goat", "dairy", "cow", "calf", "calves", "chicken", "chicks", "buffalo", "rabbit", "sheep", "duck", "pig",
     #           "duckling", "lamb", "cattle", "bull", "ram", "poultry", "honey", "bee", "animal", "livestock",
@@ -34,7 +29,6 @@ def oafTag():
     #          "goats", "cows", "chickens", "chicks", "buffalos", "rabbits", "ducks", "pigs", "ducklings", "lambs",
     #           "bulls", "rams", "bees", "animals", "oxen", "steers", "heifers", "turkeys", "sows", "hens", "piglets"]
 
-    loanlist = auxilary.getquery(form)
 
     conversions = {
         "one" : "1",
@@ -58,19 +52,6 @@ def oafTag():
         "nineteen" : "19"
     }
 
-    loanids = ""
-    total = 0
-    everyloan = []
-    for loans in loanlist:
-        for loan in loans:
-            loanids += str(loan["id"]) + ","
-            total += 1
-            if total == 100:
-                total = 0
-                loanids = loanids[:-1]
-                everyloan.append(auxilary.getinfo(loanids))
-                loanids = ""
-
     for loanlist in everyloan:
         for loan in loanlist:
             loanid = str(loan["id"])
@@ -81,9 +62,9 @@ def oafTag():
                 pos = re.findall("a total of ([^ ]*?) solar lights.?", description)[0]
                 if pos in conversions:
                     pos = conversions[pos]
-                if int(pos) > 0:
-                    auxilary.tag(loanid, "9")
+                if int(pos) > 0.5 * numborrowers:
                     auxilary.tag(loanid, "38")
+                auxilary.tag(loanid, "9")
             except:
                 pass
             '''
