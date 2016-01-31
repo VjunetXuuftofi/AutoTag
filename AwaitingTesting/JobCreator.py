@@ -15,6 +15,7 @@ limitations under the License.
 
 System and testing for tagging loans with #JobCreator.
 Caution: many loans identified that aren't tagged with #JobCreator are actually not tagged correctly.
+Testing 1/31 success @ 100%
 """
 
 import csv
@@ -55,6 +56,6 @@ for loangroup in everyloan:
                 correct += 1
                 contains = True
         if not contains:
-            print("https://www.kiva.org/lend/" + str(loan["id"]))
+            print("https://www.kiva.org/lend/" + str(loan["id"]), loan["use"])
         total += 1
-        print(correct, total)
+print(correct, total)

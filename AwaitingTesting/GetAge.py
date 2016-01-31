@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 System and testing for tagging loans with #Elderly, as well as detecting the age of borrowers.
+Testing 1/31 success @ 100%
 """
 
 import json
@@ -45,14 +46,11 @@ def tagElderly():
     total = 0
     for loanlist in everyloan:
         for loan in loanlist:
-            description = loan["description"]["texts"]["en"]
-            match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
-            if len(match) == 0:
-                continue
-            try:
-                if int(match[0][0]) < 50:
+            age = GetAge(loan["description"]["texts"]["en"])
+            if age:
+                if age < 50:
                     continue
-            except:
+            else:
                 continue
             contains = False
             for tag in loan["tags"]:
@@ -63,7 +61,7 @@ def tagElderly():
             if not contains:
                 print("https://www.kiva.org/lend/" + str(loan["id"]))
             total += 1
-            print(correct, total, match)
+    print(correct, total)
 
 def GetAge(description):
     match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
@@ -73,3 +71,4 @@ def GetAge(description):
         return int(match[0][0])
     except:
         return None
+tagElderly()

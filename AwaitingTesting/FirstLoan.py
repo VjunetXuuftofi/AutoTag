@@ -15,14 +15,11 @@ limitations under the License.
 
 System and testing for tagging loans with #FirstLoan.
 Caution: almost all loans that weren't tagged identified by this system should have been tagged.
+Testing 1/31 failed @ <90%
 """
 
 import csv
-import re
 from Other import auxilary
-import json
-from pync import Notifier
-Notifier.notify("Hello World")
 
 ids = []
 
@@ -58,6 +55,6 @@ for loangroup in everyloan:
                 correct += 1
                 contains = True
         if not contains:
-            print("https://www.kiva.org/lend/" + str(loan["id"]))
+            print("https://www.kiva.org/lend/" + str(loan["id"]), loan["use"])
         total += 1
-        print(correct, total)
+print(correct, total)

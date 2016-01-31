@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 System and testing for tagging loans with #Animals.
+Testing 1/31 failed @ 97.3%
 """
 
 
@@ -53,7 +54,7 @@ for loan in loans:
     if "#Animals" in loan["Tags"]:
         correct += 1
     else:
-        print(loan["Raw Link"], use)
+        print(loan["Raw Link"] , "|" , use , "|", loan["Sector"])
     total += 1
 print(correct, total)
 

@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 System and testing for tagging loans with #Animals.
+Testing 1/31 success @ 100%
 """
 
 

@@ -13,7 +13,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-System and testing for tagging loans with #Animals.
+System and testing for tagging loans with #Technology.
+Testing 1/31 success @ 100%
 """
 
 
@@ -35,6 +36,8 @@ loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataF
 for loan in loans:
     use = loan["Use"]
     escape = True
+    if loan["Partner Name"] == "One Acre Fund":
+        continue
     for match in looking:
         if len(re.findall(" " + match + "[^A-z]", use)) > 0:
                 escape = False

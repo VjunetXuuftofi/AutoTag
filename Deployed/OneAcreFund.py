@@ -57,7 +57,7 @@ def oafTag(everyloan):
             loanid = str(loan["id"])
             auxilary.tag(loanid, "8")
             description = loan["description"]["texts"]["en"]
-            numborrowers = loan["borrowers"]
+            numborrowers = len(loan["borrowers"])
             try:
                 pos = re.findall("a total of ([^ ]*?) solar lights.?", description)[0]
                 if pos in conversions:

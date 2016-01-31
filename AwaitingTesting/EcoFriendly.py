@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 System and testing for tagging loans with #Eco-friendly.
+Testing 1/31 failed @ 85.7%
 """
 
 import csv
@@ -41,6 +42,6 @@ for loan in loans:
     if "#Eco-friendly" in loan["Tags"]:
         correct += 1
     else:
-        print(loan["Sector"], loan["Use"], loan["Loan ID"])
+        print(loan["Raw Link"], loan["Use"])
     total += 1
     print(correct, total)

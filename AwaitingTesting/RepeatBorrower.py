@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 System and testing for tagging loans with #RepeatBorrower
+Testing 1/31 success @ 100%
 """
 
 import csv
@@ -68,7 +69,7 @@ for loangroup in everyloan:
                 contains = True
         if not contains and not loankiva:
             print("https://www.kiva.org/lend/" + str(loan["id"]))
-        else:
-            print("error")
+        elif not contains:
+            print("Error:", "https://www.kiva.org/lend/" + str(loan["id"]))
         total += 1
         print(correct, total)

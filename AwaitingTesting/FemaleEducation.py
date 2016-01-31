@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 System and testing for tagging loans with #FemaleEducation.
+Testing 1/31 failed @ 75%
 """
 
 import csv
@@ -62,6 +63,6 @@ for loangroup in everyloan:
                 correct += 1
                 contains = True
         if not contains:
-            print(loan["id"])
+            print("http://kiva.org/lend/" + str(loan["id"]), loan["use"])
         total += 1
-        print(correct, total)
+print(correct, total)

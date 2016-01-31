@@ -13,7 +13,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-System and testing for tagging loans with #Refugee.
+System and testing for tagging loans with #Schooling.
+Testing 1/31 success @ 100%
 """
 
 import csv
@@ -53,6 +54,6 @@ for loangroup in everyloan:
                 correct += 1
                 contains = True
         if not contains:
-            print(loan["id"])
+            print("https://www.kiva.org/lend/" + str(loan["id"]), loan["use"])
         total += 1
         print(correct, total)

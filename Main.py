@@ -28,17 +28,16 @@ while True:
         lasttime = datetime.fromtimestamp(time.mktime(time.strptime(line, "%d %b %Y %H:%M:%S")))
     lasttried.close()
     form = {
-            "status" : "fundraising",
-            "partner" : "202",
-            "page" : "1",
-            "app_id" : "com.woodside.autotag"
+            "status": "fundraising",
+            "partner": "202",
+            "page": "1",
+            "app_id": "com.woodside.autotag"
         }
 
     loanlist = auxilary.getquery(form)
     loanids = ""
     total = 0
     everyloan = []
-    passed = False
     timetowrite = lasttime
 
     for loans in loanlist:
@@ -55,13 +54,10 @@ while True:
                 loanids = loanids[:-1]
                 everyloan.append(auxilary.getinfo(loanids))
                 loanids = ""
-        if passed:
-            break
-
+    everyloan.append(auxilary.getinfo(loanids[:-1]))
+    OneAcreFund.oafTag(everyloan)
     lasttried = open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/time.txt", "w+")
     lasttried.write(time.strftime("%d %b %Y %H:%M:%S", timetowrite.timetuple()))
     lasttried.close()
-
-    OneAcreFund.oafTag(everyloan)
     Notifier.notify("Tagging Complete.")
     time.sleep(86400)
