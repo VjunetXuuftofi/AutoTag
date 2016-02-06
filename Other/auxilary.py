@@ -18,17 +18,64 @@ Some helpful functions to be used in almost every tagging system.
 
 import requests
 import json
+from selenium import webdriver
 import time
+from collections import defaultdict
+import re
+from tqdm import tqdm
+from datetime import timedelta
+from datetime import datetime
 
-
+def kivatag(taglist):
+    if len(taglist) < 1:
+        print("No new loans to tag.")
+        return None
+    print("Commencing Tagging")
+    driver = webdriver.Firefox()
+    driver.get("https://www.kiva.org/login")
+    elem = driver.find_elements_by_tag_name("input")
+    elem[0].send_keys("autotaggingkiva@gmail.com")
+    elem[1].send_keys("dummyaccount\n")
+    time.sleep(2)
+    for loan in tqdm(taglist):
+        driver.get("https://www.kiva.org/lend/" + str(loan))
+        try:
+            elem = driver.find_element_by_xpath("//*[@id='loanTagListing']/div[2]/a")
+            elem.click()
+        except:
+            try:
+                elem = driver.find_element_by_xpath("//*[@id='noLoanTagsListing']/a")
+                elem.click()
+            except:
+                pass
+        toexclude = []
+        try:
+            existingtags = driver.find_element_by_id("tagSelections")
+            existingtag = existingtags.find_elements_by_tag_name("span")
+            for tag in existingtag:
+                toexclude.append(str(tag.get_attribute("class"))[4:])
+        except:
+            pass
+        elems = driver.find_elements_by_class_name("loanTagCheckbox")
+        for tag in taglist[loan]:
+            if tag in toexclude:
+                continue
+            for elem in elems:
+                try:
+                    elem = elem.find_element_by_id(tag)
+                    elem.click()
+                except:
+                    pass
+            time.sleep(1)
+    driver.quit()
+    print("Done Tagging.")
 
 def getinfo(IDs):
-    """Pulls data about a specific loans from the Kiva API.
+    """Pulls data about specific loans from the Kiva API.
     Includes a time sleep to ensure that usage limits aren't exceeded."""
     response = requests.get("http://api.kivaws.org/v1/loans/" + IDs + ".json",
                  params = {"appid" : "com.woodside.autotag"})
-    headers = response.headers
-    time.sleep(60/(int(headers["X-RateLimit-Overall-Limit"])-5))
+    time.sleep(1)
     loans = json.loads(response.text)["loans"]
     return loans
 
@@ -69,32 +116,67 @@ def explorer(FP):
                             tags[tag] = 1
     return tags, total
 
-def tag(loanID, tagID):
-    """Tags a loan with the desired tag."""
-    form = {
-                "checked" : "true",
-                "tag_id" : tagID,
-                "business_id" : loanID,
-                "user_id" : "1442043"
-                }
-    heads = {
-        "Accept" : "application/json, text/javascript, */*; q=0.01",
-        "Connection" : "keep-alive",
-        "DNT" : "1",
-        "Host" : "www.kiva.org",
-        "Referer" : "http://www.kiva.org/lend/" + loanID,
-        "Accept-Encoding" : "gzip, deflate",
-        "Accept-Language" : "en-US,en;q=0.8",
-        "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8",
-        "User-Agent" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.48 Safari/537.36"
+def determinetags(loans):
+    print("Determining the tags that each loan should have.")
+    conversions = {
+        "one" : "1",
+        "two" : "2",
+        "three" : "3",
+        "four" : "4",
+        "five" : "5",
+        "six" : "6",
+        "seven" : "7",
+        "eight" : "8",
+        "nine" : "9",
+        "ten" : "10",
+        "eleven" : "11",
+        "twelve" : "12",
+        "thirteen" : "13",
+        "fourteen" : "14",
+        "fifteen" : "15",
+        "sixteen" : "16",
+        "seventeen" : "17",
+        "eighteen" : "18",
+        "nineteen" : "19"
     }
-    requests.post("https://www.kiva.org/ajax/addOrRemoveLoanTag?",
-                headers = heads,
-                data = form
-                )
+    tags = defaultdict(list)
+    for page in loans:
+        for loan in page:
+            loanid = loan["id"]
+            description = loan["description"]["texts"]["en"]
+            use = loan["use"]
+            sector = loan["sector"]
+            if loan["partner_id"] == 202:
+                tags[loanid].append("8")
+                tags[loanid].append("9")
+                numborrowers = len(loan["borrowers"])
+                try:
+                    pos = re.findall("a total of ([^ ]*?) solar lights.?", description)[0]
+                    if pos in conversions:
+                        pos = conversions[pos]
+                    if int(pos) > 0.5 * numborrowers:
+                        tags[loanid].append("38")
+                except:
+                    pass
+            match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
+            if len(match) > 0:
+                if int(match[0][0]) >= 50:
+                    tags[loanid].append("13")
+            for match in ["fabric", "sewing", "tailor", "dressmaking", "weaving", "embroidery", "batik", "basketry", "pagnes",
+           "Elei", "elei"]:
+                if len(re.findall(" " + match + "[^A-z]", use)) > 0:
+                    tags[loanid].append("26")
+            if sector == "Health" or "health" in use or "latrine" in use or " sanita" in use:
+                if sector != "Agriculture" and sector != "Retail":
+                    tags[loanid].append("27")
+            if sector == "Education":
+                tags[loanid].append("18")
+
+    kivatag(tags)
 
 
-def getquery(form):
+
+def getquery(form, lasttime = None):
     """Returns a list of dictionaries containing every loan matching a given query."""
     toreturn = []
     info = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
@@ -102,9 +184,19 @@ def getquery(form):
     for i in range(1, int(info["paging"]["pages"])):
         form["page"] = str(i)
         response = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form)
-        time.sleep(60/(int(response.headers["X-RateLimit-Overall-Limit"])-5))
+        time.sleep(1)
         loans = json.loads(response.text)["loans"]
         toreturn.append(loans)
+        if (lasttime):
+            out = False
+            for loan in loans:
+                postedtime = datetime.fromtimestamp(time.mktime(time.strptime(loan["posted_date"], "%Y-%m-%dT%H:%M:%SZ")))
+                if lasttime - postedtime > timedelta(microseconds = 1):
+                    out = True
+                    break
+            if out:
+                break
+
     return toreturn
 
 def partnertoid(partnername):

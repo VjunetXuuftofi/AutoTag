@@ -30,32 +30,12 @@ def oafTag(everyloan):
     #           "bulls", "rams", "bees", "animals", "oxen", "steers", "heifers", "turkeys", "sows", "hens", "piglets"]
 
 
-    conversions = {
-        "one" : "1",
-        "two" : "2",
-        "three" : "3",
-        "four" : "4",
-        "five" : "5",
-        "six" : "6",
-        "seven" : "7",
-        "eight" : "8",
-        "nine" : "9",
-        "ten" : "10",
-        "eleven" : "11",
-        "twelve" : "12",
-        "thirteen" : "13",
-        "fourteen" : "14",
-        "fifteen" : "15",
-        "sixteen" : "16",
-        "seventeen" : "17",
-        "eighteen" : "18",
-        "nineteen" : "19"
-    }
 
     for loanlist in everyloan:
         for loan in loanlist:
             loanid = str(loan["id"])
             auxilary.tag(loanid, "8")
+            auxilary.tag(loanid, "9")
             description = loan["description"]["texts"]["en"]
             numborrowers = len(loan["borrowers"])
             try:
@@ -64,7 +44,6 @@ def oafTag(everyloan):
                     pos = conversions[pos]
                 if int(pos) > 0.5 * numborrowers:
                     auxilary.tag(loanid, "38")
-                auxilary.tag(loanid, "9")
             except:
                 pass
             '''

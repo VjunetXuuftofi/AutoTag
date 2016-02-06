@@ -16,12 +16,10 @@ limitations under the License.
 Runs all of the implemented systems
 """
 from Other import auxilary
-from Deployed import OneAcreFund
 import time
 from datetime import timedelta
 from datetime import datetime
-from pync import Notifier
-
+from tqdm import tqdm
 while True:
     lasttried = open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/time.txt", "r")
     for line in lasttried:
@@ -29,17 +27,18 @@ while True:
     lasttried.close()
     form = {
             "status": "fundraising",
-            "partner": "202",
             "page": "1",
             "app_id": "com.woodside.autotag"
         }
-
-    loanlist = auxilary.getquery(form)
+    print("Getting the initial list of loans.")
+    loanlist = auxilary.getquery(form, lasttime)
     loanids = ""
     total = 0
     everyloan = []
     timetowrite = lasttime
 
+
+    print("Getting the details of all of the loans.")
     for loans in loanlist:
         for loan in loans:
             postedtime = datetime.fromtimestamp(time.mktime(time.strptime(loan["posted_date"], "%Y-%m-%dT%H:%M:%SZ")))
@@ -55,9 +54,10 @@ while True:
                 everyloan.append(auxilary.getinfo(loanids))
                 loanids = ""
     everyloan.append(auxilary.getinfo(loanids[:-1]))
-    OneAcreFund.oafTag(everyloan)
+    auxilary.determinetags(everyloan)
     lasttried = open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/time.txt", "w+")
     lasttried.write(time.strftime("%d %b %Y %H:%M:%S", timetowrite.timetuple()))
     lasttried.close()
-    Notifier.notify("Tagging Complete.")
-    time.sleep(86400)
+    print("Waiting a minute...")
+    time.sleep(60)
+    print("Starting again.")
