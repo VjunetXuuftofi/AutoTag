@@ -13,7 +13,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Some helpful functions to be used in almost every tagging system.
+All interactions with the internet happen here. Includes methods to pull data from the Kiva API as well as identify and
+tag loans.
 """
 
 import requests
@@ -26,7 +27,12 @@ from tqdm import tqdm
 from datetime import timedelta
 from datetime import datetime
 
+
 def kivatag(taglist):
+    """
+    Uses Selenium to sign into kiva and tag loans given in taglist through the Firefox webdriver.
+    :param taglist:
+    """
     if len(taglist) < 1:
         print("No new loans to tag.")
         return None
@@ -70,9 +76,15 @@ def kivatag(taglist):
     driver.quit()
     print("Done Tagging.")
 
+
 def getinfo(IDs):
-    """Pulls data about specific loans from the Kiva API.
-    Includes a time sleep to ensure that usage limits aren't exceeded."""
+    """
+    Pulls and returns data about specific loans from the Kiva API.
+    Includes a time sleep to ensure that usage limits aren't exceeded.
+    No more than 100 loan ID
+    :param IDs:
+    :return loans:
+    """
     response = requests.get("http://api.kivaws.org/v1/loans/" + IDs + ".json",
                  params = {"appid" : "com.woodside.autotag"})
     time.sleep(1)
@@ -80,43 +92,12 @@ def getinfo(IDs):
     return loans
 
 
-def explorer(FP):
-    """Returns the tag breakdown of a Field Partner"""
-    tags = {}
-
-    total = 0
-
-    form = {
-        "partner" : FP,
-        "page" : "1",
-        "app_id" : "com.woodside.autotag"
-    }
-    loans = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
-    loans = json.loads(loans)
-    for i in range(1, int(loans["paging"]["pages"])):
-        page = str(i)
-        form = {
-        "partner" : FP,
-        "page" : page,
-        "app_id" : "com.woodside.autotag"
-        }
-        response = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form)
-        loans = json.loads(response.text)
-        headers = response.headers
-        time.sleep(60/(int(headers["X-RateLimit-Overall-Limit"])))
-        for loan in loans["loans"]:
-            total += 1
-            if len(loan["tags"]) > 0:
-                for tag in loan["tags"]:
-                    tag = tag["name"]
-                    if tag != "volunteer_pick" and tag != "volunteer_like" and tag != "user_favorite":
-                        try:
-                            tags[tag] += 1
-                        except:
-                            tags[tag] = 1
-    return tags, total
-
 def determinetags(loans):
+    """
+    Takes a complete list of loan objects and determines which tags each one should have, storing this in a defaultdict.
+    Then, feeds this data to taglist for tagging.
+    :param loans:
+    """
     print("Determining the tags that each loan should have.")
     conversions = {
         "one" : "1",
@@ -171,14 +152,19 @@ def determinetags(loans):
                     tags[loanid].append("27")
             if sector == "Education":
                 tags[loanid].append("18")
-
     kivatag(tags)
 
 
-
 def getquery(form, lasttime = None):
-    """Returns a list of dictionaries containing every loan matching a given query."""
-    toreturn = []
+    """
+    Takes in an HTTP form and submits this form with the Kiva API. All data from the form is returned as a list of
+    dictionaries. Optionally, a datetime object can be included to stop getting more information once that data is older
+    than the query.
+    :param form:
+    :param lasttime:
+    :return queryresults:
+    """
+    queryresults = []
     info = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
     info = json.loads(info)
     for i in range(1, int(info["paging"]["pages"])):
@@ -186,7 +172,7 @@ def getquery(form, lasttime = None):
         response = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form)
         time.sleep(1)
         loans = json.loads(response.text)["loans"]
-        toreturn.append(loans)
+        queryresults.append(loans)
         if (lasttime):
             out = False
             for loan in loans:
@@ -196,12 +182,7 @@ def getquery(form, lasttime = None):
                     break
             if out:
                 break
-
-    return toreturn
-
-def partnertoid(partnername):
-    mapping = json.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/Other/partnermapping.json", "r"))
-    return mapping[partnername]
+    return queryresults
 
 
 
