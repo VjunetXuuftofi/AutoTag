@@ -166,7 +166,7 @@ def determinetags(loans):
            "Elei", "elei"]:
                 if len(re.findall(" " + match + "[^A-z]", use)) > 0:
                     tags[loanid].append("26")
-            if sector == "Health" or "health" in use or "latrine" in use or " sanita" in use:
+            if sector == "Health" or "health" in use or "latrine" in use or " sanita" in use or "toilet" in use:
                 if sector != "Agriculture" and sector != "Retail":
                     tags[loanid].append("27")
             if sector == "Education":

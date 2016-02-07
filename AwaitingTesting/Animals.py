@@ -20,7 +20,8 @@ Testing 1/31 failed @ 97.3%
 
 
 import csv
-import re
+from Other import Analysis
+from tqdm import tqdm
 
 looking = ["goat", "dairy", "cow", "calf", "calves", "chicken", "chicks", "buffalo", "rabbit", "sheep", "duck", "pig",
            "duckling", "lamb", "cattle", "bull", "ram", "poultry", "honey", "bee", "animal", "livestock",
@@ -34,14 +35,18 @@ total = 0
 ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
+forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/AnimalBagOfWords.csv")
 for loan in loans:
     use = loan["Use"]
+    '''
     escape = True
     for match in looking:
         if len(re.findall(" " + match + "[^A-z]", use)) > 0:
             escape = False
             break
     if escape:
+        continue
+    if "Sales" in loan["Activity"]:
         continue
     if match == "dairy" or match == "chicken" or match == "animal" or match == "chickens" or match == "animals"\
             or match == "hen" or match == "hens":
@@ -51,10 +56,19 @@ for loan in loans:
         continue
     if "slaughter" in use:
         continue
+        '''
+    modified = [Analysis.modify(use)]
+    if modified != [None]:
+        modified = vectorizer.transform(modified).toarray()
+        prediction = forest.predict_proba(modified)
+        if prediction[0][1] > 0.01:
+            continue
+    else:
+        continue
     if "#Animals" in loan["Tags"]:
         correct += 1
     else:
-        print(loan["Raw Link"] , "|" , use , "|", loan["Sector"])
+        print("http://www.kiva.org/lend/" + loan["Loan ID"])
     total += 1
-print(correct, total)
+    print(correct, total)
 
