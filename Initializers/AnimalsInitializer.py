@@ -19,7 +19,7 @@ approach.
 
 import csv
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/AnimalBagOfWords.csv", "w+"))
+writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv", "w+"))
 
 correct = 0
 total = 0

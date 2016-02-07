@@ -29,7 +29,7 @@ ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/WomanOwnedBizBagOfWords.csv")
+forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/WomanOwnedBizBagOfWords.csv")
 loanstowrite = []
 loanids = ""
 

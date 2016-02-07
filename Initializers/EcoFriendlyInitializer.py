@@ -19,7 +19,7 @@ Words approach.
 
 import csv
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/EcoFriendlyBagOfWords.csv", "w+"))
+writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EcoFriendlyBagOfWords.csv", "w+"))
 
 correct = 0
 total = 0

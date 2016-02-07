@@ -29,7 +29,7 @@ total = 0
 ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/AnimalBagOfWords.csv")
+forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv")
 for loan in loans:
     use = loan["Use"]
     modified = [Analysis.modify(use)]
