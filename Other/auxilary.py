@@ -26,7 +26,10 @@ import re
 from tqdm import tqdm
 from datetime import timedelta
 from datetime import datetime
+import psutil
 
+chromedriver = "/Users/thomaswoodside/Dropbox/chromedriver"
+driver = webdriver.Chrome(chromedriver)
 
 def kivatag(taglist):
     """
@@ -37,12 +40,14 @@ def kivatag(taglist):
         print("No new loans to tag.")
         return None
     print("Commencing Tagging")
-    driver = webdriver.Firefox()
     driver.get("https://www.kiva.org/login")
-    elem = driver.find_elements_by_tag_name("input")
-    elem[0].send_keys("autotaggingkiva@gmail.com")
-    elem[1].send_keys("dummyaccount\n")
-    time.sleep(2)
+    try:
+        elem = driver.find_elements_by_tag_name("input")
+        elem[0].send_keys("autotaggingkiva@gmail.com")
+        elem[1].send_keys("dummyaccount\n")
+        time.sleep(2)
+    except:
+        pass
     for loan in tqdm(taglist):
         driver.get("https://www.kiva.org/lend/" + str(loan))
         try:
@@ -73,7 +78,6 @@ def kivatag(taglist):
                 except:
                     pass
             time.sleep(1)
-    driver.quit()
     print("Done Tagging.")
 
 
@@ -183,6 +187,3 @@ def getquery(form, lasttime = None):
             if out:
                 break
     return queryresults
-
-
-

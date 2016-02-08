@@ -22,14 +22,16 @@ import csv
 from Other import auxilary
 from tqdm import tqdm
 from Other import Analysis
-
+import pickle
+import numpy as np
 
 
 ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/WomanOwnedBizBagOfWords.csv")
+forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/WOBForest", "rb"))
+vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/WOBVectorizer", "rb"))
 loanstowrite = []
 loanids = ""
 
@@ -47,6 +49,7 @@ for loan in tqdm(loans):
 
 total = 0
 correct = 0
+probabilities = []
 for loangroup in everyloan:
     for loan in loangroup:
         valid = True
@@ -61,8 +64,18 @@ for loangroup in everyloan:
         if modified != [None]:
             modified = vectorizer.transform(modified).toarray()
             prediction = forest.predict_proba(modified)
-            if prediction[0][0] > 0.01:
-                continue
+            if np.mean(probabilities) > 0.0095:
+                if prediction[0][0] > 0.01:
+                    continue
+                else:
+                    probabilities.append(prediction[0][0])
+                    print(np.mean(probabilities))
+            else:
+                if prediction[0][0] > 0.02:
+                    continue
+                else:
+                    probabilities.append(prediction[0][0])
+                    print(np.mean(probabilities))
         else:
             continue
 

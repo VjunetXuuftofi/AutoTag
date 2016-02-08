@@ -18,9 +18,11 @@ Words approach.
 """
 
 import csv
+from Other import Analysis
+import pickle
 
 writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EcoFriendlyBagOfWords.csv", "w+"))
-
+writer.writerow(["id", "description", "value"])
 correct = 0
 total = 0
 
@@ -33,3 +35,7 @@ for loan in loans:
         writer.writerow([loan["Loan ID"], loan["Use"], 1])
     else:
         writer.writerow([loan["Loan ID"], loan["Use"], 0])
+
+forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EcoFriendlyBagOfWords.csv")
+pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/EFForest", "wb+"))
+pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/EFVectorizer", "wb+"))

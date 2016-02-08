@@ -18,8 +18,11 @@ approach.
 """
 
 import csv
+from Other import Analysis
+import pickle
 
 writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv", "w+"))
+writer.writerow(["id", "description", "value"])
 
 correct = 0
 total = 0
@@ -27,7 +30,10 @@ total = 0
 ids = []
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 for loan in loans:
-    if "#Eco-friendly" in loan["Tags"]:
+    if "#Animals" in loan["Tags"]:
         writer.writerow([loan["Loan ID"], loan["Use"], 1])
     else:
         writer.writerow([loan["Loan ID"], loan["Use"], 0])
+forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv")
+pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/AForest", "wb+"))
+pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/AVectorizer", "wb+"))

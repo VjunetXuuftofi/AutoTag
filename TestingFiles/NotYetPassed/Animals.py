@@ -22,6 +22,8 @@ Switched to Bag of Words approach.
 
 import csv
 from Other import Analysis
+import pickle
+import numpy as np
 
 correct = 0
 total = 0
@@ -29,15 +31,28 @@ total = 0
 ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv")
+forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/AForest", "rb"))
+vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/AVectorizer", "rb"))
+
+probabilities = []
 for loan in loans:
     use = loan["Use"]
     modified = [Analysis.modify(use)]
     if modified != [None]:
         modified = vectorizer.transform(modified).toarray()
         prediction = forest.predict_proba(modified)
-        if prediction[0][1] > 0.01:
-            continue
+        if np.mean(probabilities) > 0.0095:
+            if prediction[0][0] > 0.01:
+                continue
+            else:
+                probabilities.append(prediction[0][0])
+                print(np.mean(probabilities))
+        else:
+            if prediction[0][0] > 0.02:
+                continue
+            else:
+                probabilities.append(prediction[0][0])
+                print(np.mean(probabilities))
     else:
         continue
     if "#Animals" in loan["Tags"]:

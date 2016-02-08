@@ -13,25 +13,33 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-System and testing for tagging loans with #FirstLoan.
-Caution: almost all loans that weren't tagged identified by this system should have been tagged.
-Testing 1/31 failed @ <90%
-Planning to switch to a Bag of Words approach
+System and testing for tagging loans with #WomanOwnedBiz
+Testing 1/31 failed @ 75%
+Switched to Bag of Words approach.
 """
 
 import csv
 from Other import auxilary
+from tqdm import tqdm
+from Other import Analysis
+import pickle
+import numpy as np
+from bs4 import BeautifulSoup
+import requests
+
 
 ids = []
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 
-
+forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/FLForest", "rb"))
+vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/FLVectorizer", "rb"))
+loanstowrite = []
 loanids = ""
 
 everyloan = []
 total = 0
-for loan in loans:
+for loan in tqdm(loans):
     loanids += loan["Loan ID"] + ","
     total += 1
     if total == 100:
@@ -43,19 +51,40 @@ for loan in loans:
 
 total = 0
 correct = 0
+probabilities = []
 for loangroup in everyloan:
     for loan in loangroup:
         description = loan["description"]["texts"]["en"]
-        if "first loan" not in description:
+        if "repaid" in description:
             continue
-        if "previous loan" in description:
+        soup = BeautifulSoup(requests.get("https://www.kiva.org/lend/" + str(loan["id"])).text)
+        if len(soup.find_all(id="prevLoanDetails")) != 0:
             continue
+        modified = [Analysis.modify(description)]
+        if modified != [None]:
+            modified = vectorizer.transform(modified).toarray()
+            prediction = forest.predict_proba(modified)
+            if np.mean(probabilities) > 0.0095:
+                if prediction[0][0] > 0.01:
+                    continue
+                else:
+                    probabilities.append(prediction[0][0])
+                    print(np.mean(probabilities))
+            else:
+                if prediction[0][0] > 0.02:
+                    continue
+                else:
+                    probabilities.append(prediction[0][0])
+                    print(np.mean(probabilities))
+        else:
+            continue
+
         contains = False
         for tag in loan["tags"]:
             if tag["name"] == "#FirstLoan":
-                correct += 1
                 contains = True
+                correct += 1
         if not contains:
-            print("https://www.kiva.org/lend/" + str(loan["id"]), loan["use"])
-        total += 1
-print(correct, total)
+            print("http://www.kiva.org/lend/" + loan["id"])
+        total +=1
+        print(correct, total)

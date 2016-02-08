@@ -49,7 +49,7 @@ for loangroup in everyloan:
     for loan in loangroup:
         loankiva = False
         description = loan["description"]["texts"]["en"]
-        soup = BeautifulSoup(requests.get("https://www.kiva.org/lend/" + str(loan["id"])).text, "lxml")
+        soup = BeautifulSoup(requests.get("https://www.kiva.org/lend/" + str(loan["id"])).text)
         if len(soup.find_all(id="prevLoanDetails")) == 0:
             if "repaid" not in description:
                 continue

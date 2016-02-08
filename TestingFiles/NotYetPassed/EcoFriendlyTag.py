@@ -19,13 +19,17 @@ Testing 1/31 failed @ 85.7%
 
 import csv
 from Other import Analysis
+import pickle
+import numpy as np
 
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/EcoFriendlyBagOfWords.csv")
+forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/EFForest", "rb"))
+vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/EFVectorizer", "rb"))
 correct = 0
 total = 0
 
 ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/loans_assigned_for_tagging.csv"))
+loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
+probabilities = []
 for loan in loans:
     if loan["Partner Name"] == "One Acre Fund":
         continue
@@ -33,8 +37,16 @@ for loan in loans:
     if modified != [None]:
         modified = vectorizer.transform(modified).toarray()
         prediction = forest.predict_proba(modified)
-        if prediction[0][0] > 0.01:
-            continue
+        if np.mean(probabilities) > 0.0095:
+            if prediction[0][0] > 0.01:
+                continue
+            else:
+                probabilities.append(prediction[0][0])
+        else:
+            if prediction[0][0] > 0.02:
+                continue
+            else:
+                probabilities.append(prediction[0][0])
     else:
         continue
     if "#Eco-friendly" in loan["Tags"]:
