@@ -14,14 +14,16 @@ Pull requests on existing systems will be accepted if they pass this test and id
 
 ##Current Status:
 
-Kiva is going to have a new release that breaks the tagging mechanism. I will work on building a new tagging system as soon as it comes out. Additionally, we are working on building a tool for taggers to undo tags that are incorrectly applied. Testing results from 1/31 can be found in JanTesting.pdf. 
+Some tags are operational. Please see "Implemented" Testing results from 1/31 can be found in JanTesting.pdf. 
 
 ###Implemented:
 One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology on loans from the One Acre Fund partner.
 
+Kivawide tags - #Elderly, #Schooling, #HealthAndSanitation, #Fabrics.
+
 ###Awaiting Approval from Loan Taggers Team Captians (100% tested accuracy):
 
-Fabrics, Elderly, HealthAndSanitation, JobCreator, Refugee, RepeatBorrower, Technology, Schooling, Widowed
+JobCreator, Refugee, RepeatBorrower, Technology, Widowed
 
 ###Awaiting Testing on Mar 2 (previous testing results):
 
@@ -33,13 +35,13 @@ General #FemaleEducation (<90%)
 
 General #FirstLoan (<90%)
 
-General #Trees (93.75%)
+General #WomanOwnedBiz (N/A)
 
 ###Development Abandoned:
 
-General #WomanOwnedBiz (many complicated disqualifying factors)
+General #Trees (volume too small)
 
-###No Development Planned (reasons why):
+###Development not (yet) occurring (reasons why):
 
 General #IncomeProducingDurableAsset (requires real human intuition to identify)
 
