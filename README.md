@@ -45,7 +45,7 @@ General #SingleParent (N/A)
 
 General #Single (N/A)
 
-General #IncomeProducingDurableAsset (requires real human intuition to identify)
+General #IncomeProducingDurableAsset (N/A)
 
 
 ###Development Abandoned:
