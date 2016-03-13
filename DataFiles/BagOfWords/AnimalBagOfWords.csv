@@ -1,7 +1,4 @@
 id,description,value
-1015660,to buy cows to fatten and breed to have calves to sell.,1
-1012747,to purchase a larger quantity of tools and accessories for vehicles.,0
-1013808,to purchase grocery products and open a new store,0
 1014055,to buy and sell footwear,0
 1014202,to pay for the rental of 3 hectares of land where she cultivates basic grains.,0
 1014617,to pay for 450 kgs of potato seeds and 150 packages of fodder to feed the livestock.,1
@@ -22,7 +19,7 @@ id,description,value
 1014751,to acquire a large space for his barbershop.,0
 1014767,to buy cooking ingredients wholesale so that she will have time to care for her baby.,0
 1014870,to buy silverware to sell in her gift shop.,0
-1014885,"to buy food for pigs, toothbrushes, toothpaste, Garden products, etc. ",0
+1014885,"to buy food for pigs, toothbrushes, toothpaste, Garden products, etc. ",1
 1014987,to buy more fabric and other sewing accessories,0
 1015024,to buy more chests and cradles,0
 1015404,to buy cattle for fattening and trade.,1
@@ -53,7 +50,6 @@ id,description,value
 1013675,"to buy more seeds, fertilizer, compost, pest control, etc., and improve the soil.",0
 1014412,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for the coming harvesting season,0
 1014452,"to pay for music discs, video games and new stock of perfume to sell in his store. ",0
-1005091,to purchase stock of goats to slaughter and get meat for resale,0
 1005788,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1006352,"to buy food and clothing, eliminating pressure to sell maize for low prices at harvest time.",0
 1006468,to purchase mobile devices (phones) in bulk,0
@@ -76,7 +72,7 @@ id,description,value
 1005148,to add stock of fruits and rent another little plot for vegetables.,0
 1005171,to buy assorted tableware and a variety of other merchandise,0
 1005214,to purchase bales of clothes for resale.,0
-1013621,"to purchase some cooking implements, upgrade her equipment, and buy stock to make beans, �sudado� and �sancocho� [traditional stews made with beef or chicken], chicken with rice, and other types of dishes.",0
+1013621,"to purchase some cooking implements, upgrade her equipment, and buy stock to make beans, ��_��__��_��___��_��__��_��____sudado��_��__��_��___��_��__��_��____ and ��_��__��_��___��_��__��_��____sancocho��_��__��_��___��_��__��_��____ [traditional stews made with beef or chicken], chicken with rice, and other types of dishes.",0
 1013640,to buy clothes for women.,0
 1013647,"to buy a new stove, tables, chairs, pans, spoons and forks, among other utensils she needs for her eating establishment.",0
 1014401,"to buy more stock of flour, sugar, soap, cooking oil and other items.",0
@@ -92,7 +88,6 @@ id,description,value
 1013638,to buy soft drinks and beers.,0
 1013639,"to buy spare parts for his motorcycle, which is his main means of transport to go to work.",0
 1013642,to have working capital to acquire power to negotiate with her suppliers.,0
-1013643,"to buy more fertilizers, manure, and pesticides, among other things.",0
 1013768,to purchase baby livestock to raise and sell in future.,1
 1014013,to buy rexine of various types for her husband's vehicle's seat cover sewing and then selling business.,0
 1014371,to buy three calves.,1
@@ -125,7 +120,7 @@ id,description,value
 1014295,to pay for chicken meat for his business,0
 1014307,"to purchase additional groceries to sell in her store such as canned goods, noodles, spices, milk, coffee, drinks, candies, soap, and personal care products.",0
 1014314,to pay for several kilos of dried fish to sell.,0
-1014325,to treat his father and buy medicine for his father�s treatment.,0
+1014325,to treat his father and buy medicine for his father��_��__��_��___��_��__��_��____s treatment.,0
 1007435,to buy silver fish to sell.,0
 1012740,"to buy beverages, baked goods, vegetables, fruits, and other products.",0
 1012743,"to buy beer, sodas, hard ciders, cookies, and other products.",0
@@ -142,7 +137,6 @@ id,description,value
 1014990,to buy a new rickshaw with the contribution of savings for her husband's rickshaw driving services.,0
 1014335,to buy medicine for her treatment.,0
 1014490,Purchase a motorcycle for timely delivery of the citrus fruits he grows and sells.,0
-1013454,to buy 12 crates of maltina and 7 crates of assorted drinks. 4 cartons of juice,0
 1014363,to have her teeth treated at the dental clinic.,0
 1012737,to buy fertilizers that he can apply to two plots of his coffee farm.,0
 1014158,to buy sewing equipment for her business.,0
@@ -155,7 +149,6 @@ id,description,value
 1015731,to purchase a tractor and rent it out in order to generate a more stable icnome,0
 1014326,to buy a solar panel for her house.,0
 1015722,to buy a buffalo to increase milk production and monthly income.,1
-1015729,to buy hens and broilers for producing chicken for reselling purpose.,1
 1014109,to invest in her cosmetics business.,0
 1014581,to pay for seeds and fertilizer for his farm and for forage to feed to his livestock.,1
 1014642,to expand her agriculture business. ,0
@@ -168,13 +161,12 @@ id,description,value
 1015433,To buy additional products for her business,0
 1014558,to buy land,0
 1014849,to purchase raw material for his pizzeria.,0
-1014860,to buy maintenance equipment for her cattle ranch.,0
+1014860,to buy maintenance equipment for her cattle ranch.,1
 1014866,to buy a motorcycle.,0
 1015691,to build a latrine,0
 1015314,to expand her business to sell more sarees.,0
 1015336,To expand her weaving business to sell more sarees,0
 1015339,"to buy more brick moulding equipment, the raw material resources she uses, and also adding to her groceries business.",0
-1015429,to provide credit to end users to allow them to purchase a life saving stove.,0
 1015435,to buy a lingerie collection for her shop.,0
 1015472,"to buy chicks, chicken feeds, and wood and to service his car.",1
 1015578,to buy more clothing that she will sell .,0
@@ -188,13 +180,10 @@ id,description,value
 1014080,to purchase more beans to sell,0
 1014088,to purchase more stock of second-hand clothes for sale and make more income to provide for the needs of her family.,0
 1014116,to buy ladies' clothes for selling.,0
-1014126,to buy cows for slaughtering to sell.,0
 1014134,to purchase cloth.,0
-1014138,"to buy oil, onions, salt, tomato paste, etc.",0
 1014151,to buy merchandise to resell.,0
 1014154,to buy fabric for his business.,0
 1013586,"to buy cement, sand and gravel, and hire workers to install a concrete floor in her house.",0
-1013589,"to buy more fertilizers, manures, pest control agents, herbicides, etc. to improve the land.",0
 1013591,"to buy meats, sausages, dairy products, baked goods and other products.",0
 1014039,to help her son in purchasing a new rickshaw so he can start driving again and can generate income.,0
 1014043,to buy new tools and make some decoration in his barber shop.,0
@@ -210,9 +199,7 @@ id,description,value
 1013566,"to purchase fertilizer to apply to her crop of bananas and also to purchase products for her store, such as rice, sugar, drinks, etc.",0
 1013571,"to buy: cement, sand, gravel, sheets, and pins to change the floor and roof of his house.",0
 1013572,"to buy products like tubs, jars, cups, etc. in mass quantity.",0
-1013573,to buy a box for electrical tools.,0
 1013576,"to buy cement, gravel and sand to cement the floor of her home.",0
-1013579,"to buy tires, chains, patches, pedals, oil, etc. at wholesale",0
 1013582,to invest in improvement of local infrastructure.,0
 1013585,"to buy sugar, flour, eggs, lard and other products.",0
 1014024,to buy mineral fertilizers and seeds,0
@@ -224,11 +211,10 @@ id,description,value
 1014037,to buy fresh milk in bulk for her husband's milk trading.,0
 1014046,to buy new tools and decorations for his barber shop.,0
 1013546,"to purchase merchandise such as rice, sugar, and more.",0
-1013550,to purchase more fish to raise in her pond and also to purchase feed for them.,0
+1013550,to purchase more fish to raise in her pond and also to purchase feed for them.,1
 1013552,"to purchase supplies such as manure, fertilizers and pay for weeding to maintain his corn and coffee crops.",0
 1013553,to buy a milk cow to produce more milk and sell dairy products.,1
 1013555,to buy clothes to sell.,0
-1013556,to buy tools and materials for his trade.,0
 1013558,"to buy cement, sand, and a door to improve the walls and replace the door of her house.",0
 1014017,to buy warmer clothes for her husband's clothing shop.,0
 1014019,to buy fresh and seasonal fruits for her husband's fruits selling business.,0
@@ -318,8 +304,8 @@ id,description,value
 1013940,"to buy artificial jewelry such as rings, earrings, bracelets, and necklaces for her husband's jewelry shop.",0
 1013942,"to buy cost efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar lights.							.",0
 1013947,to buy a new rickshaw body for her husband to compensate for accidental damage.,0
-1013955,to purchase hybrid seeds and fertilizer for the�cultivation�of maize							,0
-1013958,"to purchase hybrid seeds and fertilizer for the�cultivation�of maize, as well as a solar light.							",0
+1013955,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize							,0
+1013958,"to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize, as well as a solar light.							",0
 1013961,to buy new beauty products and equipment.,0
 1013813,to buy new rickshaw repairing tools and more spare parts for her husband's rickshaw repairing workshop.,0
 1013815,to buy an moto-rickshaw body for her son's local transportation services.,0
@@ -359,7 +345,6 @@ id,description,value
 1012736,"to buy cut firewood, sand, clay, and other supplies.",0
 1012785,"to buy vegetables, bread, fruits, meat, drinks and other items. ",0
 1013385,to purchase a new sewing machine for his wife to improve the quality of her work and also work much more efficiently and quickly.,0
-1013490,to buy cartons of fish and loaves of bread for her business.,0
 1013493,to increase the fish stock and to buy cooking oil and charcoal for cooking.,0
 1013534,to purchase three bales of clothing for her business.,0
 1013547,to buy cattle ,1
@@ -374,7 +359,6 @@ id,description,value
 1013803,to help her husband in repairing his rickshaw so he can drive smoothly and generate income for the family.,0
 1013805,to buy tools and spare parts for her husband for his mechanical shop.,0
 1013954,to buy five pigs and four bags of hay (feed for pigs),1
-1013520,to buy palm oil for her business.,0
 1013655,to build a proper home for her family.,0
 1014095,to buy more sorghum to sell.,0
 1014764,to buy inventory items for his agricultural/vet shop he's been operating for the past ten years.,0
@@ -392,12 +376,10 @@ id,description,value
 1015396,to increase her capital and buy a large quantity of clothing for resale to earn more.,0
 1012774,"to buy various clothing items, shoes, low cost items and more.",0
 1013461,"to make some maintenance for his rickshaw,",0
-1013470,to buy 50 rubbers of palm oil for her business,0
 1013471,to buy cost efficient seeds and fertilizer for the coming harvesting season.,0
 1013472,to purchase a car and start a taxi business.,0
 1013473,to buy a new collection of goods and inventory to sell at his store.,0
 1013475,to purchase hybrid seeds and fertilizer for cultivation as well as a solar light.,0
-1013480,to buy additional electronics for resale.,0
 1013484,to purchase hybrid seeds and fertilizer to improve the harvest of maize.,0
 1013510,to restock items in the food store.,0
 1012495,to buy rotors and drums for all kinds of vehicles.,0
@@ -411,7 +393,6 @@ id,description,value
 1013467,to pay for some maintenance for his rickshaw.,0
 1012764,"to buy fertilizer, herbicides, and to prepare the soil where she is going to grow basic grains.",0
 1012767,"to purchase clothing such as blouses, pants, shirts, children's clothing, bedding and shoes to sell.",0
-1013434,to buy animals for her husband's butcher business.,0
 1013436,to hep her husband increase his scrap recycling business.,0
 1013438,to buy a new sewing machine for her business.,0
 1013443,to buy new beauty equipment for her business.,0
@@ -579,7 +560,6 @@ id,description,value
 1012604,to buy a pair of oxen to plow his land and help with agricultural work.,1
 1013267,to buy cost efficient seeds and fertilizer for the coming harvesting season,0
 1013274,"to complete construction of his wall fence, boys' quarters, and the veranda of his house.",0
-1013278,to buy more animal drugs and agro inputs to sell.,0
 1013279,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1013297,"to buy groceries to sell at her sari-sari, or small general store.",0
 1013298,to buy cost-efficient seeds and fertilizer for the coming harvesting season.,0
@@ -603,8 +583,7 @@ id,description,value
 1013207,to increase her husband's electronic spare parts business.,0
 1013238,to increase her husband's barber business.,0
 1013964,to pay what is left from the price of a warehouse he was  saving to buy long ago.,0
-1014031,"to buy more bags of rice, peppers, onions, palm oil, and salt.",0
-1014330,to pay for his son�s tuition fees.,0
+1014330,to pay for his son��_��__��_��___��_��__��_��____s tuition fees.,0
 1013974,To stock up on diapers for resale.,0
 1014041,"to buy products for her beauty salon,",0
 1014167,to buy a new collection for her retail shop.,0
@@ -616,7 +595,6 @@ id,description,value
 1014324,to buy a solar panel for lighting in her house.,0
 1012581,buy a calf.,1
 1012588,to buy more boxes of ice creams and sweets of all flavors to supply her business. .,0
-1012593,"purchase beef and pork, plus cooking oil and propane gas, for frying food and sausages, which will be very useful in keeping her business functioning.",0
 1012595,to buy supplies for an irrigation system.,0
 1012597,to buy supplies for her farming business.,0
 1013154,to purchase more cattle to resell in the market.,1
@@ -626,7 +604,6 @@ id,description,value
 1014058,to buy some equipment and furniture for her law office .,0
 1014076,to pay for her children's increasing school tuition fees.,0
 1014317,to buy a solar home system in order to brighten his house at night time.,0
-1001544,"to buy more beans, sorghum and tomatoes to sell.",0
 1004616,to raise sheep for sale,1
 1012753,"to buy fruits, vegetables, meats, baked goods, beverages, dairy goods, and other products.",0
 1014071,to buy new material needed to continue providing customer satisfaction and grow her work scale a bit.,0
@@ -671,13 +648,11 @@ id,description,value
 1012880,to buy potato and onion seeds and fertilizers and also prepare the land for planting.,0
 1012881,to buy additional food for her business,0
 1012086,to repair his taxi.,0
-1012489,"A loan of $1,100 helps this borrower to buy more wholesale clothing and jewelry.",0
 1012493,to buy all the construction materials he needs.,0
 1012854,to purchase more fabrics and attract a larger number of customers,0
 1012855,to buy an engine for the furgon (minibus) he uses to transport people.,0
 1012860,to buy more kinds of nuts and seeds.,0
 1012861,to buy clothes and blankets to sell.,0
-1012864,to buy desserts and sweets.,0
 1012060,"chickens, feed, and medicine.",1
 1012520,to buy agricultural produce such as maize and beans to sell.,0
 1012619,"to buy food and clothing, eliminating pressure to sell maize for low prices at harvest",0
@@ -725,30 +700,26 @@ id,description,value
 1012499,to buy electronics to sell so that he can meet his customers' needs.,0
 1012504,to buy cattle to fatten and then sell.,1
 1012506,to buy cattle to fatten so it matures quickly and is ready for sale.,1
-1012043,to buy necessary construction materials.,0
 1012429,to buy more maize for his posho mill so as to meet customer demand and hence increase his income to pay school fees for his children and provide food for his family.,0
 1012446,"to buy more stock of sugar, salt and other household items so as to meet her customers' demands.",0
 1012450,to buy maize produce to sell.,0
 1012014,to buy grazing cattle.,1
 1012021,"to buy more shirts, pants, blouses, dresses, skirts, bathing suits, underwear, etc. and a canopy for her clothing business.",0
 1012024,"to invest in basic grains, schools supplies, sodas, wood and corn.",0
-1012028,to purchase materials for necessary construction.,0
 1012427,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season.,0
 1012439,to buy roofing material like iron sheets and nails for roofing his house.,0
 1012441,to buy maize and beans to sell.,0
 1011989,to buy merchandise to stock the store and ingredients for his wife's business.,0
 1011999,purchase doors and pay for labor.,0
-1012005,purchase needed construction materials.,0
 1012392,to invest in her husband's general store.,0
 1012410,to purchase shoes and invest in his business.,0
 1011991,"to buy basic grains, tomatoes, onions, peppers and potatoes.",0
 1011993,to pay for doors and the cost of labor.,0
-1011996,"to buy pig skin, cheese, beans, corn and other ingredients.",0
 1012391,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1012400,to buy cost-efficient seeds and fertilizer for the coming harvesting season.,0
 1012401,"to purchase sacks of apples, mangoes and guavas to meet market demand consistently, which ultimately will enable her to timely cover her utility bills.",0
 1012404,to buy electrical machines for her business.,0
-1012409,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1012409,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1011977,"to buy bracelets, watches, earrings and chains.",0
 1011981,"purchase shirts, pants, blouses and skirts.",0
 1011983,"purchase pants, shirts, blouses and skirts.",0
@@ -757,7 +728,6 @@ id,description,value
 1011990,to purchase doors and the necessary construction materials.,0
 1012386,to buy one more buffalo to cater to more customers for providing better standard of living to her family members,1
 1011965,"to purchase animals such as chickens, turkeys, hens, etc., their feed, and various expenses.",1
-1011973,to buy necessary construction materials.,0
 1011974,"To purchase basic grains, dairy products, sweets, detergent, soap, eggs, and other items for his store.",0
 1011975,purchase construction supplies.,0
 1011976,purchase insecticides and seeds.,0
@@ -776,10 +746,9 @@ id,description,value
 1012344,to gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
 1012382,to purchase hybrid seeds and fertilizer to his improve harvests of maize.,0
 1011359,"to invest in sand, cement, gravel, iron, bricks, labor, etc. to build a perimeter wall",0
-1011386,to buy cashew nuts and sell them.,0
 1012198,to purchase spare parts and repair his car,0
 1012201,to purchase additional prepaid airtime credit to help community members who need access to communication services.,0
-1012262,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.							,0
+1012262,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.							,0
 1012273,to buy cost-efficient seeds and fertilizer for the coming harvesting season.,0
 1011355,"to invest in cement, sand, iron, gravel, bricks, the payment of labor, etc to carry out the construction of the wall of her house.",0
 1011357,Purchase grocery products to sell.,0
@@ -815,7 +784,7 @@ id,description,value
 1011351,"to buy meat, chicken, ham, cheese, vegetables, breads and more.",0
 1011717,to help her husband in purchasing new rickshaw and for paying rickshaw maker services charges.,0
 1012023,"buy more pigs, vaccines and food for them.",1
-1012025,buy items like women�s and men�s clothes and shoes to sell.,0
+1012025,buy items like women��_��__��_��___��_��__��_��____s and men��_��__��_��___��_��__��_��____s clothes and shoes to sell.,0
 1012026,"to buy agricultural inputs for his lemon growing like fertilizers, pesticides and others.",0
 1012027,to make her plantain growing better so the production will increase and she will have more to sell.,0
 1012034,to buy two more calves to raise so he has more animals.,1
@@ -856,7 +825,7 @@ id,description,value
 1011586,to buy car parts for repairing her husband's car,0
 1011788,to buy some cattle,1
 1011814,to buy her daughter's wedding supplies,0
-1011818,to buy a greater variety of cloth and spools of thread in various colors to meet customers� demand,0
+1011818,to buy a greater variety of cloth and spools of thread in various colors to meet customers��_��__��_��___��_��__��_��____ demand,0
 1011821,to purchase one more buffalo for increasing milk sales to earn good amount of income,0
 1011822,to purchase more cattle for reselling in the market,1
 1011826,to purchase more animals to increase her sales.,1
@@ -919,7 +888,7 @@ id,description,value
 1011504,to buy types of sweets and bakery items for her husband's bakery.,0
 1011509,to buy fresh and seasonal vegetables for her husband's green grocery business.,0
 1011512,to buy scrap goods in bulk for her husband's recycling business.,0
-1011716,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1011716,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1011799,to buy inventory of second-hand clothes and other inventory items to resell.,0
 1011802,to pay for a printer and tablet needed for organizing work more efficiently.,0
 1011807,to buy a new motorcycle,0
@@ -944,7 +913,6 @@ id,description,value
 1011751,to purchase hybrid seeds and fertilizer to improve harvests of maize							,0
 1011759,to pay for labor for her farm,0
 1011761,"to buy seeds, fertilizer & a solar light.",0
-1011765,"to buy sugar, bread, flour, etc. to sell",0
 1012702,to purchase a few purebred cows in order to increase the size of her herd.,1
 1012728,to rear sheep for sale.,1
 1012925,"to buy meat, condiments, baked goods, vegetables, eggs, ham, cheese, etc.",0
@@ -955,7 +923,7 @@ id,description,value
 1011289,"to buy a hot-dog cart, a grill and supplies to prepare food.",0
 1011290,"to purchase supplies, equipment, and tools for her business.",0
 1011291,"to purchase vegetables to sell, as well as materials for making hammocks.",0
-1011741,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1011741,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1011745,"to buy farm implements, high quality seeds, good fertilizer, and pesticides.",0
 1011747,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.							,0
 1011752,to buy seeds for planting.,0
@@ -1005,7 +973,6 @@ id,description,value
 1011662,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season,0
 1011666,to buy more stock of cereals,0
 1011254,to boost her custom tailoring business.,0
-1011259,to purchase beef to strengthen his butcher's shop inventory.,0
 1011263,"to acquire the business she currently administers, which can be seen in the photo.",0
 1011267,to stock his store with stuffed animals and other romantic gifts.,0
 1011270,"to buy buttons, threads (in all colors), oil for the machines, clasps, iron fittings, among other things.",0
@@ -1054,9 +1021,7 @@ id,description,value
 1012776,", a beautician, purchase hair coloring, creams, shampoo, rinses and other inputs.",0
 1012783,"to buy vegetables, fruit, bread products, meat, drinks, and other items.",0
 1012803,to buy blankets wholesale.,0
-1012807,to buy wholesale ice cream,0
 1012808,to buy wholesale blankets,0
-1012809,to buy soft drinks and cookies at wholesale.,0
 1012907,"to buy vegetables, meat, baked goods, greens, jam, cheese, and others.",0
 1012913,to buy perfumes to sell,0
 1011192,"to buy maize, firewood, bread, chicken meat, vegetables, oil, crackling, cheesy tortillas, beans etc for the sale of tortillas, breads and stuffed tortillas. ",0
@@ -1078,9 +1043,7 @@ id,description,value
 1011494,to purchase bags of animal feed and vitamins.,1
 1011154,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1011186,to buy young fish and tilapia in order to set up a large fish tank.,0
-1011194,to buy other recording equipment for his business,0
 1011197,to pay for farming and raising animals.,1
-1011198,buy more clothing at wholesale.,0
 1011200,to buy necessary construction materials.,0
 1011204,"to buy clothing, basic grains, and other items to stock her business.",0
 1010393,to buy a motorbike,0
@@ -1126,10 +1089,9 @@ id,description,value
 1011111,to buy inputs and seeds for her farm.,1
 1011115,to buy more stock of ingredients for preparing food in hr restaurant,0
 1011127,"to buy farm inputs, such as fertilizer and seed, so as to improve her production and hence, increase her income, with which she will provide quality health care and better housing for her family.",0
-1011135,"to open a small market, in order to generate a more stable income.",0
 1011138,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve their harvest of maize.							",0
 1011142,to buy cost-efficient maize seed and fertilizer for the coming harvesting season.,0
-1011146,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1011146,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1011148,to buy cost efficient maize seeds and fertilizer for the coming harvesting season							,0
 1011151,to buy a milking cow.,1
 1011160,to buy and sell cattle.,1
@@ -1156,7 +1118,7 @@ id,description,value
 1012508,to invest in the maintenance and cultivation of 1 hectare of coffee production.,0
 1012546,to repair the corral and to buy more animals.,1
 1012550,to invest in working capital by purchasing more Gano Life products.,0
-1012554,"para realizar mejoras en su casa,aperturar su local,lo cu�l seguir� generando ingresos adicionales.",0
+1012554,"para realizar mejoras en su casa,aperturar su local,lo cu��_��__��_��___��_��__��_��____l seguir��_��__��_��___��_��__��_��____ generando ingresos adicionales.",0
 1012563,to invest in the purchase of manure and other supplies for his crop.,0
 1012568,to invest in buying fertilizer and other materials for his coffee crop.,0
 1008668,to buy feed for his hogs and a cow ,1
@@ -1173,9 +1135,8 @@ id,description,value
 1011088,to buy  more cows for fattening.,1
 1010649,to buy a young bull.,1
 1010986,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
-1010987,to buy heads of cattles and goats for slaughtering to sell.,0
 1010995,to buy seedlings and weeding maintenance cost for his garden improvement,0
-1011009,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1011009,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1011010,to purchase farm inputs such as seeds and fertilizers  to increase  output which will lead to a subsequent increase in her level of income.,0
 1011017,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1011018,to buy more stock of utensils.,0
@@ -1219,7 +1180,7 @@ id,description,value
 1010946,to purchase hybrid seeds and fertilizer to improve his harvests of maize.,0
 1010952,to buy more fish to sell.,0
 1010300,"to buy more and new equipment, and to do a good campaign to attract more ?customers to increase their income. ?",0
-1010391,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1010391,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1010396,to purchase additional prepaid airtime credit for helping community members who need access to communication service.,0
 1010399,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1010405,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
@@ -1243,9 +1204,9 @@ id,description,value
 1010892,to buy more stock of shoes and food containers.,0
 1010898,to buy another motorcycle.,0
 1010900,to purchase sacks of coconuts to sell.,0
-1010901,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
-1010164,to buy fertilizer and pesticides to cover her farming business�s expenses,0
-1010395,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1010901,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
+1010164,to buy fertilizer and pesticides to cover her farming business��_��__��_��___��_��__��_��____s expenses,0
+1010395,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1010614,"to buy snacks, cookies, sweets, bread, soft drinks, and supplies to prepare enchiladas and tostadas which she also sells at a school.",0
 1010790,to buy more stock of plastic containers,0
 1010792,"to buy chicken, beef, pulses, bread, butter and yogurt for her husband's restaurant so he can offer more menu items to his customers.",0
@@ -1255,9 +1216,8 @@ id,description,value
 1011805,members purchase more ducks and high-quality feed,1
 1012637,to buy flour and cookies.,0
 1010171,to buy more vegetables for husband for increase his business .,0
-1010388,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1010388,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1010598,"to buy sugar, coffee, bread, sweets, candy, rice, grains, and cookies, among other products.",0
-1010604,"to buy paint, varnish, oils and other tools.",0
 1010778,to buy farm inputs.,0
 1010780,to buy more stock of timber and pay school fees,0
 1010387,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
@@ -1268,13 +1228,10 @@ id,description,value
 1010747,to buy fertilizers and pesticide for her cassava,0
 1010764,"to buy more stock of bread, soap, flour, milk and other items",0
 1010556,"to buy materials and supplies such as mesh for the fence, seeds for cucumbers and chiles, wing nuts for the irrigation system, and pipes for the irrigation water.",0
-1010577,"to buy more flour, pans, molds, etc.",0
 1010579,to buy steers to pasture.,1
-1010583,to buy more clothing in bulk and also shoes.,0
 1010584,to buy all the necessary construction materials.,0
 1010722,to buy fertilizer.,0
 1010475,to purchase hybrid seeds and fertilizer to improve their maize harvest.							,0
-1010476,to buy cattle to slaughter and sell.,0
 1010479,"to buy sugar, soap and other general merchandise to sell.",0
 1010481,to buy maize for milling into flour to sell.,0
 1010484,to buy maize and beans for selling.,0
@@ -1282,7 +1239,7 @@ id,description,value
 1010568,to invest in fixed assets and repairs to his garage where he keeps his rickshaw.,0
 1010570,"to buy more seeds, fertilizers, manures, pest control agents and herbicides to improve his land.",0
 1005720,to invest in her brother's food stall.,0
-1010267,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1010267,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1010268,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
 1010446,to gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
 1010451,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
@@ -1347,7 +1304,7 @@ id,description,value
 1010212,to replace his windows and doors,0
 1010264,to buy new makeup products and a new tattoo machine,0
 1010279,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
-1010292,to purchase hybrid seeds and fertilizer for the�cultivation�of maize							,0
+1010292,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize							,0
 1010293,to purchase more clothes to sell,0
 1010295,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
 1010530,to buy doors and windows.,0
@@ -1373,7 +1330,6 @@ id,description,value
 1013206,"to buy 10 packages of fertilizer, a ton of barley, 120 kg of thick polyethylene and 100 kg of thin polyethylene.",0
 1010181,and her husband to repair his taxi.,0
 1010187,to increase her husband's fruit stand business.,0
-1010190,to buy animals her husband's business.,0
 1010191,to buy medicine and vaccines for her pigs.,1
 1010204,to buy fertilizer and seed.,0
 1010492,"to buy small animal farms, such as chickens, ducks, and hens, and to cover some personal expenses.",0
@@ -1382,8 +1338,8 @@ id,description,value
 1010515,to buy fertilizers and to pay for the labor for farm maintenance.,0
 1009630,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season.,0
 1010223,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
-1010225,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
-1010232,to purchase hybrid seeds and fertilizer for the�cultivation�of maize							,0
+1010225,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
+1010232,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize							,0
 1010236,"to buy cost-efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar light.",0
 1010243,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1010245,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
@@ -1425,8 +1381,7 @@ id,description,value
 1012224,to buy a cow and seven sheep in order to increase her livestock headcount,1
 1012020,to stock his bookstore with school supplies.,0
 1010257,to buy new shishas and shisha equipment to sell and expand his business.,0
-1010657,to buy computer equipment.,0
-1012297,to buy more groceries to sell and improve her family�s income,0
+1012297,to buy more groceries to sell and improve her family��_��__��_��___��_��__��_��____s income,0
 1012302,to buy one more cow for her farm and also some fodder for her farm cattle,1
 1012837,"to buy vegetable seeds, chemicals, a wheelbarrow, water tank, rake, shovel, hand gloves and safety boots.",0
 1012850,"to help her husband to buy more products to stock his four stores, and put shelves in his stores to recognize his products.",0
@@ -1441,20 +1396,19 @@ id,description,value
 1010251,to buy wheat and mineral fertilizers.,0
 1009948,to buy toys because she will start her own business.,0
 1009949,to pay for repairs on his vehicle.,0
-1010068,to purchase a variety of construction materials.,0
 1010088,"to buy seeds, fertilizers, compost, pest controls, herbicides, and other supplies so that he can improve his land.",0
 1010142,to buy seeds and fertilizers for her farmland,0
 1010186,with her son's wedding,0
 1011213,to purchase two cows.,1
 1011329,to purchase a compressor and a tank of oxygen for his locksmith shop.,0
-1011950,to buy five calves.,0
+1011950,to buy five calves.,1
 1011954,to purchase fabric to make clothing to sell.,0
 1011957,to buy six calves.,1
 1012301,to restore the out of stock items in the food store.,0
 1012324,to buy an electric hammer set and an electric cutting machine.,0
 1012545,to purchase cartons of raw fish for her business.,1
 1005960,"to purchase bags of cement, plywood, sticks and for payment of labor costs.",0
-1009743,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1009743,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1009945,to buy new products for her business.,0
 1010089,"to buy more shirts, pants, skirts, dresses, undergarments, and also notebooks because the school season is coming.",0
 1010161,to buy slate and other construction materials to insulate the roof of her house,0
@@ -1492,7 +1446,7 @@ id,description,value
 1009891,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer.,0
 1010063,to buy the construction materials she needs.,0
 1010067,"to invest in: brick, cement, and sand to finalize housing construction.",0
-1012300,to solve his beloved mother�s health problems because he is very upset to see her weak and unhealthy,0
+1012300,to solve his beloved mother��_��__��_��___��_��__��_��____s health problems because he is very upset to see her weak and unhealthy,0
 1012303,to purchase tools for fishing to sell.,1
 1012414,to increase his capital to buy a large amount of bananas to make banana beer to resell and earn more.,0
 1012452,to purchase cows so that she can start producing dairy products for sale.,1
@@ -1514,13 +1468,12 @@ id,description,value
 1009645,to buy cereals to sell.,0
 1009673,"to buy more bread, cooking oil, soap and other items to sell.",0
 1010057,"to buy sportswear, sporting outfits, gloves, and footwear to sell to his customers.",0
-1010154,to buy a wide range of food products to resell.,0
 1007374,to replace the dirt floor.,0
 1008155,to repair his car.,0
 1008614,to buy two head of cattle and feed,1
 1009549,to buy auto rickshaw for her son	.,0
 1009585,"to buy cosmetic products such as facial cream, hair colors, scissors and combs for her beauty salon.",0
-1009587,"to buy  banana fruit and vegetables such as bitter gourd known as �ampalaya�, luffa gourds known as �patola�, Malabar Spinach.",0
+1009587,"to buy  banana fruit and vegetables such as bitter gourd known as ��_��__��_��___��_��__��_��____ampalaya��_��__��_��___��_��__��_��____, luffa gourds known as ��_��__��_��___��_��__��_��____patola��_��__��_��___��_��__��_��____, Malabar Spinach.",0
 1009643,to buy farm implements.,0
 1010008,"to buy sweets: jellies, pastries, cookies and cakes.",0
 1010054,"to buy seeds, manure and fertilizers, and pesticides.",0
@@ -1549,10 +1502,10 @@ id,description,value
 1009691,to buy medicine for his illness.,0
 1010196,to buy medicine.,0
 1012182,with his operation and medical treatment.,0
-1012236,"to solve his lovely mother�s health problem, and he is thankful beforehand and just impatient for the Kiva loan.",0
+1012236,"to solve his lovely mother��_��__��_��___��_��__��_��____s health problem, and he is thankful beforehand and just impatient for the Kiva loan.",0
 1012246,to pay for the treatment that his wife so needs,0
 1012314,to pay for his wife's medical exam at the hospital in the hopes of solving her health problem quickly.,0
-1012320,to address her husband�s health problems.,0
+1012320,to address her husband��_��__��_��___��_��__��_��____s health problems.,0
 1012351,to pay for a medical exam at the hospital.,0
 1010350,To pay for his university fees,0
 1010377,"to pay his university fees, majoring in mechanical engineering.",0
@@ -1589,7 +1542,6 @@ id,description,value
 1008756,to buy 500 pairs of shoes.,0
 1008759,to procure construction materials.,0
 1008762,"to buy underwear, diapers, baby blankets, shirts and pants.",0
-1008767,"to buy juice, cookies, cheese, and various fruits.",0
 1011015,to get five crates of Primus drinks and sugary drinks.,0
 1011024,to buy 25 sacks of beans.,0
 1011031,"to get supplies of ""pagne"" fabric, shoes, pants, shirts, T-shirts and underwear.",0
@@ -1600,7 +1552,6 @@ id,description,value
 1011964,to buy automobile tires and oil.,0
 1011995,to buy various garments to sell.,0
 1012397,to purchase a minibus in order to start a trading business with cereals.,0
-1011344,"to buy ingredients such as: flour, sugar, yeast, molds, and other things.",0
 1011470,to buy fertilizer.,0
 1012289,to buy baby fish to raise and sell in the future.,1
 1012148,to purchase baby livestock to raise and sell in future.,1
@@ -1656,7 +1607,7 @@ id,description,value
 1009698,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1009699,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 1009718,"to purchase cost efficient maize seeds, banana seedlings, and fertilizer for the coming harvesting season",0
-1009720,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1009720,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1009721,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
 1009521,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation						.,0
 1009583,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
@@ -1731,14 +1682,12 @@ id,description,value
 1009425,"to purchase strings, bamboo poles and seaweed.",0
 1009427,to restock sore with consumable goods.,0
 1009976,"to invest in blocks, sand, cement and iron and to pay for the labor to build a retaining wall",0
-1009992,to buy more clothing wholesale.,0
 1009995,to buy an automobile repair shop.,0
 1009996,"to buy a gas stove, improve her firewood oven, and buy ingredients and supplies to prepare meals and lunches.",0
 1009231,to acquire additional capital for her sari sari store,0
 1009257,to buy beans and maize to sell.,0
 1009375,"to restock her sari-sari store with consumable goods like noodles, canned goods, coffee, milk, confectioneries, condiments, and other items.",0
 1009977,"to pay for the installation of air conditioning, and to repair his front bumper, which will make his taxi more comfortable.",0
-1009980,"to buy CDs, DVDs, bond paper, ink cartridges, and other stationary items",0
 1009982,"to invest in bricks, sand, cement, iron, and labor costs for building a bedroom",0
 1011235,to work with agriculture and ranching.,1
 1011664,"to buy agricultural machinery, three farrows and two heifers for the development of his farm.",1
@@ -1761,11 +1710,8 @@ id,description,value
 1009216,"to buy canned goods, noodles, eggs, cooking oil, food seasoning, snack foods, mosquito repellent, drinks and rice",0
 1009217,to buy fruits and vegetables; food seasoning and dried noodles,0
 1009221,to  buy farm supplies like fertilizer and pesticides,0
-1009964,"to buy drinks, fruit (fresh and dried) and vegetables to continue selling them and cover her customer's needs.",0
 1009973,"invest in more pigs and basic grains, and improve the stock in her business",1
 1007017,to purchase stock of home products to sell,0
-1010518,"A loan of $1,600 helps this borrower to buy pig feed.",1
-1011184,"to buy cracklings, beans, fresh cheese, corn and other ingredients.",0
 1011195,To build a house for his family.,0
 1011246,to rent the sewing machine to make her products.,0
 1010597,to build a suitable home for her daughter.,0
@@ -1778,11 +1724,10 @@ id,description,value
 1009148,to purchase bags of fertilizers and pesticides,0
 1009931,"to buy insecticides, herbicides, and pesticides so that his vegetable crop has a healthy development.  ",0
 1009950,to buy needed construction materials.,0
-1010575,"to buy more products such as cosmetics, nail polishes, hairpins, shampoo, hair dyes, eyeglasses etc.",0
 1010591,to build a fitting house for his wife.,0
 1010595,to build a suitable home for her son.,0
 1010666,"to invest in rice, oil, drinks, meats and vegetables, as well as in maintenance repairs of some apartments that he owns and rents out.",0
-1010667,to invest in two dairy cows and to buy cases of various drinks.,0
+1010667,to invest in two dairy cows and to buy cases of various drinks.,1
 1011215,to build an appropriate home for his family,0
 1011462,to buy fertilizer,0
 1007432,to buy a dairy cow.,1
@@ -1906,7 +1851,6 @@ id,description,value
 1008002,"to buy fishing materials such as fishing net, fishing rope and fishing weights",0
 1008027,"to buy goods such as shirts, skirts, pants, curtains and other apparels",0
 1008033,"to buy beauty products such as soap, lotion and cosmetics; fragrances, personal and home care products.",0
-1008137,"to buy different kinds of meat such as pork, beef, and goat�s meat (chevon); vegetables",0
 1008216,"to buy commodities such as canned goods, noodles, food seasonings, toiletries, eggs, cooking oil, snack foods, chocolate bars, soft drinks, and drinking liquor.",0
 1006248,"to buy canned goods, noodles, spices, eggs, cooking oil, biscuits, chips, bread, sugar, salt, coffee, drinks, powdered juice; and a fishing boat engine.",0
 1006249,"to buy sugar, salt, powdered juice, coffee, candy, chips, biscuits, bread, spices, noodles, canned goods, drinks and RTW products.",0
@@ -1957,7 +1901,7 @@ id,description,value
 1005627,"to buy farm inputs such as good quality seeds, fertilizer, and pesticides.",0
 1005640,To buy cereals,0
 1005691,"to buy flashlights, sunglasses and CDs",0
-1005452,"to buy �bobo� material such as bamboo stem, and fish net",0
+1005452,"to buy ��_��__��_��___��_��__��_��____bobo��_��__��_��___��_��__��_��____ material such as bamboo stem, and fish net",0
 1005743,to buy cereals for resale.,0
 1005790,	to buy cereal.,0
 1009929,to buy material to sew more vests for children.,0
@@ -2000,8 +1944,7 @@ id,description,value
 997312,to buy another motorbike so as to deliver his produce speedily to market.,0
 997315,to buy a motorbike.,0
 997325,to buy farm implements.,0
-1001185,to buy piglets and feed.,0
-1009098,purchase soda and water in bulk.,0
+1001185,to buy piglets and feed.,1
 1009110,to purchase materials for installation and to pay for labor.,0
 1007206,to buy necessary construction materials,0
 1009089,"to invest in skirts, blouses, shirts, pants, etc. and beauty and dairy products to increase her earnings.",0
@@ -2035,12 +1978,11 @@ id,description,value
 1009032,"to purchase new models of cell phones and accessories such as cases, chargers and headphones.",0
 1009039,"to buy a variety of make-up, clothes, shoes and purses.",0
 1008907,to buy food products and some things she needs for the house.,0
-1008972,to buy chickens at wholesale,1
 1010277,to increase her income through starting a new home-based clothes selling business.,0
 1010371,To pay for his education fees,0
 1009847,To pay for a necessary dental surgery she has to undergo,0
 1010092,to buy blankets and expand her small business. ,0
-1010138,to buy more groceries to sell and improve her family�s income,0
+1010138,to buy more groceries to sell and improve her family��_��__��_��___��_��__��_��____s income,0
 1010173,to buy a sewing machine for her tailoring micro-enterprise.,0
 1009689,to buy the latest style second hand clothes to meet his customer's requirements.,0
 1009759,"to pay for table and 4 chairs, two conditioners and refrigerator needed for the cafe",0
@@ -2053,7 +1995,6 @@ id,description,value
 1008622,"to help her husband purchase sanitation retail items, such as pipes, tape, elbows and tools.",0
 1008744,To buy  cattle.,1
 1008956,"to buy products such as groceries, sweet breads, candy, etc. for his store.",0
-1008957,to buy more wholesale clothes,0
 1008967,"to purchase electric cable, cement, sand, outlets, and a fuse box to install electricity in his home.",0
 1006701,to purchase additional prepaid airtime credit for helping community members who need access to communication service.,0
 1008745,to give his community better access to communication service by selling mobile airtime credits.,0
@@ -2066,7 +2007,6 @@ id,description,value
 1008768,to help her husband do some much-needed maintenance on his taxi.,0
 1008942,to buy fish and chicken wholesale to sell at Christmas time.,0
 1008945,"purchase agricultural inputs: more seeds, fertilizers, pest control, etc.",0
-1010091,to purchase a variety of construction materials. ,0
 1008732,to purchase mobile airtime credits.,0
 1008735,to buy a new moto rickshaw body for her husband's transportation services.,0
 1008737,to give his community better access to communication services by selling mobile airtime credits.,0
@@ -2104,9 +2044,8 @@ id,description,value
 1008208,with her home improvement project.,0
 1008483,"to invest in yucca, potatoes, oil, corn, spices, etc. to expand the production of her dishes.",0
 1008490,to purchase more construction materials.,0
-1008493,to purchase tires and do maintenance on his motorcycle taxi.,0
 1008495,"to purchase cement, sand, gravel, beams, metal sheeting and pins to build an outdoor walkway on his house.",0
-1008937,"Para comprar: ropa, zapatos, cosm�ticos, entre otros productos para vender y mejorar sus ganancias.",0
+1008937,"Para comprar: ropa, zapatos, cosm��_��__��_��___��_��__��_��____ticos, entre otros productos para vender y mejorar sus ganancias.",0
 1010139,to buy food products for future retail sale.,0
 1010462,to raise sheep for sale,1
 1009636,to begin trading in bed linens and household goods in order to generate a stable income.,0
@@ -2133,7 +2072,6 @@ id,description,value
 1009559,to pay for 40 sheep to develop agribusiness,1
 1010111,with his sheep fattening business. ,1
 1010317,"to purchase large stocks of beans and rice, and increase his earnings. ",0
-1008174,"to purchase green vegetables, two crates of tomatoes, and onions to sell.",0
 1008175,to buy fertilizer to increase her crop yield to support her farming and fishing net.,0
 1008187,to buy more stock of fruit.,0
 1008474,to invest in the purchase of a heifer.,1
@@ -2143,23 +2081,20 @@ id,description,value
 1008459,to buy construction materials,0
 1008460,to buy clothing to sell,0
 1008465,to buy clothing for her business.,0
-1008468,to buy more movies at wholesale price.,0
 1004458,To buy cereals,1
 1006594,"To invest in: a cart of greater capacity, tables, benches, and raw materials to improve the service of his sales.",0
 1006984,To buy seeds and expand his horticulture farming,1
 1008878,to buy clothes to sell.,0
-1008938,"to buy flour, sugar, flavored jellies, mold, etc.",0
 1009019,to buy more inputs to sell such as candies and snacks so she can distribute to the schools that start classes in January.,0
 1009061,to buy a new cow to provide milk for his cheese making,1
 1009983,to buy three bulls to keep raising cattle,1
-1009989,to buy more wholesale cold cuts.,0
 993421, to buy cattle and expand his business.,1
 1003956,to buy farm implements,0
-1006242,to build a modern dairy unit and to buy farm inputs.,0
+1006242,to build a modern dairy unit and to buy farm inputs.,1
 1008192,to purchase additional spare parts or accessories for a Passenger Unit Vehicle.,0
 1008321,to purchase a car and start his own taxi business.,0
 1009055,to build an additional  room at the house where he lives.,0
-1009446,to buy more cows in order to increase her herd,0
+1009446,to buy more cows in order to increase her herd,1
 1009535,to buy mineral fertilizer,0
 1008131,to purchase a stock  of new  clothes for resale,0
 1004166,"to buy a fast food stand, with which she hope to increase her sales.",0
@@ -2172,11 +2107,9 @@ id,description,value
 1008977,to purchase basic goods at wholesale prices. ,0
 1009094,"start her selling business by buying clothes for women, men and kids.",0
 1009180,to purchase additional cows in order to increase her herd,1
-1004081,to start an agro vet business.,1
 1006351,to construct a modern dairy unit.,1
 1008281,to buy farm implements.,0
 1009052,to make repairs on his house.,0
-1009084,to fix a room in her home.,0
 1009271,"to purchase boxes, adapters, consoles, etc. to sell",0
 1009367,"to buy fabric, necklaces, rings, thread, shoes, t-shirts, jogging suits, and others.",0
 1004137,"to buy supplies, tools, fixed assets, and inventory for the preparation of typical dishes and fried food",0
@@ -2186,7 +2119,6 @@ id,description,value
 1008452,"to buy a grill, tables, chairs, and fix the roof.",0
 1008453,"to purchase balconies, laminate, poles and payment of labor to have a more comfortable home.",0
 1007839,"to buy ingredients, as well as fire wood in order to expand her food business.",0
-1008925,to purchase more meat for sale.,0
 1008927,to purchase more clothing for her inventory and take advantage of increased sales at the beginning of the school year.,0
 1008928,to increase her inventory and purchase more articles of clothing to increase sales.,0
 1008929,to buy a new sewing machine,0
@@ -2197,7 +2129,6 @@ id,description,value
 1007915,buy more sodas to sell and also to buy a refrigerator where to keep them.,0
 1007919,to make some adjustments to the food car and to paint a refrigerator that needs some maintenance,0
 1008437,"to invest in cattle in order to have increased sales capacity and better serve his clients, as well as to bring in the harvest.",1
-1008439,to buy doors and all of the needed materials.,0
 1008441,to buy agricultural supplies and to pay the cost of preparing the land where she will plant corn.,0
 1008445,"to buy sodas, juices, oil, plantains, cassava, among other products needed to prepare for selling snacks and stock the store.",0
 1007909,"buy supplies to sell, especially stationary products to stock up.",0
@@ -2212,7 +2143,7 @@ id,description,value
 1008779,to pay for the course of treatment at the hospital for her mother-in-law.,0
 1006492,To buy more garlic seed along with fertilizer for her crops,0
 1007845,"to buy fabric in a variety of colors, as well as other supplies",0
-1006493,To buy 12 �cortes� or wrap around woven skirts as well as 500 lbs of used clothing that she will sell.,0
+1006493,To buy 12 ��_��__��_��___��_��__��_��____cortes��_��__��_��___��_��__��_��____ or wrap around woven skirts as well as 500 lbs of used clothing that she will sell.,0
 1007834,"to buy corn, ingredients for her ice creams, different kinds of snacks, and firewood.",0
 1007907,buy clothes for men and women to sell in her town.,0
 1008405,"to buy sandals, socks, make up, etc. in order to improve sales.",0
@@ -2228,7 +2159,6 @@ id,description,value
 1007886,to buy a dozen sheep.,1
 1007887,to buy fertilizers and natural foods.,0
 1008394,"to buy ice creams to go out and sell in the neighboring communities, as well as make some adjustments to his small cart.",0
-1008398,"to buy lotions, shampoo, hair ties, scissors and more.",0
 1008402,"to buy cement, sand, and gravel to cement the floor of her home and prevent dust from causing respiratory problems.",0
 1007769, to buy a wide variety of cloth in different colors and designs to attract more customers and expand her business.,0
 1007777,"to buy tomatoes, onions and other vegetables.",0
@@ -2237,13 +2167,10 @@ id,description,value
 1007881,to buy three calves.,1
 1007882,to buy two calves.,1
 1007767,to buy more stock of fruits and vegetables,0
-1007869,to buy two calves.,1
 1007873,to buy fertilizers and fruit trees.,0
 1007876,to build a dairy unit.,1
-1008374,to buy more shrimp to sell.,0
 1008381,"to buy cement, sand, laminate sheeting, poles and fasteners to replace the roof of her house and improve her son's quality of living.",0
 1008382,"to buy soft drinks, juices, and consumer products.",0
-1008386,"to buy more personal use items; creams, perfume, lotions and deodorant amongst other things.",0
 1008390,to build a small snack stand to sell her products.,0
 1008596,to buy construction supplies to repair her house.,0
 1007512,to buy more stock of clothes,0
@@ -2264,11 +2191,10 @@ id,description,value
 1007657,"to buy more stock of sugar, flour, salt, and other items.",0
 1007035,to buy one more buffalo to cater to more customers,1
 1007521,to buy more stocks of fish.,0
-1007568,to buy more stock of meat,0
 1007578,to buy more stock of motorcycle spare parts,0
 1007587,"to buy more stock of sugar, rice, soap, flour and other items.",0
 1007630,to buy wood and other supplies to renovate her old house.,0
-1007641,to buy more household appliances to improve her family�s usage.,0
+1007641,to buy more household appliances to improve her family��_��__��_��___��_��__��_��____s usage.,0
 1008107,to buy two cows,1
 1008230,to buy additional cattle,1
 1007194,to buy cooking supplies for selling food made with dried meat.,0
@@ -2276,8 +2202,6 @@ id,description,value
 1008663,To  expand his business by purchasing more  beans for sale.,0
 992909,to pay for a tractor service to plow his land and purchase work tools,0
 993664,to expand his livestock business and purchase calves,1
-1008961,to buy more wholesale clothing.,0
-1008950,to buy all necessary construction materials,0
 1008720,to buy  hardware for his shop.,0
 1009002,"to make some adjustments to the store, put a door in its garage and buy inputs to stock the store.",0
 1007496,to buy more stock of beauty products for salon use,0
@@ -2331,7 +2255,6 @@ id,description,value
 1007356,"to buy more stock of sugar, cooking oil, flour and other items.",0
 1007359,"to buy more stock of sugar, cooking oil, flour and other items for resale.",0
 1007361,"to buy more stock of sugar, cooking oil, flour and other items.",0
-1007691,buy grocery items and increase sales volume,0
 1007875,"to buy drinks, condiments, bread, snacks, rice, salt, etc. With these new products, she will meet the daily demands of her customers.",0
 1008619,"To buy fertilizer, which is expected to increase productivity of her crop yield.",0
 1008674,to buy more grocery items in order to attract more customers.,0
@@ -2427,7 +2350,7 @@ id,description,value
 1007263,"to invest in: drinks, sugar, staple grains, cheese, cream, etc. to increase her business sales and the products in her store.",0
 1006973,to add M-pesa float,0
 1006979,to purchase baby cows to raise and sell in the future.,1
-1006980,to purchase baby poultry to raise and sell in the future.,0
+1006980,to purchase baby poultry to raise and sell in the future.,1
 1006981,to invest in her decoration business.,0
 1007256,"to buy products for her store, and corn to make tortillas to sell.",0
 1007257,"to buy pigs, flour, and vitamins to feed them, fatten them, and sell them at a good price.",1
@@ -2437,10 +2360,9 @@ id,description,value
 1006961,"to buy more stock of sugar, bread, flour, soda and other items",0
 1006962,to buy a buffalo for her dairy farm.,1
 1006964,To buy building materials,0
-1006969,to buy more stock of meat,0
 1006971,to provide more mobile airtime credits for her community,0
 1007253,"to invest in: cinder blocks, cement, sand, and labor payments to build a wall in his home.",0
-1006898,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1006898,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1006907,to buy cost efficient maize seeds and fertilizer for the coming harvesting season					.,0
 1006949,for purchase of a new rickshaw for her son.,0
 1006893,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
@@ -2449,13 +2371,13 @@ id,description,value
 1006908,to buy more stock of furniture,0
 1006942, to buy farm inputs.,0
 1006943,to give his community better access to communication service by selling mobile airtime credits.,0
-1007232,"to purchase traditional clothing items such as g�ipiles [blouses], sashes and cortes [skirts].",0
+1007232,"to purchase traditional clothing items such as g��_��__��_��___��_��__��_��____ipiles [blouses], sashes and cortes [skirts].",0
 1006906,to buy young cattle.,1
 1006930,"to buy more stock of sweets, sugar, bread and other items.",0
 1006939,to buy sewing machine spare parts,0
 1006915,to give his community better access to communication services by selling mobile airtime credits.,0
 1006919,"to buy more stock of flour, sugar, bread and other items.",0
-1006923,"to purchase hybrid seeds and fertilizer for the�cultivation�of maize, as well as two solar lights.",0
+1006923,"to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize, as well as two solar lights.",0
 1006925,"to buy more stock of cooking fat, soda, soap and other items",0
 1007209,"to buy pants, blouses, plastics and appliances.",0
 1006864,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
@@ -2485,7 +2407,7 @@ id,description,value
 1008805,to augment his capital and buy chemical fertilizer and pay the workers to make more.,0
 1008834,"to buy pagnes (WAX, GTP, HITARGET) to sell.",0
 1008842,"to increase his capital and purchase a large amount of flour, as well as telephones to sell, in order to earn more.",0
-1006489,"to increase her inventory of traditional wrap-around skirts, �cortes�, and blouses, �huipiles�.",0
+1006489,"to increase her inventory of traditional wrap-around skirts, ��_��__��_��___��_��__��_��____cortes��_��__��_��___��_��__��_��____, and blouses, ��_��__��_��___��_��__��_��____huipiles��_��__��_��___��_��__��_��____.",0
 1007848,to buy cattle,1
 1007601,to buy more stock of cereals,0
 1007732,to buy more stock of cereals,0
@@ -2496,7 +2418,7 @@ id,description,value
 1007704,to pay for a medical exam at the hospital and find out his health problem,0
 1008431,"to invest in papayas, pineapples, watermelons, melons, etc. to increase his sales.",0
 1008433,to build decent housing to live peacefully with his family.,0
-1007701,to solve his father�s health problems with great desire to find nothing serious with it,0
+1007701,to solve his father��_��__��_��___��_��__��_��____s health problems with great desire to find nothing serious with it,0
 1007804,to pay for new stock of  home appliances to sell in the store,0
 1007954,to pay for additional inventory and for a down payment on a portable work shop.,0
 1007965,to buy grocery items to replenish her store,0
@@ -2522,11 +2444,8 @@ id,description,value
 1006713,invest in her husband's food stall,0
 1006736,to buy raw material for her husband's bike poshish (seat covers) shop.,0
 1006560,"to buy chemical and organic fertilizers, and pesticides.",0
-1007172,to buy cashew nuts wholesale.,0
 1007218,to buy the doors and the necessary construction materials.,0
 1007220,"to buy seeds, fertilizer, pest-control products, herbicides, etc. and to improve his plot of land.",0
-1007224,"to purchase briefcases, purses, and bags in bulk.",0
-1007228,to purchase the needed construction materials and the doors.,0
 1006588,to buy more construction materials.,0
 1006590,para la compra de las puertas y materiales de construccion necesarios.,0
 1006600,To invest in: chairs and tables to increase her income.,0
@@ -2545,13 +2464,13 @@ id,description,value
 1007169,to expand his current business by purchasing more clothes for sale.,0
 1007024,to purchase dairy cows and pigs and start an agribusiness.,1
 1007037,to purchase more bananas for sale.,0
-1008339,to buy cows for re-sale,0
+1008339,to buy cows for re-sale,1
 1004944,to buy two calves.,1
 1006069,to buy 3 calves,1
 1006854,to pay for potato seeds (450 kgs) to cultivate and fodder to feed the cattle.,1
 1006965,to build a roof over the new house seen in the background,0
 1007006,"to buy potato and wheat seeds, and to purchase forage for feeding his livestock.",1
-1007034,to use for replacing her market�s food and beverage assortment.,0
+1007034,to use for replacing her market��_��__��_��___��_��__��_��____s food and beverage assortment.,0
 1006583,"to buy seeds, fertilizers, manure, and blight control and to improve the land shown.",0
 1006704,to buy calves and expand his business.,1
 1006708,to repair an auto rickshaw for her husband.,0
@@ -2563,17 +2482,13 @@ id,description,value
 1006581,"invest in blouses, shirts, pants, skirts, etc. to increase her sales.",0
 1006585,"to invest in rice, beans, creams, oils, etc., to increase her products in order to increase her sales.",0
 1006880,to pay his university fees for the semester.,0
-1007204,to pay for ophthalmic treatment.,0
-1007212,to pay for ophthalmic treatment.,0
 1007157,"to invest in flour, raising agent, sugar, eggs etc to increase his production of bread. ",0
-1007178,"to buy flour, eggs, sugar, milk, whipped cream, and other things, all wholesale.",0
 1007505,to buy more stock of fruits and vegetables so as to meet customer's demand,0
 1007535,to buy fertilizer and certified seeds that will improve on production hence increase income to provide food for her family and pay school fees for her children,0
 1007940,to build an adequate house for her family.,0
 1007950,to build a suitable home for him and his wife.,0
 1006994,to buy shoes.,0
 1007196,"to invest it in the purchase of cassava, taro, tamarind harvests and bananas.",0
-1007198,"to buy basic staple items, sweet bread, juices, disposable items, and other items at wholesale.",0
 1007336,to buy more groceries to sell,0
 1007789,to fatten pigs to sell on.,1
 1007939,to buy a heavy duty treadmill.,0
@@ -2583,7 +2498,7 @@ id,description,value
 1007854,"to buy rice, sugar, vegetable oil, and sodas.",0
 1006970,to purchase more baby poultry to raise and sell in the future.,1
 1007003,"to pay for a polyethylene cover for the greenhouse, to purchase cucumber seeds, and to process land and prepare it for the coming spring cultivation season.",0
-1007020,finally for solving her beloved husband�s health problems,0
+1007020,finally for solving her beloved husband��_��__��_��___��_��__��_��____s health problems,0
 1007156,"to expand her current business by purchasing more soap, sugar, and bananas to sell.",0
 1007918,"to buy new clothing such as pants, skirts, blouses, dresses, children's clothing, underwear and towels, etc.",0
 1007927,to strengthen and equip his bakery in order to be able to offer first-class services and earn an income for his family.,0
@@ -2598,7 +2513,6 @@ id,description,value
 1006540,"to buy food and clothing, thereby eliminating pressure to sell maize for low prices at harvest ",0
 1006545,"to buy food and clothing, eliminating pressure to sell maize for low prices at harvest",0
 1006557,"to buy rice, vegetable, corn meal, beans, eggs, chicken, beef, salads, etc., for the family business.",0
-1006570,to buy more coconuts and watermelons in bulk.,0
 1006548,"to buy bananas in bulk in varieties including silk, chocolate and gold.",0
 1006566,"to buy chemical and organic fertilizers, and pesticides, among other things.",0
 1006439,to buy more cleaned coffee to sell.  .,0
@@ -2634,7 +2548,7 @@ id,description,value
 1006428,to purchase stocks of clothing and start selling.,0
 1006911,to create her own business and open a store .,0
 1006986,to purchase more baby livestock to raise and sell in future.,1
-1006499,"to buy corn and beans, as well as a larger stove for her tortiller�a.",0
+1006499,"to buy corn and beans, as well as a larger stove for her tortiller��_��__��_��___��_��__��_��____a.",0
 1005509,to buy mineral fertilisers and seeds for crops.,0
 1006360,"to buy food and clothing, eliminating pressure to sell maize for low prices at harvest.",0
 1006378,"to buy food and clothing, eliminating the pressure to sell maize for low prices at harvest.",0
@@ -2654,7 +2568,7 @@ id,description,value
 1006750,to pay rent and increase her stock on hand.,0
 1006922,to buy more groceries to sell.,0
 1007192,to buy ingredients such as corn for selling tortillas.,0
-1007250,"to buy traditional clothing such as: g�ipiles, sashes and shorts.",0
+1007250,"to buy traditional clothing such as: g��_��__��_��___��_��__��_��____ipiles, sashes and shorts.",0
 1006282,to purchase 20 sacks of cashew nuts for resale,0
 1006297,to pay labor for harvesting his crops and clear the garden for the next planting season.,0
 1006306,to buy zinc sheets to renovate her house.,0
@@ -2666,7 +2580,7 @@ id,description,value
 1007135,to reinforce her stock of salted fish in order to satisfy the demand of her clients,1
 1007155,"to provide products for their grocery store such as rice, beans, sugar, milk, bread eggs, detergents etc.",0
 1007167,"to invest in working capital for the purchase of clothes such as shirts, skirts, blouses, children's clothes and bed linens.",0
-1007236,"to purchase traditional clothing items such as g�ipiles [blouses], sashes and cortes [skirts].",0
+1007236,"to purchase traditional clothing items such as g��_��__��_��___��_��__��_��____ipiles [blouses], sashes and cortes [skirts].",0
 1006199,To invest in her husband's general store.,0
 1006200,to increase her husband's shoe business.,0
 1006202,"to buy artificial jewelry such as bracelets, bangles, lockets, necklaces, rings and earrings for her husband's jewelry business",0
@@ -2691,7 +2605,7 @@ id,description,value
 1006128,"to buy freezer goods, a display cooler, canned foods, snacks, toiletries, etc.",0
 1006068,to buy 3 calves,1
 1006049,to purchase hybrid seeds and fertilizer to improve maize harvests.						,0
-1006051,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.							,0
+1006051,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.							,0
 1006063,to buy two calves.,1
 1006065,to buy new stocks of shoes and clothes.,0
 1006066,to buy new inventory of soft drinks and sweets,0
@@ -2725,9 +2639,8 @@ id,description,value
 1005923,to buy all the construction materials he needs,0
 1005925,"to buy metal sheeting, wood and nails to build a roof over a hallway in his home.",0
 1005729,to invest in her son's welding shop.,0
-1005738,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1005738,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1005739,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
-1005912,"to buy fertilizers, manure, pest controls, etc.",0
 1005913,to buy clothing and shoes.,0
 1005926,for the purchase of necessary construction materials.,0
 1005714,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve maize harvests.",0
@@ -2752,10 +2665,8 @@ id,description,value
 1005661,to purchase a solar light as well as hybrid seeds and fertilizer to improve harvests of maize.,0
 1005899,"invest in towels, blouses, skirts, pants, t-shirts and plastic products to offer her clients.",0
 1005657,to buy a car.,0
-1005879,"to buy more personal use products wholesale such as perfumes, creams, and deodorants.",0
 1005890,"to buy cans of beer, fizzy drinks and juices.",0
 1005617,"to buy cost efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar light",0
-1005769,to purchase food products for retail sale in her shop.,0
 1005865,to buy additional cows to increase her livestock headcount,1
 1005289,to buy beers and other packed alcohol drinks to sell.,0
 1005545,"to buy a huge quantity of wheat, salt, sugar, and oil and also pay for labour charges for making biscuits and bakery items.",0
@@ -2777,13 +2688,12 @@ id,description,value
 1005268,"to purchase more clothes like skirts, bedsheets, trousers etc to sell.",0
 1005500,to buy a new electric stove,0
 1005517,to buy cosmetics and new goods for her shop,0
-1005857,"to buy manure, pest control and improve his land.",0
 1005759,to buy a lathe.,0
 1006484,To develop her business and to buy new equipment for her salon,0
 1006521,"to buy equipment for his cyber cafe such as: monitors, CPUs, computer accessories, and more.",0
 1006568,to buy machinery for the spa,0
 1005628,"to buy a computer and also professional literature, which will be great for him in his self-development work",0
-1006413,to pay for her husband�s course of treatment at the hospital as soon as it is possible.,0
+1006413,to pay for her husband��_��__��_��___��_��__��_��____s course of treatment at the hospital as soon as it is possible.,0
 1005776,"to purchase rice, sugar, noodles, milk, oil, etc.",0
 1005235,to buy additional gas bottles for his store .,0
 1005240,to buy coffee for trade.,0
@@ -2836,18 +2746,17 @@ id,description,value
 1005345,"to buy footwear, especially sandals, which are widely used in the area.",0
 1005353,"to purchase paint and a new, more attractive sign.",0
 1005183,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
-1005350,to buy pigs to process.,0
 1005152,to process more prepaid mobile airtime purchases for his local community.,0
 1005162,to buy products for her retail store,0
 1005165,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1005168,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
-1005170,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1005170,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1005140,to purchase hybrid seeds and fertilizer to improve the harvest of maize.,0
 1005142,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1005143,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 1005145,to process more prepaid mobile airtime for members of her local community.,0
 1005147,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
-1005150,to purchase hybrid seeds and fertilizer for the�cultivation�of maize							,0
+1005150,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize							,0
 1005103,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 1005105,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1005110,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.							,0
@@ -2903,13 +2812,12 @@ id,description,value
 1005781,to purchase more beans and casava to sell.,0
 1005858,To purchase more beans and cassava flour to  sell.,0
 1005904,to buy a freezer to store ice cream for the children.,0
-1005383,to pay for dental treatment.,0
-1005744,"to pay for the solution to her daughter-in-law�s health problem so that she will finally have a child, which is the whole family�s greatest desire.",0
+1005744,"to pay for the solution to her daughter-in-law��_��__��_��___��_��__��_��____s health problem so that she will finally have a child, which is the whole family��_��__��_��___��_��__��_��____s greatest desire.",0
 1005755,pay for her medical treatment.,0
 1004950,to purchase hybrid seed and fertilizer to improve maize harvest.,0
 1004962,to purchase two solar lights and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation					.,0
 1004617,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
-1004621,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1004621,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1004622,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1004625,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1004633,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
@@ -2926,15 +2834,13 @@ id,description,value
 1004681,to purchase hybrid seeds and fertilizer to improve his maize harvest.,0
 1004706,"to purchase rice, wheat, sugar, oil, tea, soap, detergent, shampoo, biscuits, snacks, potatoes, onions, salt, etc.",0
 1004772,"to buy supplies for preparing traditional ""empanadas"" (savoury pastries).",0
-1004801,buy fertilizers and pay checks and to improve the field shown in the photograph.,0
 1004802,"to invest in: mangos, papayas, watermelons, mandarins, oranges, lemons, tomatoes, onions, peppers, potatoes, etc.",0
 1004680,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 1004771,"to invest in a variety of foodstuffs, including: legumes, rice, oil, meat, chicken and more.",0
 1004675,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
-1004676,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1004676,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1004678,to gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1004689,"to buy cost-efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar light.",0
-1004669,to buy cows for his butcher shop business.,1
 1004670,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1004684,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 1004686,to purchase two solar lights and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
@@ -2942,17 +2848,16 @@ id,description,value
 1004620,"to purchase necessary utensils, four chairs, a gas stove, rice, wheat, oil, etc.",0
 1004469,"to process more prepaid mobile airtime purchases and utility bill payments, like electricity, water, etc.",0
 1004608,"to purchase a huge quantity of dress materials, saris and kids' collections.",0
-1004796,"to buy shaving creams, scissors, a razor and hair clipper, among other items.",0
 1004479,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 1004480,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1004647,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1004648,to purchase a solar light as well as hybrid seeds and fertilizer to improve harvests of maize.,0
-1004653,"to purchase hybrid seeds and fertilizer for the�cultivation�of maize, as well as a solar light.							",0
+1004653,"to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize, as well as a solar light.							",0
 1004657,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season.,0
 1004659,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
 1004666,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
-1004466,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
-1004470,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1004466,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
+1004470,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1004472,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1004602,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1004605,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
@@ -2962,18 +2867,15 @@ id,description,value
 1004597,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 1004603,to purchase skirts and trousers.,0
 1004793,to buy materials needed for construction.,0
-1004794,Buy more coconuts at wholesale.,0
 1004460,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1004461,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
-1004584,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1004584,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1004591,to gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1004437,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 1004781,to purchase a tank of oxygen and an air compressor to paint cars.,0
 1004787,to buy a gas broiler to expand her food menu and improve her family's income.,0
 1004574,to gain access to cost efficient hybrid seeds and fertilizer for maize cultivation,0
 1004777,to buy spare mobile phone parts.,0
-1004778,to buy more fruit and vegetables wholesale.,0
-1004779,to buy farm supplies.,0
 1004786,to purchase a motorcycle.,0
 1004569,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season.,0
 1004572,"to buy more cooking oil, rice, sugar and other items to sell",0
@@ -2995,17 +2897,14 @@ id,description,value
 1004435,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1004736,"to buy meat, plantains, onions,  fresh tomatoes, rice, etc. for her business.",0
 1004750,"to buy blouses, shirts, pants, skirts, perfumes, jewelry etc. for her business",0
-1004752,"to buy products for her beauty salon such as creams, shampoo, hair clips and scissors among other items",0
-1004756,to buy more coconuts wholesale.,0
 1004761,purchase needed construction materials.,0
-1004762,purchase corn and lime powder.,0
 1004417,to purchase a motorbike for her husband to take to his work place.,0
 1004731,"to buy rice, sugar, coffee, eggs, bread, water, blouses, dresses, pants, etc. for his businesses.",0
 1004733,"to buy basic materials: corn in bulk, sausage, oil and general supplies.",0
 1004738,"to buy seeds, fertiliser, manure, pesticide, etc., and to improve his land.",0
 1004745,"buy seeds, fertilizers, manure, insecticide, herbicide, etc., and improve his land.",0
 1004389,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
-1004445,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1004445,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1004476,to purchase a solar light as well as hybrid seeds and fertilizer to improve harvests of maize.,0
 1004730,to purchase tools for the repair and maintenance of computers.,0
 1004378,"to buy cost efficient maize seeds and fertilizer for the coming harvesting season, as well as two solar lights.",0
@@ -3016,10 +2915,9 @@ id,description,value
 1004414,"to purchase more grocery items including grains, peas, flour, sugar and tea to serve more customers and generate more income.",0
 1004687,to buy a new supply of clothes and raw materials for the articles that she makes in this small family business,0
 1004717,to buy needed building materials.,0
-1004719,buy wood in bulk,0
 1004376,to buy bundles of blankets and bedspreads in different colors and designs,0
 1003863,to purchase hybrid seeds and fertilizer to improve his harvests of maize.,0
-1003911,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1003911,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1004338,to buy the necessary supplies to repair her house.,0
 1004702,to buy eggs and groceries to sell in her neighborhood store.,0
 1003843,to stock her store.,0
@@ -3028,7 +2926,6 @@ id,description,value
 1004323,"to purchase stocks of sugar, rice, maize flour and wheat flour.",0
 1004170,to purchase two solar lights and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.							,0
 1004646,to invest in the sowing and cultivation of potatoes.,0
-1004699,"to buy more products like eggs, cereals, candy, oil, pasta, detergent, etc. wholesale.",0
 1004211,"to buy clothing, fragrances and accessories.",0
 1004217,to purchase a sewing machine.,0
 1004218,"to purchase wood, screens and materials to improve his animal pens.",1
@@ -3041,18 +2938,11 @@ id,description,value
 1004289,to buy clothes for her husband's shop.,0
 1003901,to process more prepaid mobile airtime purchases for members of her local community.,0
 1004194,"to buy snacks, sweets, drinks, and disposable napkins, cups and plates, and more, and thus stock up her business with new merchandise and meet her customers' needs.",0
-1004195,to buy doors and windows.,0
 1004204,"to buy shavers, razors, hair gel, talc and more to better equip his business.",0
-1004178,to buy construction materials.,0
 1004183,"to purchase fertilizers, herbicides, and manure to give good treatment to his crops, another part will be to pay the workers who help him.",0
-1004185,"to purchase the necessary materials, doors and windows.",0
 1004186,to purchase gunpowder to take advantage of the Christmas season and in this way generate extra income.,0
-1004188,"to buy products for her beauty salon such as lotions, shampoo, hair barrettes, scissors, and so on.",0
-1004189,to buy red meat and pork in bulk.,0
 1004192,"to buy supplies such as meats, cold meats, rice, beans, drinks, oil, condiments and more. She can then meet customers' demands.",0
-1004196,"to buy more soups, eggs, basic grains, beverages, snacks, sweet bread, etc.",0
 1004175,to buy all the construction materials she needs.,0
-1004177,"to buy paint, varnish, oils and other tools.",0
 1004182,"to buy volumes of products: 20 cases of soft drink, 200 cases of beer, 10 cases of maltas (South American soft drink) and 100 cases of juice.",0
 1004216,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1004032,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve her harvests of maize.",0
@@ -3060,7 +2950,7 @@ id,description,value
 1004040,to purchase hybrid seeds and fertilizer to improve maize harvests.,0
 1004041,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
 1004043,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
-1004044,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+1004044,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 1004167,"to purchase three solar lights, as well as hybrid seeds and fertilizer to improve his harvests of maize.",0
 1004214,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1004023,to buy cost efficient maize seeds and fertilizer for the coming growing season.,0
@@ -3071,7 +2961,7 @@ id,description,value
 1004421,to purchase more fruit to resell,0
 1004592,to raise sheep to sell them,1
 1004649,to purchase sheep to sell later on.,1
-1004704,buy grocery items and pi�atas,1
+1004704,buy grocery items and pi��_��__��_��___��_��__��_��____atas,1
 1004105,to buy different kinds of flour to bake traditional bread.,0
 1004184,to purchase a latest generation camera to stay in the market.,0
 1004200,to buy wholesale natural cosmetics to supply her business.,0
@@ -3086,7 +2976,6 @@ id,description,value
 1004146,to buy the necessary machinery to knit.,0
 1004062,to buy cost efficient maize seed and fertilizer.,0
 1004007,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
-1004065,to open a market and generate a stable income.,0
 1004067,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1004050,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation,0
 1004059,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
@@ -3095,14 +2984,13 @@ id,description,value
 1003961,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1003962,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 1003965,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
-1003968,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1003968,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1004049,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 1004139,to buy bigs and balanced foodstuff for its fattening and raising.,1
 1004141,"to buy 2 cows, vaccines, and fertilizer for his pastures.",1
 1003954,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 1003958,to process more prepaid mobile airtime purchases for members of her local community.,0
-1004048,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
-1003970,to increase his business merchandise with special ?offer products which will increase his sales and income.,0
+1004048,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1004127,"to buy clothing, footwear for all occasions and increase her stock of hair products, nail polish, dye and keratin.",0
 1003974,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 1003984,to repair the roof of his house.,0
@@ -3115,31 +3003,23 @@ id,description,value
 1004117,purchase corn seeds and feed for his pigs.,1
 1003870,to process more prepaid mobile airtime purchases for members of her local community.,0
 1004099,buy clothing and footwear,0
-1004100,"buy bulk clothing, candy, juices, soft drinks and coffee",0
 1004083,"buy shoes, sandals, and slippers, and also invest in cheese and cream; to better supply her business and take advantage of the season.",0
-1004094,"to buy more soups, eggs, basic grains, soft drinks, sweets, pastries, etc.",0
-1004082,buy more clothes wholesale.,0
 1003785,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 1003827,to process more prepaid mobile airtime purchases for members of his local community,0
 1003771,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
-1003633,buy the necessary building materials.,0
 1003649,to purchase baby pigs to raise and sell in the future.,1
 1003650,to purchase baby livestock to raise and sell in future.,1
 1003663,to purchase fruit to resell,0
-1003666,"to purchase more selling�milk, salt, cake... and general things to resell.",0
+1003666,"to purchase more selling��_��__��_��___��_��__��_��____milk, salt, cake... and general things to resell.",0
 1004295,to buy baby fish (for resale) and food for them,0
-1003619,to purchase more concentrated feed and chickens.,1
-1003608,to buy more wholesale clothes.,0
 1003716,to purchase more vegetables to resell.,0
 1003719,to purchase baby livestock to raise and sell in future.,1
 1003600,"for corn flour and some cups, plates, and spoons.",0
-1003578,to purchase more wholesale clothing.,0
 1003581,to purchase pigs and fattening animal feed.,1
 1003583,"to purchase merchandise, which is to say, baby clothing.",0
 1003587,"buy shirts and pants for women, men and children, as well as diverse brands of make-up.",0
 1003590,to buy a cyclone fence and to pay for labor.,0
 1003595,"to buy an industrial oven, mixers, furniture and equipment, in order to better serve her customers and to generate greater income for her family.",0
-1003571,"to purchase a variety of molds, glue, plastic and other materials, all wholesale.",0
 1003637,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 1003553,"to buy masonry, cement, rods, sand, stones, plasma, and palms, among other things, for the construction of a septic tank.  ",1
 1003601,to purchase two solar lights as well as hybrid seeds and fertilizer to improve maize harvests.,0
@@ -3148,10 +3028,10 @@ id,description,value
 1003467,"to buy cost-efficient maize seeds and fertilizer for the coming harvest season, as well as a solar light.",0
 1003470,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 1003456,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
-1003458,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1003458,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1003459,to purchase a solar light and to gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
 1003462,to purchase not only a solar light but also hybrid seeds and fertilizer to improve maize harvests.,0
-1003466,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+1003466,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 1003454,to buy cost efficient maize seeds and fertilizer for the coming harvesting season							,0
 1003444,to buy cost efficient maize seeds and fertilizer for the coming harvesting season							,0
 1003446,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.							,0
@@ -3173,7 +3053,6 @@ id,description,value
 1003384,to buy mobile phone airtime credit to sell.,0
 1003560,to buy leather wholesale to make shoes and boots.  ,0
 1003549,to buy plated jewelry and perfume wholesale.,0
-1003561,to buy more veneer jewelry wholesale.,0
 1003564,to buy more tools for his workshop and a larger amount of soda.  ,0
 1003567,to buy chickens and pigs as well as balanced feed.,1
 1002159,"to pay for tools and materials needed for providing auto repair work, and also cover renovation costs of the garage.",0
@@ -3199,9 +3078,9 @@ id,description,value
 998473,to pay for 3.5 tonnes of potato seeds because at this period of the year seeds are twice cheaper.,0
 999098,"to pay for agricultural work, applying and incorporating phytosanitary products, fertilizers and paying labor costs for his harvest.",0
 999100,to purchase merchandise this Christmas season.,0
-999112,to buy feed and chickens for the business.,0
+999112,to buy feed and chickens for the business.,1
 999115,"to invest in merchandise such as pants, shirts and underwear.",0
-999118,"to buy animals such as pigs and chickens, as well as fortified feed to raise and fatten them.",0
+999118,"to buy animals such as pigs and chickens, as well as fortified feed to raise and fatten them.",1
 999119,"to buy bottles of cream, tortillas with cheese fillings, and cheese to be able to offer more merchandise to his customers.",0
 998394,to buy a washing machine and water.,0
 998397,to buy electronic spare parts and stock of electronics.,0
@@ -3253,7 +3132,7 @@ id,description,value
 999853,"to buy wholesale clothing, shoes, and accessories.",0
 999867,to buy undergarments to sell.,0
 998289,to buy more fish to improve her trade.,0
-998914,to restock more men�s shoes as the festive season is fast approaching.,0
+998914,to restock more men��_��__��_��___��_��__��_��____s shoes as the festive season is fast approaching.,0
 998923,to buy different kinds of birds per customer requests,1
 999325,to buy cows to increase her working capital.,1
 999328,to buy hardware goods for her son's hardware store.,0
@@ -3273,16 +3152,16 @@ id,description,value
 999781,to buy clothes and shoes to sell.,0
 1002014,to pay for his operation and for medicine,0
 1002015,"to buy more sacks of rice, beans and cans of cooking oil for his business.",0
-1002027,to pay for her daughter�s education fees.,0
+1002027,to pay for her daughter��_��__��_��___��_��__��_��____s education fees.,0
 1002031,to invest in raising and breeding pigs.,1
 1002037,to purchase baby poultry to raise and sell in the future.,1
 1002043,to solve her health problems and get rid of her discomfort.,0
 1002053,to resolve his health problems.,0
-1002111,to find the solution to his wife�s health problem so that she will get rid of the discomfort and anxiety connected with her health.,0
+1002111,to find the solution to his wife��_��__��_��___��_��__��_��____s health problem so that she will get rid of the discomfort and anxiety connected with her health.,0
 1002162,"to buy an embroidery machine and supplies, and to open her own tailor shop to get into the market and earn more income for her family",0
 1002171,to buy an embroidery machine of 6 heads and for minor inputs to expand her production and improve her income for her children.,0
 993461,to increase the stock of missing items for his retail shop and to buy more sacks of charcoal for sale,0
-993689,to buy additional fabric to satisfy her customers� needs.,0
+993689,to buy additional fabric to satisfy her customers��_��__��_��___��_��__��_��____ needs.,0
 994761,to buy fishing net,0
 997842,to purchase additional livestock to increase the size of her herd.,1
 998898,to buy a new collection of women's clothing to sell at his stall.,0
@@ -3314,7 +3193,6 @@ id,description,value
 997159,to purchase additional bundles of nipa to sell.,0
 997406,"to buy more biscuits, milk and soda for selling.",0
 998358,to buy more stock of cereals.,0
-998411,"to pay for renovation of the truck, purchase four winter wheels for it to continue his meat selling and distributing service.",0
 998726,to repair her husband's taxi.,0
 998814,"to add more stock of rice, sugar, and baking powder and to pursue renovating her house.",0
 998845,to add more capital to buy cassava.,0
@@ -3331,7 +3209,7 @@ id,description,value
 999041,to apply and incorporate phytosanitary products and fertilizers and pay for labor for his harvest.,0
 998143,"to buy betel leaf, chopped ground areca nuts, mint, coconut, fruit preserves, various spices, and tobacco for her son's betel leaf shop.",0
 1000259,to buy shoes for his business.,0
-1001718,to purchase pigs to fatten them and after a time sell them at a good price.,0
+1001718,to purchase pigs to fatten them and after a time sell them at a good price.,1
 1001783,to buy fishing nets.,0
 996794,to buy large water bottles.,0
 1001345,to buy peanuts.,0
@@ -3345,7 +3223,6 @@ id,description,value
 1001561,to purchase new equipment and materials and attract new clients.,0
 1001130,to buy 5 crates of drinks for sale.,0
 1001172,to buy 120 fish for sale.,0
-1001184,to buy 20 crates of drinks and fruit juice.,0
 1001490,to buy 140 fish for sale.,0
 1001543,to stock up on pharmaceutical products.,0
 1001548,to stock up with 500 pairs of shoes.,0
@@ -3379,7 +3256,7 @@ id,description,value
 998365,to buy a new clothes collection for her shop,0
 998370,"to purchase fruit and vegetables, and renovate his truck.",0
 998375,"to buy maize, peppers, tomatoes, and fish.",0
-998658,to celebrate her child�s wedding.,0
+998658,to celebrate her child��_��__��_��___��_��__��_��____s wedding.,0
 998734,to buy piglets and food for the pigs.,1
 999076,to buy clothes: trousers and shirts for adults and children.,0
 999108,to buy fertilizers to grow coffee on his land.,0
@@ -3387,7 +3264,6 @@ id,description,value
 998305,to pay for the credit amount borrowed for the purchase of a car and continue providing his transportation services.,0
 998312,"to buy more stock of sugar, rice, flour, and other items.",0
 998318,"To do some maintenance on his rickshaw,",0
-998356,to buy more tubers of yam and fishes.,0
 998364,to build a garage for a workshop and purchase a car for spare parts.,0
 998366,to make necessary maintenance to his shop to avoid winter leakage and do necessary wall painting.,0
 999035,to invest in the purchase of pigs and to pay the expenses for the maintenance of her crop.,1
@@ -3424,7 +3300,7 @@ id,description,value
 998418,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 998421,to buy cost efficient maize seeds and fertilizer for the coming harvesting season							,0
 998426,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
-998448,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.						,0
+998448,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.						,0
 998462,"to buy cost efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar light.",0
 998571,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 998257,"to buy more stock of bread, soap, flour, soda and other items",0
@@ -3442,7 +3318,6 @@ id,description,value
 1001798,"purchase a mobile radio system for directing transportation for women. This will allow her to work while caring for her children, and provide added income to support her family.",0
 1001508,"to buy a replacement cow to provide income for her family,  to improving their conditions.",1
 1001509,to purchase two calves to raise into adults and then sell for a profit,1
-1001510,to renovate the shop and to purchase food which to attract more customer,0
 997704,to purchase 5 sacks of fertilizer and 6 cans of herbicides for his crops,0
 997706,buy 4 bags of fertilizer and 5 boxes of herbicide.,0
 1000525,to purchase goats to sell,1
@@ -3494,9 +3369,7 @@ id,description,value
 1001308,to buy agricultural inputs to maintain her coffee crop.,0
 1001387,"to buy a greater variety of items for her store, like vegetables, meat, seasonings, baked goods, dairy products, among others.",0
 1001391,to buy all types of clothing for resale.,0
-1001393,"to stock her pantry with vegetables, meat, baked goods, dairy products, among other items.",0
 1001646,"to pass a medical treatment in order to solve his health problem, and he is thankful beforehand to Kiva lenders.",0
-1001686,to buy wholesale chicken meat. ,0
 1001697,to buy wholesale herbs and incense.,0
 1001724,to buy cookies wholesale.,0
 997266,to buy automobile parts and pay for an expert's services.,0
@@ -3529,7 +3402,6 @@ id,description,value
 998187,to buy more stock of fruits.,0
 998195,to buy more stock of fruits and vegetables,0
 997250,to pay for a sow and two oxen to enlarge the number of livestock on his farm.,1
-998011,to buy broilers for her husband's chicken production and selling shop.,0
 998095,to buy motorbike's spare parts for her husband's shop.,0
 998153,to buy more fish for resale.,0
 998154,"to buy buy materials like plywood, paint, nails, fishing boat glue and paint.",0
@@ -3542,9 +3414,8 @@ id,description,value
 998146,to buy farm inputs.,0
 1000950,to buy mineral fertilizers and seeds.,0
 1000969,to open a beauty salon and generate stable income.,0
-1001110,to solve his mother�s health problem by doing a proper treatment course at the hospital.,0
+1001110,to solve his mother��_��__��_��___��_��__��_��____s health problem by doing a proper treatment course at the hospital.,0
 1001126,to pay for a cow and forage for feeding the livestock,1
-1000174,to buy agro-veterinary products for resale.,0
 1001030,"to pay for nuts to make Armenian ""soujoux"" (a type of dried fruit made from walnuts and sweet fruit syrup) to sell in the coming new year holiday season.",0
 1001123,to pay for a cow and 100 packages of ground fodder for feeding the cattle.,1
 1001220,to purchase accessories for hairdressing to get more customers.,0
@@ -3639,8 +3510,8 @@ id,description,value
 1001027,to buy some construction materials to rebuild his old house.,0
 1001036,to pay for fodder to feed the livestock and support her farm in the winter season.,1
 1001075,"to undergo a serious, expensive and rather long course of treatment in order to get rid of her health problems",0
-1001080,to be able to pay for her husband�s surgery; she is full of hope and impatience for the support of Kiva lenders.,0
-1001086,to solve his father�s health problems since he must undergo an urgent and expensive course of treatment at the hospital.,0
+1001080,to be able to pay for her husband��_��__��_��___��_��__��_��____s surgery; she is full of hope and impatience for the support of Kiva lenders.,0
+1001086,to solve his father��_��__��_��___��_��__��_��____s health problems since he must undergo an urgent and expensive course of treatment at the hospital.,0
 997599,to buy more harvested rice.,0
 997605,to purchase additional sacks of rice grains to sell.,0
 997606,to buy an additional amount of electronic mobile credits to sell.,0
@@ -3748,7 +3619,7 @@ id,description,value
 997131,"to buy different types of beauty products, such as creams and hairbrushes, to increase her beauty salon business.",0
 997132,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 997145,to purchase hybrid seeds and fertilizer to improve harvest of maize.,0
-997172,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+997172,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 997176,to buy maize seeds and fertilizer.,0
 997178,to purchase hybrid seeds and fertilizer to improve maize harvest.,0
 997730,to buy a young bull and form the herd.,1
@@ -3757,7 +3628,6 @@ id,description,value
 996006,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
 997088,"to buy items to sell, like canned goods, soap, milk, sugar, eggs, chips, etc.",0
 997101,"to buy canned goods, noodles, toiletries, food seasoning, snack foods, and drinks.",0
-997113,to increase stock of fresh chicken to sell during the coming Christmas festivals,0
 997122,to repair their fishing boat,0
 997728,"to buy corn, chicken, salt, vegetables, etc., which will help improve the production of tamales and soups she sells.",0
 996827,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
@@ -3783,10 +3653,6 @@ id,description,value
 999182,to invest in maintaining one hectare of coffee,0
 999702,buy fertilizer and pay his workers for plantation maintenance.,0
 1000628,to invest in the expansion of sugarcane fields.,0
-998188,to buy cows to increase milk production.,1
-999491,"to buy cement, bricks and other building materials.",0
-999565,repair his shop.,0
-1000090,to buy fertilizers for plants,0
 997864,pay for labor and purchase fertilizers and pesticides.,0
 999020,"to pay for farm work, applications of pesticides, fertilizers, and labor for his harvest",0
 999711,to buy fertilizer and pay for labor for his workers (to maintain his plantation).,0
@@ -3802,7 +3668,6 @@ id,description,value
 998457,"with working capital, for the purchase of different varieties of fish such as bonito, mackerel, pejerry, etc, crates and to make improvements to his home.",0
 1000121,to develop his business and increase his merchandise with special newly-released barbering tools and machines.,0
 1000202,to pay for her son's car registration fees so he can expand his business through visiting a wider region by his own car.,0
-1000191,to repair the water system at his salon.,0
 1000081,to pave the tiles on a store that he's been building lately and that he wants to rent it out,0
 997832,buy cows to fatten and sell.,1
 997836,to buy additional cows to increase the size of her herd.,1
@@ -3831,7 +3696,6 @@ id,description,value
 997510,to invest in fixing up his locale and to buy beer.,0
 998053,to pay for land preparation like plowing & harrowing and purchase of good variety of seedlings.,0
 998062,"to purchase ingredients for her bakery like flour, milk, sugar, butter, and cheese.",0
-998122,to purchase bulk supplies of bags of animal feed and veterinary supplies.,0
 998669,"to pay for wood, vehicle rental and labor.",0
 998728,"to buy for his grocery store such items as liquor, canned goods, noodles, sugar, cooking oil, toiletries, food seasonings, snack foods and sacks of rice as well as crude oil and gasoline.",0
 999248,"to purchase bags of cement, plywood, hollow blocks, nails and labor costs for boarding house repairs.",0
@@ -3854,12 +3718,9 @@ id,description,value
 1000308,to buy more designs of bags for her business.,0
 1000550,to have products in stock such as bottled drinks and grocery items to add to her variety store business.,0
 992851,To expand her business by purchasing a large quantity of bananas for sale.,0
-998369,to increase variety.,0
-998373,to expand her business.,0
 998404,to purchase more food items for sale.,0
 998423,to expand her business of small retail.,0
 998440,to expand his cafe business.,0
-1000050,to buy more beans and maize for selling.,0
 998392,to pay for a smoke-blowing machine and other tools for selling in the toy and design shop.,0
 998427,to pay for food and drink supplies to sell in his food store,0
 999323,to buy more sacks of charcoal to match the on going demand during the Christmas and New Year festival,0
@@ -3892,14 +3753,13 @@ id,description,value
 998585,to buy a cuerda (28 m2) of land for cultivation.,0
 998603,to buy a plot of land to grow coffee,0
 999097,to purchase agricultural supplies to maintain the crop.,0
-999102,"to buy and sell traditional clothing such as g�ipiles, sashes and skirts.",0
+999102,"to buy and sell traditional clothing such as g��_��__��_��___��_��__��_��____ipiles, sashes and skirts.",0
 999870,to repair her home.,0
 1000287,"to buy grocery producs such as juice, soft drinks, sweets, and candies.",0
 1000289,to purchase drinking glasses and plates for her food business. ,0
 1000298,"to buy materials such as whitewash, sand, and sheet metal to remodel her house.",0
 998583,to buy groceries to sell.,0
 998588,to buy new clothing to sell.,0
-998597,to purchase pigs to slaughter and sell them in the butcher shop.,0
 999165,to buy materials to build a wall.,0
 999180,to buy corn seeds and agricultural inputs.,0
 999874,to repair his home.,0
@@ -3939,7 +3799,6 @@ id,description,value
 998252,to give his community better access to communication services by selling mobile airtime credits.,0
 999370,to purchase additional prepaid airtime credit for helping community members who need access to communication services.,0
 999381,to purchase additional prepaid airtime credit for community members who need access to a communication service.,0
-996571,To buy more food items to supply to her customers.,0
 996742,to fix his vehicle.,0
 997471,to cover an order of products that she has and to deliver it as soon as possible to earn trust with her customers.,0
 997472,to purchase new clothing to sell.,0
@@ -3952,7 +3811,6 @@ id,description,value
 997143,to renovate and enlarge the barn to make space for newborn pigs to live and to buy fodder to feed the animals.,1
 997019,to buy fertilizer input for her farming and to pay for plowing to get her crop grow well.,0
 997377,to buy paper to sell.,0
-997504,"to buy candy, soft-drinks, cookies among other things.",0
 997506,to buy groceries to sell.,0
 997507,to buy tires and repair his motorcycle's suspension.,0
 997511,"to invest in maintaining and cultivating one hectare of his existing coffee plantings, to ensure good production for the 2016 season.",0
@@ -3965,14 +3823,6 @@ id,description,value
 996913,to pay for permits and licenses to travel in her motorcycle transportation business.,0
 997495,"to purchase ornamental plants, soil and fertilizers and to improve the place where his nursery garden is located.",0
 997491,to buy a cart to sell chips.,0
-1000104,"to pay for 4 months tuition at Moringa School, Nairobi's top coding school.",0
-1000116,"to pay for four months' tuition at Moringa School, Nairobi's top coding school.",0
-1000124,"to pay for four months tuition at Moringa School, Nairobi's top coding school.",0
-1000138,"to pay for four months' tuition at Moringa School, Nairobi's top coding school.",0
-1000140,"To pay for tuition for 4 months at Moringa School, Nairobi's top coding school.",0
-1000152,"to pay for 4 months' tuition at Moringa School, Nairobi's top coding school.",0
-1000168,"to pay for 4 months' tuition at Moringa School, Nairobi's top coding school.",0
-1000205,"to pay for four months' tuition at Moringa School, Nairobi's top coding school.",0
 996263,to buy cereals.,0
 996409,to invest in her husband's mobile shop.,0
 997501,"to buy construction materials she needs to finish building a wall, to make her home more secure.",0
@@ -3980,8 +3830,8 @@ id,description,value
 996852,to purchase hybrid seeds and fertilizer to improve harvests of maize							,0
 996854,to purchase cost-efficient hybrid seeds and fertilizer for maize cultivation							,0
 996858,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
-996870,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
-996875,to purchase hybrid seeds and fertilizer for the�cultivation�of maize	.						,0
+996870,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
+996875,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize	.						,0
 996879,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.							,0
 996800,"to buy cost-efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar light.",0
 996807,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
@@ -3989,10 +3839,10 @@ id,description,value
 996815,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 996843,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 996844,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
-996846,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+996846,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 996855,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 996856,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
-996857,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+996857,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 996400,to invest in her son's cosmetic shop.,0
 996415,to buy baby fish and food for them,1
 996429,to buy tomato seeds and fertilizer and materials to construct a greenhouse,0
@@ -4019,11 +3869,8 @@ id,description,value
 998272,to purchase more grocery items to add to her stock for sale.,0
 998893,buying more charcoal and materials to resell.,0
 999199,to buy fertilizer,0
-1000193,"to pay for 4 months tuition at Moringa School, Nairobi's top coding school.",0
-1000200,"to pay for four months' tuition at Moringa School, Nairobi's top coding school.",0
 996756,to pay for the purchase of a better vehicle.,0
 996761,to buy furniture to resell because she wants to take advantage of the Christmas season.,0
-996763,to buy more groceries for her store.,0
 996765,to buy an engine for his car.,0
 996766,to buy perfume to sell for Christmas.,0
 996772,to buy beer and groceries for her store,0
@@ -4035,22 +3882,22 @@ id,description,value
 996358,to buy fodder for his farm cattle and for repair his cattle barn.,1
 996372,"To buy seeds, mineral fertilizers and other products for new sowing",0
 996381,to fill in the land around his house and fix his house  .,0
-996741,"buy fertilizers, pay for his fieldhands� labor, and do maintenance on his plantation.",0
+996741,"buy fertilizers, pay for his fieldhands��_��__��_��___��_��__��_��____ labor, and do maintenance on his plantation.",0
 996754,to buy inputs for his decoration business,0
 996764,"to purchase clothing for the Christmas season, as well as forms and hangers to be able to show the clothing.",0
 997718,to sell cassava and salted fish.,0
 996378,"to purchase automobile parts and repair his car, so he can return to work.",0
 996418,to increase her livestock headcount and expand her activities.,1
 996705,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season.,0
-996706,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+996706,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 996710,to purchase hybrid seeds and fertilizer to improve harvests of maize							,0
 996713,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season							,0
 996715,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season							,0
 996718,to buy cost-efficient maize seeds and fertilizer for the coming harvesting season.,0
-996735,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+996735,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 996745,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 996572,to purchase hybrid seeds and fertilizer to improve her harvests of maize,0
-996578,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+996578,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 996695,to purchase hybrid seeds and fertilizer to improve harvests of maize,0
 996697,to purchase hybrid seeds and fertilizer to improve her maize harvests.,0
 996698,to purchase hybrid seeds and fertilizer to improve her maize harvests.,0
@@ -4063,7 +3910,6 @@ id,description,value
 998479,to expand her kiosk business.,0
 998907,to buy products for his grocery store.,0
 999507,"to buy products for her beauty salon, such as creams, shampoo, scissors, hairpins and other things that she needs.",0
-999713,"To buy more sorghum, beans, and potatoes to sell.",0
 1000083,to pay for the surgery of his wife at the hospital,0
 1000151,continue building a house for their family that they started in the year 2000. This loan will be used to invest in this house.,0
 1000378,to purchase a car for her husband to start a taxi business.,0
@@ -4085,20 +3931,20 @@ id,description,value
 996685,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 996687,"to buy cost efficient maize seeds and fertilizer for the coming harvesting season, as well as a solar light.",0
 996688,to purchase a solar light and gain access to cost efficient hybrid seeds and fertilizer for maize cultivation.,0
-996689,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+996689,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 996690,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 996691,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
 996670,to purchase hybrid seeds and fertilizer to improve harvest of maize.,0
 996671,to buy cost efficient maize seeds and fertilizer for the coming harvesting season.,0
 996672,to purchase a solar light and gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation.,0
-996674,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
+996674,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
 996676,"to purchase a solar light, as well as hybrid seeds and fertilizer to improve harvests of maize.",0
 996238,to buy cattle and expand her livestock business,1
 996278,"to purchase construction materials such as hardware, rubber sheeting, and coal for the stove. ",0
 996289,to buy construction materials and repair her house,0
 996292,to buy livestock and expand her business,1
 997455,"to stock her business, principally with alcoholic beverages.",0
-996488,to purchase hybrid seeds and fertilizer for the�cultivation�of maize.,0
+996488,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize.,0
 996568,to purchase hybrid seeds and fertilizer to improve harvests of maize.,0
 996569,to buy cost efficient maize seeds and fertilizer for the coming harvest season.,0
 996661,to gain access to cost-efficient hybrid seeds and fertilizer for maize cultivation,0
@@ -4141,13 +3987,9 @@ id,description,value
 998962,to pay for two cows and two calves to enlarge the number of livestock on the farm.,1
 1000444,to expand his agribusiness activities by purchasing rabbits and making a rabbit hutch.,1
 996386,to buy a cow and also fodder for all his farm cattle.,1
-996391,to buy food items and a refrigerator.,0
 996565,to grow her restaurant,0
-997429,"to buy more fertilizers, manure, pest controls, herbicides and to improve the land.",0
 997430,to buy car parts.,0
 997439,to purchase a cart to sell French fries.,0
-998301,to expand her business.,0
-998452,to expand her business of food crops.,0
 999665,to buy more decorations for selling.,0
 1000075,"to cover his tuition fees for a BSc. in IT, from the first to the fourth year.",0
 1000451,to renovate and then rent a flat.,0
@@ -4181,7 +4023,6 @@ id,description,value
 999636,"to buy more rice, sugar, biscuits and juice for selling.",0
 999650,"to buy more rice,sugar and soaps for selling",0
 999660,"to buy more vegetables such as cabbages, tomatoes and carrots for selling",0
-1000048,"to buy more banana, maize flour, cassava and rice to sell.",0
 1000059,"to buy more rice, sugar, biscuits and plates to sell.",0
 1000221,"to buy tiles, PVC pipes, water closets, plywood, cement, iron rods, and roofing sheets for resale.",0
 1000222,"to buy cosmetics, jewelries and plastics for resale.",0
@@ -4195,8 +4036,8 @@ id,description,value
 996468,to purchase more drinks to sell.,0
 996477,to buy new equipment needed for the restaurant and to add new recipes to the menu.,0
 996491,to buy cost efficient maize seeds and fertilizer for the coming harvesting season						.,0
-996494,to purchase hybrid seeds and fertilizer for the�cultivation�of maize,0
-996495,to finally finish repairing their house in the New Year�s holidays to come.,0
+996494,to purchase hybrid seeds and fertilizer for the��_��__��_��___��_��__��_��____cultivation��_��__��_��___��_��__��_��____of maize,0
+996495,to finally finish repairing their house in the New Year��_��__��_��___��_��__��_��____s holidays to come.,0
 997345,"to buy lotions, deodorants, clothing garments, and shoes, among other products, to improve her sales.",0
 997348,"to buy more materials such as meat, vegetables, chairs, tables, among other inputs to improve her business.",0
 997358,"to invest in pork cracklings, cheese, beans, tomatoes, cabbage and drinks amongst other products for her sales of pupusas and drinks.",0
@@ -4204,12 +4045,12 @@ id,description,value
 997364,"to invest in cement, sand, brick, gravel and iron to build a perimeter wall in front of her house.",0
 997366,to buy fruit to make sweets to sell.,0
 999067,to buy a block of land to cultivate.,0
-999104,"to buy and sell traditional clothing such as skirts, sashes and g�ipiles.",0
+999104,"to buy and sell traditional clothing such as skirts, sashes and g��_��__��_��___��_��__��_��____ipiles.",0
 999147,to buy clothing to sell.,0
-999151,"to buy traditional items of clothing, such as: g�ipiles (traditional tunics or blouses), woven belts and skirts.",0
+999151,"to buy traditional items of clothing, such as: g��_��__��_��___��_��__��_��____ipiles (traditional tunics or blouses), woven belts and skirts.",0
 999173,to repair her home.,0
 999890,"to buy and sell typical clothing like blouses, woven belts, and skirts.",0
-1000280,"to buy clothing such as ""cortes,"" ""fajas,"" and ""g�ipiles"" [traditional skirts, sashes, and blouses]",0
+1000280,"to buy clothing such as ""cortes,"" ""fajas,"" and ""g��_��__��_��___��_��__��_��____ipiles"" [traditional skirts, sashes, and blouses]",0
 1000285,"to buy groceries such as juice, soda, sweets, and candy",0
 1000299,"to buy groceries like snacks, juices, sodas and candies.",0
 995682,to pay for her son's wedding expenses,0
@@ -4269,7 +4110,6 @@ id,description,value
 996215,to improve her beauty salon.,0
 996218,"to buy cosmetics such as creams, hair brushes, and accessories",0
 996707,"to purchase vegetables, meat, basic grains, drinks, seasonings, etc. to make the dishes on the menu that he offers his customers.",0
-996712,"to buy more soups, eggs, basic grains, soft drinks, candy, and sweet bread, etc.",0
 996719,"to buy underwear, blouses, skirts, pants and backpacks. This will allow her to be prepared for the Christas season and for the beginning of the new school year.",0
 992352,to increase on the fast moving items in his shop.,0
 997847,to pay the university fees for this  semester.,0
@@ -4283,23 +4123,9 @@ id,description,value
 999966,to pay his tuition fees from the first to fourth year.,0
 997091,to pay for his operation and to purchase medicine,0
 997275,to have a surgery at the hospital and also take rehabilitation courses after that surgery,0
-997465,to pay for knee surgery,0
-997508,to pay for eye treatment,0
-997509,to pay for dental treatment,0
-997512,to pay for ophthalmic treatment,0
-997513,to pay for dental treatment,0
-998531,to pay for dental treatment,0
-998540,to pay for dental treatment,0
-998543,to pay for dental treatment,0
-998553,to obtain eye treatment,0
 998897,to solve the health problems of her mother-in-law,0
 998904,to buy medicines to help treat his lovely wife.,0
 998910,to buy medicines for treatment.,0
-999034,to pay for breast surgery in order to be able to work normally and generate economic resources.,0
-999117,to pay for ophthalmic treatment,0
-999187,to pay for ophthalmic treatment,0
-999888,to pay for ophthalmic treatment.,0
-999907,to pay for ophthalmic treatment,0
 996155,to purchase additional fertilizer for rice production.,0
 996168,to buy baby fish and develop fish farming.,1
 996176,To cover cassava harvesting costs.,0
@@ -4322,14 +4148,12 @@ id,description,value
 996593,to buy a refrigerator for her store to keep soft drinks cool and in this way sell more and make more income. ,0
 992404,To plant rice,0
 995871,"To buy farm implements, high quality seeds, good fertilizer, and pesticides.",0
-995947,"to buy more rice, beans, and cooking oil at wholesale.",0
 996502,to purchase and sell livestock.,1
 996265,to buy seeds and mineral fertilizers for the new sowing season.,0
 996563,to breed and sell chickens.,1
 996604,"Buy peanut seeds, agrochemicals, and preparation of agricultural land, so as to generate better income for his family",0
 997020,to buy fertilizer to improve her cassava farm and to pay for plowing.,0
 997719,"to buy silver, gold, steel and costume jewellery.",0
-996849,to pay for dental treatment.,0
 997141,"to buy commodities such as rice, sugar, tea bags, milk etc. for her husband's general store.",0
 997211,to expand the pig breeding bursiness.,1
 997230,to buy cost efficient maize seeds and fertilizer for the coming harvesting season,0
@@ -4357,7 +4181,6 @@ id,description,value
 996082,"buy bread, dressings, condiments, beverages, eggs, cookies, clothing, etc. to meet client demands during the holiday season.",0
 996096,"to buy more soup, eggs, basic staple foods, drinks, snacks, sweet baked goods etc.",0
 996103,"to purchase more products, such as shampoo, creams, and deodorants, among other things.",0
-996104,"to purchase soaps, eggs, basic grains, soft drinks, candy, sweet breads, etc.",0
 994393,to purchase some calves for fattening and reselling,1
 995736,to give his community better access to communication services by selling mobile airtime credits.,0
 995737,to buy goods for and enlarge her home products sales business.,0
@@ -4365,7 +4188,6 @@ id,description,value
 995808,to buy good quality seeds and fertilizers for her farm.,0
 996089,"to buy a new food truck, and supplies and ingredients (flour, cheese, meats, vegetables, oil, dressings, sauces, disposable plates, napkins and sugar).",0
 996091,to buy corn by the hundredweight and lime.,0
-996095,to buy necessary construction materials.,0
 999409,to buy some chickens and make repairs to his shop.,1
 998783,to buy some goods and smoke machine chop.,0
 998919,to buy a new collection of shoes to sell at his stall.,0
@@ -4385,7 +4207,6 @@ id,description,value
 995732,"to buy items to sell like eggs, canned goods, junk foods, home product care, and other groceries",0
 995734,to buy farm implements.,0
 995795,"to make some maintenance for his rickshaw,",0
-996084,to buy more clothing at wholesale,0
 996085,"to buy clothes, cosmetic and fabric to make clothing.",0
 995772,to make some maintenance to his rickshaw.,0
 995812,"to carry out some maintenance on his rickshaw,.",0
@@ -4400,7 +4221,6 @@ id,description,value
 999476,"to pay for fertilizer, and cover his cultivation and apricot orchard watering costs.",0
 991721,to buy cereals for resale.,0
 991726,To buy cereals,0
-995671,to buy animals for her husband's butcher business.,0
 995679,to pay for repairs to her husband's rickshaw.,0
 995680,"to buy feeds, medicines and vaccines for her pigs.",1
 995787,"to do some maintenance on his rickshaw,.",0
@@ -4425,7 +4245,6 @@ id,description,value
 995665,to buy baby fish to develop fish farming,0
 995668,to repair her husband's rickshaw.,0
 998812,to buy more shoes and shorts to sell.,0
-999050,"to pay for a prosthesis and treatment for his daughter, who suffered an accident, because the costs are very expensive.",0
 999107,to buy perfumes in large quantities.,0
 999164,to buy a stock of cosmetics wholesale to make the best of the seasonal sales.,0
 999706,"to buy more salt, sugar, rice, and maize flour to sell.",0
@@ -4439,7 +4258,6 @@ id,description,value
 996028,to buy a hair dryer and a turning chair for hair washing.,0
 998432,To buy more charcoal for sell.,0
 999592,"to buy more cabbages, carrots and tomatoes to sell.",0
-999594,"to buy more rice, cassava, beans and potatoes to sell.",0
 999605,"To buy more salt, sugar, and biscuits to sell.",0
 991504,to buy cereals from farmers to resell.,0
 991695,to buy farm implements.,0
@@ -4449,7 +4267,6 @@ id,description,value
 995232,"To pay for grocery items, beverages and toiletries to sell.",0
 995236,"to buy more stock of sugar, flour, detergent, soft drinks and other items.",0
 995397,"to buy more stock of sugar, flour,bread and other items.",0
-995508,to buy local breed chicken to sell at the Christmas season.,1
 995512,to renovate his rental houses to attract more tenants and make more income to support his family and build more rental houses.,0
 995523,to buy more stock items like sodas and beers to sell.,0
 995535,to increase her stock of veils and winter scarfs to reply to the diversified customer requests and increase her sales.,0
@@ -4470,28 +4287,19 @@ id,description,value
 999139,to buy wholesale stuffed animals.,0
 999179,to buy groceries in bulk.,0
 999756,buy hairdresser tools such as furniture and supplies in order to offer better services to her customers and generate better income for her family.,0
-998425,to buy groceries to implement her business.,0
 998863,to pay for his higher education in the Business Administration Program.,0
 998891,to pay for his higher education in the International and Comparative Politics Program.,0
 998892,to pay for higher education in the international and comparative politics program.,0
-999043,to adapt an area of his house to become a restaurant.,0
-999047,to buy more merchandise for her sales business.,0
-999056,to expand her business of selling notions.,0
-999116,To expand the range of products on sale in her eatery.,0
-999125,to expand the serving area in her restaurant,0
 996404,to buy some cows to increase the size of her herd.,1
 998968,To increase her stock ahead of the Christmas rush.,0
 999270,To buy medicines for treatment,0
 997989,to buy some livestock in order to increase her herd.,1
 997986,to purchase some livestock in order to increase her herd,1
 999724,"to buy merchandise such as women's clothing, accessories, and lotions.",0
-998295,to repair his tractor and increase his business,0
 998315,to buy two more calves.,1
 998320,to repair his truck.,0
 998323,to buy three calves.,1
 998324,to buy sheep for fattening up and subsequent resale,1
-998835,to buy two head of cattle,1
-998909,to buy a new motor for his car,0
 991168,to raise sheep in order to sell them.,1
 994601,"to buy one bag of sugar, one carton of tea, and one can of oil",0
 995522,to purchase peanuts and vegetables.,0
@@ -4550,7 +4358,6 @@ id,description,value
 998443,"to buy more bananas, cassava and beans for selling.",0
 998541,to buy more beer to sell.,0
 999136,buy fruit wholesale to offer at a good price for the coming holiday celebrations.,0
-999167,buy candy in bulk,0
 999177,to buy clothing in bulk.,0
 992775,to buy feed for his cattle.,1
 994304,to buy three calves and food for them.,1
@@ -4591,7 +4398,7 @@ id,description,value
 993425,to buy poultry,1
 993813,to buy pork and chicken meat,0
 994091,"to buy spices, eggs, cooking oil, toiletries, candies, biscuits, chips, sugar, canned goods, noodles and drinks.",0
-994094,"to buy fish trap material known as �bobo�; to repair his fishing boat, specifically; he will buy plywood and paint",0
+994094,"to buy fish trap material known as ��_��__��_��___��_��__��_��____bobo��_��__��_��___��_��__��_��____; to repair his fishing boat, specifically; he will buy plywood and paint",0
 994104,"to purchase additional supplies like biscuits, bottled drinks, candies, and assorted canned goods",0
 994721,"to buy cooking oil, brown sugar and bananas.",0
 994722,"to buy canned goods, spices, noodles, cooking oil, eggs, chips, biscuits, candies, sugar, powdered milk and chocolate drinks, toiletries, laundry soap, drinks, and feed.",1
@@ -4657,7 +4464,6 @@ id,description,value
 995896,to buy pharmaceutical products.,0
 995910,to buy a supply of 50 cases of Primus [beer] and 50 cases of candy.,0
 998382,"to buy more milk, juice, and cakes.",0
-999045,"to pay the medical costs of dental treatment, which is expensive, and in this way be able to function normally.",0
 997123,to raise pigs.,1
 997127,to buy a breeding cow,1
 998566,"to buy men's shoes, women's shoes, and flat sandals and platform sandals for women.",0
@@ -4694,8 +4500,6 @@ id,description,value
 993383,to buy new fishing nets and a fishing boat engine.,0
 993385,to buy fishing nets and a fishing boat engine.,0
 993539,"to buy more salt, sugar, biscuits and chocolate to sell.",0
-999012,"to pay medical costs due to an accident that his brother suffered on his motorcycle, that way he can get better. ",0
-991068,to buy clothing to put on sale.,0
 992336,"to buy pig feed as well as grocery items such as drinks, coffee, sugar, biscuits, biscuits, and bread ",1
 992758,"to buy products such as bottled water, bowls, lunch boxes, and kitchen utensils.",0
 995093,to buy fertilizers and other farm supplies,0
@@ -4711,7 +4515,7 @@ id,description,value
 997821,"for purchasing new stocks (chicken, fish, sugar, salt, rice, etc.) for the business.",0
 997853,to buy new sheep and expand his business,1
 998107,to increase her merchandise with a new collection of cosmetics and perfumes to better satisfy her customers' needs.,0
-998544,"to purchase traditional clothes, such as:  ""g�ipiles"" (a traditional woven tunic), sashes and skirts.",0
+998544,"to purchase traditional clothes, such as:  ""g��_��__��_��___��_��__��_��____ipiles"" (a traditional woven tunic), sashes and skirts.",0
 990754,to buy fishing net and fishing boat repair,0
 994585,to buy more stock of tomatoes,0
 994958,to invest in the purchase of fertilizers and pay for planting coffee.,0
@@ -4766,7 +4570,6 @@ id,description,value
 996812,"to buy chickens, feed, and medicine.",1
 996818,"buy chickens, feed, and  medicine.",1
 997346,to buy more charcoal to sell.,0
-997355,"to buy more sorghum, beans and maize flour for sell.",0
 997357,to buy more clothes for selling.,0
 997359,to buy more clothes for selling.,0
 997361,to buy more beer for selling.,0
@@ -4774,7 +4577,7 @@ id,description,value
 997378,"to buy rice, spices, noodles, soups, eggs, sugar, coffee plus food items for her convenience store.",0
 997375,to buy various colors and patterns of textiles so that she can continue to sew.,0
 997376,"to buy rice, sugar, oil, eggs, oats, coffee, beans, juices, soda and seasonal fruit to expand her inventory.",0
-997369,to purchase more �cortes� (traditional wrap-around skirts) so that she can have a good inventory for the end of year festivities.,0
+997369,to purchase more ��_��__��_��___��_��__��_��____cortes��_��__��_��___��_��__��_��____ (traditional wrap-around skirts) so that she can have a good inventory for the end of year festivities.,0
 997373,"to buy plenty of soft drinks, cosmetics, creams and perfumes to sell. .",0
 997374,"to replenish her inventory and purchase rice, beans, noodles, salt, eggs and soft drinks.",0
 998493,to cover higher education costs.,0
@@ -4795,7 +4598,7 @@ id,description,value
 994928,to stock up with ice cream to have more to sell.,0
 994724,to buy more stocks of vegetables.,0
 994658,"to buy additional grocery items including oil, milk, sugar, juices, etc.",0
-994663,"to buy a greater variety of cloth and spools of thread in various colors to meet customers� demands consistently, to increase her net income for improving their standard of living.",0
+994663,"to buy a greater variety of cloth and spools of thread in various colors to meet customers��_��__��_��___��_��__��_��____ demands consistently, to increase her net income for improving their standard of living.",0
 994669,to buy more stock of fish.,0
 994681,to buy materials to complete the construction of rental houses.,0
 994684,"to buy a wide variety of cloth in different colors and designs, to attract more customers and expand her business.",0
@@ -4860,8 +4663,6 @@ id,description,value
 994197,"to buy new clothing in  variety of sizes for boys and girls, men and women.",0
 994256,to process more prepaid mobile airtime purchases for members of his local community.,0
 994260,to process more prepaid mobile airtime purchases for members of her local community.,0
-996302,to buy cleaning products to increase her monthly income,0
-996467,to repair her stall for her cows.,1
 996717,to build an adequate house for her family,0
 996782,to build her own house.,0
 996791,to live with her family in a healthy environment,0
@@ -4888,11 +4689,8 @@ id,description,value
 997743,to pay for post-graduate teaching studies in mass communications.,0
 997746,to pay for his graduation fees. ,0
 997751,to pay for college,0
-996099,to get dental treatment.,0
 996390,to solve her health problem finally and return to her usual way of life.,0
 996736,buy a fat-reducing massage machine,0
-996824,A loan of $300 helps this borrower to obtain eye treatment,0
-996838,to obtain eye treatment,0
 997148,to take her husband to the hospital for a medical check,0
 996373,to buy a new laptop for his studies.,0
 996442,to pay for his university tuition to receive a BA degree in IT .,0
@@ -4959,7 +4757,6 @@ id,description,value
 993696,to buy more coffee for processing and selling.,0
 993700,"to buy general merchandise such as sugar, salt and sodas to sell.",0
 993734,to treat his teeth.,0
-993737,to buy cows to slaughter and sell in his butcher shop.,0
 993741,"to buy more crates of beer, soda and other spirits to sell.",0
 995970,to pay for land cultivation costs (7 hectares) and land rental costs and to purchase more corn seeds for cultivation.,0
 996362,to pay of her surgery and cover the expenses connected with her post-operation period at the hospital.,0
@@ -4976,7 +4773,6 @@ id,description,value
 995924,to pay for a Karcher power washer for car washing service and buy food for selling in his store .,0
 991599,to buy a bio-digester for clean renewable cooking.,0
 992962,to purchase chemicals and hair conditioner for her beauty salon business.,0
-992982,to buy fish and meat for sale.,0
 993232,"to buy a calf that they are selling in the area, because it is a good milk-producing breed",1
 993268,"to buy shoes, sandals and sneakers to sell this season.",0
 993577,"to process more prepaid mobile airtime purchases and utility bill payments (like electricity, water, etc.) for members of his local community.",0
@@ -5016,7 +4812,7 @@ id,description,value
 993991,"to buy a variety of women's accessories, namely costume jewelry and hand bags.",0
 994651,for the repairs to his flat which will be of great help for his father.,0
 994653,to do the repairing of his flat quickly and accurately making it more comfortable for his family,0
-995276,to help her husband financially and to manage to complete repairs to their house for the New Year�s holidays.,0
+995276,to help her husband financially and to manage to complete repairs to their house for the New Year��_��__��_��___��_��__��_��____s holidays.,0
 995351,for the purchase of one cow for his farm and fodder for farm cattle for winter long months.,1
 995424,to buy one more cow for his farm and fodder for all his farm cattle.,1
 993983,"to buy grains, food, personal care products, and domestic products",0
@@ -5029,7 +4825,6 @@ id,description,value
 993980,"to buy perfume, lotion, cream, shampoo, deodorants, etc. wholesale.",0
 993760,"to buy winter tires for his far and he will also settle gas balloon on his car, on this way he can also reduce his expenses on petrol use",0
 993803,for the purchase of a computer since she would like also to manage some part of her work at her house.,0
-993817,"to buy several bulls and sell their meat near the end of December, which he believes will be very profitable.",1
 994757,to purchase one more cow and also fodder for all his farm cattle for the long winter period.,1
 995749,to pay for university tuition to receive a BA degree in Economics.,0
 995775,to pay for university tuition to earn his Bachelor's degree from the Faculty of Sport Pedagogy.,0
@@ -5042,7 +4837,6 @@ id,description,value
 996138,to cover his university fees.,0
 996240,to buy a new stock of second hand clothes to sale.,0
 996646,purchase peanut seeds to improve his harvest and generate greater earnings for his family.,0
-996649,purchase a quintal of quinoa.,0
 988942,to buy different household related products and cosmetics to re-sell to private firm.,0
 991561,to purchase tires and for motor maintenance.,0
 993017,"to buy rice, sugar, grains, biscuits, oil and flour from the market at lower rates to make her stock available for her customers",0
@@ -5107,9 +4901,7 @@ id,description,value
 993267,to make some adjustments to his stationery store and to pay for a work force.,0
 993269,to buy a big display case and invest in more inventory.,0
 993918,"in agricultural jobs, application and incorporations of plant protection products, fertilizers and labor for his crops.",0
-993919,purchase all the necessary building materials and to pay for labor.,0
 992844,To pay fees and purchase milk and tea to sell to her customers,0
-993059,to buy more cows for slaughtering and to sell as meat on Christmas eve.,1
 993123,to buy pestcides to spray his crops.,0
 993871,to buy more chicks.,1
 993877,"to buy more animals like pigs, ducks, turkeys, etc.",1
@@ -5121,7 +4913,7 @@ id,description,value
 993279,to buy seeds and fertilizers and pay day workers.,0
 993866,to invest in his business by stocking it with a greater quantity of animals.,1
 992929,to purchase clothes to resell during the festive Christmas season.,0
-993004,to purchase a winter collection of garments to meet customers� demands consistently,0
+993004,to purchase a winter collection of garments to meet customers��_��__��_��___��_��__��_��____ demands consistently,0
 993005,"to buy maize, fish, firewood and other ingredients at wholesale prices",0
 993007,"to buy one more buffalo to cater to more customers, thereby providing a better standard of living for her family members",1
 995463,increase his items for sale in his retail shop.,0
@@ -5142,8 +4934,6 @@ id,description,value
 993200,buy cashew seeds in large quantity to have a more competitive business and to better satisfy his clients.,0
 996074,"to offer her children their own house, where they can have their own space. Right now they rent a house in were they live with more families",0
 996078,to live with her children in an adequate house of their own.,0
-994988,to pay for dental treatment.,0
-995611,to pay for ophthalmic treatment.,0
 992860,to buy additional stocks of groceries to sell.,0
 993167,"to buy rice, sugar, fizzy drinks and oil.",0
 993176,"pies to purchase meat, bread for hamburgers, sauces, vegetables and drinks for her business.",0
@@ -5186,7 +4976,6 @@ id,description,value
 994876,to invest in fertilizers and maintenance work on his coffee crops.,0
 994879,to invest in tables and chairs to provide comfort and a better service to his customers.,0
 994880,to purchase supplies to maintain his crop.,0
-992518,to pay for dental treatment.,0
 992698,to buy more sea foods to sell.,0
 992752,to buy more stocks of groceries to sell.,0
 992771,"to buy items to sell like beverages, eggs, canned goods, junk foods, home product care and other groceries.",0
@@ -5218,11 +5007,8 @@ id,description,value
 995036,"to buy traditional clothing like skirts, belts and blouses.",0
 995047,"to buy traditional clothing like blouses, sashes, and skirts.",0
 995054,to buy and sell groceries.,0
-995367,to buy fertilizers for plants,0
 995481,to buy a new specially designed banner for the exterior her shop.,0
-995491,to buy calves to increase his business,1
 995507,to renew her business machines and tools in addition to buying special fabrics for Christmas requested designs.,0
-991952,to pay for ophthalmic treatment.,0
 992499,"fill her orders: nutritional products, jewelry, make up and body creams.",0
 992502,to buy a vehicle in order to transport tools and laborers.,0
 992595,"to purchase rice seeds which will have good results in healthier, heavier, and potentially higher-yielding seedlings.",0
@@ -5245,14 +5031,12 @@ id,description,value
 992459,"to purchase chickens to fatten and hens to increase the egg production, he feels very positively about investing the loan in his business.",1
 992461,"to purchase manure, insecticides, seeds, and herbicides, and in addition to pay to plow the land to be able to plant.",0
 995319,"to buy more rice, sugar, salt and cooking oil to sell.",0
-995332,"to buy more rice, cooking oil, and salt to sell.",0
 995340,to buy more lotions for selling.,0
 995361,to buy more beers for selling.,0
 995383,to buy more charcoal to sell.,0
 995449,to buy local medicines for resale.,0
 994169,"to carry out harrowing, transplanting, purchase pesticides and pay labour.",0
 994631,to raise and resell sheep.,1
-992301,investing  in her husband's butcher shop.,0
 991663,"to buy materials such as soldering rods, welding rods, iron rods and sheets for her husband's shuttering services.",0
 992294,to buy more personal care products to sell.,0
 992411,to purchase farm inputs like fertilizer and certified seeds for more income to provide food and clothing for her family.,0
@@ -5291,7 +5075,6 @@ id,description,value
 991950,to buy one ton of bananas for wholesale and retail.,0
 992113,to invest in her husband's marble factory.,0
 991229,"to buy jewelry for the holiday season, as well as to repair his car.",0
-991744,to buy more animals for slaughtering to sell.,1
 991751,"to buy stock like sugar, soap, cooking oil, to sell",0
 992002,"to buy fishing materials like new fishing nets, and to pay for gasoline and boat repairs.",0
 992076,to help her husband buy a van.,0
@@ -5322,7 +5105,6 @@ id,description,value
 995152,to purchase more baby poultry and pigs to raise and sell in the future.,1
 990246,to buy a barbeque and 2 wooden tables so that she can expand her menu and provide comfortable seating for her customers,0
 993107,"to invest in merchandise for the business such as rice, sugar, milk, oil, etc.",0
-994047,"to pay the medical expenses of his brother-in-law, who had a traffic accident, so that he can recover",0
 994637,to purchase food and supplies to maintain her cake store,0
 995082,"to  buy a freezer, box of chicken, sack of flour, sack of sugar, box of tinned fish, box of vegetable oil, box of milk, box of sausage,",0
 995113,"to purchase milk, sugar, cake and general things to resell.",0
@@ -5347,7 +5129,6 @@ id,description,value
 994935,buy his own scythe so he can mow for his clients.,0
 991670,to buy a dairy cow and two milk goats,1
 992829,to increase on the spare parts inventory in his shop.,0
-994052,to pay for his wife's medical treatment so that she can recover and do her activities in a normal way.,0
 994676,to do a very cute and accurate repairing of his house in a short period of time.,0
 994772,to buy items for her beauty parlor,0
 994899,to buy staple grains and cereals to sell.,0
@@ -5403,7 +5184,7 @@ id,description,value
 994868,"to purchase fertilizer, pesticides, and corn seeds in order to plant 14,000 square meters.",0
 994338,to purchase a motorbike for her husband to take to his work.,0
 994655,"to solve his health problems by passing a medical exam at the hospital, with great hope that there will be nothing serious.",0
-994679,to solve his son�s health problem quickly and easily.,0
+994679,to solve his son��_��__��_��___��_��__��_��____s health problem quickly and easily.,0
 994887,to give her son a house where he can have his own room.,0
 991426,to buy additional stocks of groceries to sell.,0
 991453,to invest in her crockery shop.,0
@@ -5416,7 +5197,6 @@ id,description,value
 991391,to buy a rickshaw body for her husband so he can compensate against his accidental lost.,0
 992505,to buy necessary construction materials.,0
 993149,to by compost and weed killer and to pay for labor.,0
-993164,to buy a cow and three pigs in order to butcher them and sell the meat.,1
 993189,"to buy oil, vegetables, corn, flour, cheese, etc., so she can prepare her pupusas without any trouble.",0
 993219,"to purchase clothing and shoes for both sexes. This way, she will be able to satisfy her customers and have a stable income to meet her obligations.",0
 993223,to buy fruits to resale in bags.,0
@@ -5455,7 +5235,7 @@ id,description,value
 993106,to purchase working materials and start selling bed linens.,0
 993016,"to purchase more reels of threads, packs of buttons, ribbons and laces for meeting the orders on time",0
 993023,to purchase a new sewing machine with some spools of threads and laces for meeting the demands of her customers consistently.,0
-993271,buy the inputs she needs to finish the sewing production she�s working on now.,0
+993271,buy the inputs she needs to finish the sewing production she��_��__��_��___��_��__��_��____s working on now.,0
 993945,"to purchase a sewing machine and supplies at a wholesale discount such as fabrics, threads, elastics, and more.",0
 993952,"to purchase a double-needled machine, and so be able to fulfill her customers' requests.",0
 994001,to purchase a serging machine and supplies for making clothing.,0
@@ -5473,7 +5253,6 @@ id,description,value
 991463,to purchase bales of clothes for resale.,0
 991143,"to give her children a proper house, where they can develop better opportunities than the one's they've had.",0
 993082,to trade in clothing and bed linens.,0
-993514,to buy calves and develop his business,1
 994373,to purchase more seafood to resell.,0
 994376,to purchase a new photocopy machine to do photo service.,0
 994379,"to purchase more milk, cake, sugar, and general things to resell.",0
@@ -5527,11 +5306,9 @@ id,description,value
 994367,to purchase more clothes to resell,0
 994369,to purchase fishing net for fishing,0
 988312,to buy almonds and fruits and increase his business.,0
-990274,"to buy more soup, eggs, basic grains, soft drinks, sweets, pastries, etc.",0
 990285,"to buy more corn, cheese, pork, beans, tomatoes, cabbages, etc.",0
 990288,"for wholesale purchase of perfumes, lotions, creams, shampoos, deodorants, etc.",0
 990291,to buy more clothes wholesale.,0
-990295,to buy a variety of wholesale shoes.,0
 990945,to purchase bales of clothes for resale.,0
 990946,to help her husband in repairing his taxi.,0
 990948,purchase assorted goods.,0
@@ -5541,14 +5318,13 @@ id,description,value
 990943,to purchase spare parts and service his motor vehicle.,0
 992539,To produce honey and better products for her customers and in this way generate more income for her son,1
 993521,"to buy more pens, sugar, plates and spoons for selling.",0
-993771,"to pay for his smallest daughter�s proper medical exam at the hospital, with great hope there will be nothing seriously wrong with her.",0
+993771,"to pay for his smallest daughter��_��__��_��___��_��__��_��____s proper medical exam at the hospital, with great hope there will be nothing seriously wrong with her.",0
 994181,to buy machinery so he can establish his metal-working shop and provide income for his parents who are elderly.,0
 994195,to buy bakery ingredients and equipment to make and sell more products to earn more income,0
 990268,to purchase the necessary construction materials and pay for labor.,0
 990856,to help her husband repair his rickshaw.,0
 990859,to invest in her husband's taxi repairs.,0
 990249,"to buy bread, sweets, oil, drinks, etc. With new products and a better stock, her investment will be less. ",0
-990250,"to buy necessary building materials, such as cement and sand, and to pay for labor.",0
 990789,to buy another motorcycle,0
 990844,To invest in her son's fish selling business.,0
 990848,to buy more stock of groceries to sell.,0
@@ -5561,7 +5337,6 @@ id,description,value
 993624,to buy makeup and a tattoo machine for her beauty salon,0
 993702,to pay for tools and materials.,0
 994011,to buy materials to adapt her pigpens and to buy pigs.,1
-994174,pay for their mother's treatment so she can return to a normal life.,0
 993602,"to pay for four oxen, forage for feeding the cattle, fertilizer, seeds for land cultivation and pay for transportation costs",1
 993638,to purchase baby poultry to raise and sell in future.,1
 993543,"to buy more chocolate, pens, glucose and Colgate to sell.",0
@@ -5585,7 +5360,6 @@ id,description,value
 993231,purchase molds and bases. ,0
 993237,"to purchase grocery products such as candy, soda, rice, sugar, and pasta.",0
 992077,to pay his tuition,0
-992430,to purchase cheese and eggs to sell at the market.,0
 989899,"to buy oil, rice, beans, sardines, sugar, and bread, among other items.",0
 990704,To invest in her son's fruit shop.,0
 990730,to buy more stock of clothes and shoes.,0
@@ -5593,11 +5367,7 @@ id,description,value
 990810,"to buy more stock of sugar, bread, flour, soap and other items",0
 993057,"to purchase stock of various home products, such as bed linens, mattresses and utensils, and start a trading business.",0
 993132,to start a trading business with used and new clothing.,0
-992899,"to buy more barley, alfalfa, wheat to resell.",0
 993538,to buy food for the piglets,1
-993684,to buy wooden sticks and other things for covering his plants.,0
-989831,to buy necessary construction materials.,0
-989874,to obtain working capital as he wants to provide maintenance to his comercial locale and make some improvements.,0
 990155,to buy beauty products for salon use.,0
 990729,"to buy hair care products, skin products, and bleaching and whitening creams for her beauty salon.",0
 990758,to buy a new motorcycle,0
@@ -5636,7 +5406,6 @@ id,description,value
 990630,to buy rice to sell,0
 989738,to apply and incorporate plant sanitation products and fertilizers and to pay for labor for his coffee harvest.,0
 989739,"to buy corrugated tin, lumber, wire, and nails in order to construct a porch on her residence and in this way to offer better security to her family.",0
-989744,to buy the necessary construction materials.,0
 989745,"to buy seeds, fertilizer, manure, pest control, herbicides, etc. and improve the land.",0
 989759,to buy corn by the quintal.,0
 989761,"to buy enchildadas, enredados (elephant ears) and banana fritters.",0
@@ -5649,7 +5418,7 @@ id,description,value
 992897,"to increase and diversify her Christmas gifts and gadgets collection, and to acquire newly released Christmas themed decorations.",0
 993062,to buy stock of beans to sell.,0
 992887,"to buy more soap, toothpaste, sugar, and other items to sell.",0
-993258,"to buy items of traditional clothing such as g�ipiles, sashes and skirts.",0
+993258,"to buy items of traditional clothing such as g��_��__��_��___��_��__��_��____ipiles, sashes and skirts.",0
 992230,"to purchase more cake, sweets, milk and general items to resell in her store",0
 992707,to purchase baby pigs to raise and sell in the future.,1
 992920,"to buy cement, paints, iron rods, nails and other building materials.",0
@@ -5663,7 +5432,7 @@ id,description,value
 992864,to buy new equipment for Opel car body repairs.,0
 993315,to purchase ingredients to make cakes for sale.,0
 989734,"to invest in merchandise for her business, such as basic grains, pitchers, crates, and plates, among other plastic products.",0
-990500,to buy feed and more copra from farmers.,0
+990500,to buy feed and more copra from farmers.,1
 989700,"to buy feed for her pigs and to pay for the costs that go into the harvesting of basic grains.
 ",1
 989713,"to buy what is necessary for the mill, such as sashes, discs, knives. etc.",0
@@ -5710,11 +5479,9 @@ id,description,value
 993036,to cover his ?semester fees,0
 989355,"to buy cement, sand, gravel, bricks, and iron bars in order to build a room in her home.",0
 989356,"to lay a cement floor in the hall of his house and thereby improve his quality of life; he is doing this above all for his children, whom he is always looking to protect.",0
-989358,"to buy soups, eggs, basic grains, soft drinks, sweets, pastries, etc.",0
 989359,"to buy cement, sand, gravel, bricks and iron to finish the walls of his house.",0
 989361,"to buy clothing, beauty products and other items to offer her customers.",0
 990050,to buy more items to sell in her general store.,0
-989297,to buy more coconuts wholesale.,0
 989340,"to have a store of basic goods, because he has sales experience. ",0
 989346,to buy tires and provide maintenance to his pickup truck.,0
 989349,"to buy metal sheets, poles, pins, nails and wire to improve the roof and part of the walls in her house.",0
@@ -5730,16 +5497,13 @@ id,description,value
 989920,"to purchase additional items like canned goods, bread, cooking oil, coffee, cereals, soft drinks, snack foods, etc. to sell.",0
 990001,to buy a camera,0
 990006,to buy shoe making and repair materials,0
-990015,to replace out-of-stock items at his butcher shop.,0
 987963,to buy more products to stock her store.,0
-988796,to buy more accessories and parts wholesale.,0
 992446,to purchase 2 dairy cows.,1
 993145,"to buy rice, sugar, chicken, oil and oats",0
 992517,to purchase ceramic floor tiles and to pay workers for their labor.,0
 992509,to stock her business with gallons of paint for the December season.,0
 992361,to purchase chickens and set up a poultry-farm .,1
 992804,to buy mineral fertilizers and seeds.,0
-991429,to expand her business.,0
 992692,to purchase more baby fish to resell.,0
 992715,to purchase baby pigs to raise and sell in future.,1
 992347,to increase his general store inventory and serve more customers.,0
@@ -5750,18 +5514,13 @@ id,description,value
 992741,to purchase fruit to resell.,0
 992765,to purchase fruit to resell.,0
 992767,to purchase baby livestock to raise and sell in future.,1
-992531,to pay for an operation for gastric problems that she suffers from so that she can reestablish herself and conduct her business normally and be able to help her son.,0
 992631,to purchase more fish to resell,0
 990269,"to buy inputs, toys especially, for this Christmas season.",0
 990273,to start her bar/store business and buy inputs to begin with and some chairs and tables for the place.,0
 990275,to buy a new chair for the salon and some treatments to keep selling them,0
 990276,"buy supplies for the holidays, when demand for food and drinks is highest.",0
-992351,"to buy shampoo, perfumes, cosmetics and beauty products .",0
-992529,to pay for a prostrate operation so he can function normally.,0
-992535,"to pay her mother's medical expenses for a traffic accident, so that she can get back to her normal life.",0
 992545,to produce honey for sale in order to make a better income for his child.,1
 992554,start an apiculture business to produce honey and generate better income for his family.,1
-991909,to pay for ophthalmic treatment.,0
 990318,to purchase more wholesale dairy products.,0
 992576,to buy a stock of dresses and jeans.,0
 990021,to buy seed to plant.,0
@@ -5773,7 +5532,6 @@ id,description,value
 992717,to purchase baby cattle to raise and sell in future.,1
 992719,to purchase more equipment to peel rice.,0
 992720,to purchase baby poultry to raise and sell in future.,1
-988747,to buy necessary building supplies,0
 988760,"to buy more soups, eggs, basic grains, sodas, sweets, sweet bread, etc.",0
 988774,to buy more fruits and vegetables.,0
 988785,to purchase household appliances and a variety of merchandise.,0
@@ -5823,7 +5581,7 @@ id,description,value
 989626,to buy more ladies and children's clothes for retail ,0
 989645,to buy shoes and shoe soles for resale,0
 992206,to pay for the treatment course of his mother at the hospital,0
-992314,to cover the expenses of her husband�s surgery and then the course of treatment at the hospital,0
+992314,to cover the expenses of her husband��_��__��_��___��_��__��_��____s surgery and then the course of treatment at the hospital,0
 987794,"to invest in basic ingredients and propane oil to make tamales, pupusas and riguas.",0
 987803,to buy products and plastic bags for his business,0
 988897,to buy furniture,0
@@ -5833,7 +5591,6 @@ id,description,value
 988095,to puchase a new motorcycle and to be able to complete the paperwork for the one that he already has.,0
 987885,"to invest in corn, seasonings, drinks, chocolate, cheese, shredded pork, oil, etc. in order to make and sell pupusas.",0
 989057,to purchase more stock of lessos for resale,0
-992289,"to pay for candies (1,000 kg), walnuts and hazelnuts to meet high demand for the New Year holiday season.",0
 992429,to buy secondhand clothes for selling.,0
 992438,to increase her capital and buy a large quantity of clothes for resale.,0
 992302,to enlarge the number of his livestock with two more calves and also he will buy fodder for all his farm cattle,1
@@ -5846,13 +5603,12 @@ id,description,value
 991919,"to buy perfumes, lotions, creams, shampoo, deodorants, etc. in brief.",0
 989695,to purchase merchandise to stock her neighborhood shop.,0
 990936,to buy fodder for his pigs and he needs to provide his pigs with as much fodder possible for winter,1
-992236,to renew her stall�s clothes assortment with new winter season women's clothes.,0
+992236,to renew her stall��_��__��_��___��_��__��_��____s clothes assortment with new winter season women's clothes.,0
 992261,to buy two bulls and fodder for his cows.,1
-992204,to buy tables and chairs for his cafe,0
 989592,To buy children's clothes for the new season,0
 989689,"to buy detergents and soap, as well as intending to take advantage of the season to invest in Christmas decorations.",0
 990949,to buy winter tires and gas for his car.,0
-992250,for paying for his wife�s treatment with special medicine.,0
+992250,for paying for his wife��_��__��_��___��_��__��_��____s treatment with special medicine.,0
 992265,to complete the repairing of his flat making it clean and comfortable before the New Year holidays.,0
 992277,to enlarge the number of farm cattle.,1
 992405,to pay for necessary dental surgery.,0
@@ -5864,7 +5620,6 @@ id,description,value
 991943,to buy piglets & feed.,1
 991946,to buy meat for her restaurant.,0
 992062,"to buy ingredients like milk, sugar, fruits and other materials for her food production business.",0
-991873,"to buy more soups, eggs, basic grains and beans, soft drinks, candies, sweet bread, etc.",0
 992270,to purchase baby pigs to raise and sell in future.,1
 992276,"to purchase baby poultry to raise, and to buy supplies for farming.",1
 992286,to purchase more vegetables to resell.,0
@@ -5882,7 +5637,6 @@ id,description,value
 983874,"To start his chicken breeding business, and to be able to provide a better future to his daughter",1
 986558,to buy the best-selling farm supplies to meet his customers' demand.,0
 991071,to buy fruit to sell.,0
-991165,to pay for ophthalmic treatment,0
 991776,to rent rice fields to harvest and sell.,0
 992142,To purchase spare parts for motor maintenance.,0
 992174,to pay for his university tuition to pursue his studying in the Health and Fitness department.,0
@@ -5912,7 +5666,6 @@ id,description,value
 991132,to buy mattresses.,0
 991197,to buy a refrigerator and soda counter to improve her business.,0
 991635,"to purchase piglets, ducklings and high quality feeds.",1
-991680,to buy more products,0
 987875,to purchase a refrigerator to store more ice cream and to maintain a motorcycle that he uses in his business.,0
 987878,to pay for the harvest of his staple grains crop as well as to purchase bags to store them in.,0
 987889,"to buy rice, sugar, coffee, eggs, cheese, milk and bread for her business.",0
@@ -5922,7 +5675,6 @@ id,description,value
 989125,to purchase more handbags for resale.,0
 989168,to invest in her husband's crockery business.,0
 989197,to  purchase newly released accessories and cosmetics especially for the coming Christmas season.,0
-989213,to purchase more stock of clothing,0
 989215,to purchase more hand bags for selling.,0
 987883,"to invest in special paper for repairing speakers, copper, glue, speaker cones, wire, and other materials that are necessary for equipment repairs.",0
 988678,to buy a milking cow,1
@@ -5932,7 +5684,7 @@ id,description,value
 989101,to invest in repair of her husband's transportation rickshaw.,0
 987870,to buy an assortment of bread to resell. Another portion will allow her to buy clothing articles with new styles to satisfy the taste of her customers.,0
 988610,"to buy food and clothing, eliminating pressure to sell maize for low prices at harvest",0
-988047,"to buy some packages of ��ame"" and ""yuca� (traditional Colombian tubers), corn and some chili pepper.",0
+988047,"to buy some packages of ��_��__��_��___��_��__��_��____��_��__��_��___��_��__��_��____ame"" and ""yuca��_��__��_��___��_��__��_��____ (traditional Colombian tubers), corn and some chili pepper.",0
 988081,"buy products like rice, oil, grain, disposables, and an umbrella to improve her food place.",0
 988674,to buy a milking cow,1
 988964,to purchase more coconut supplies for resale.,0
@@ -5956,16 +5708,13 @@ id,description,value
 988771,to buy seeds.,0
 989857,"to buy supplies for the preparation of natural medicines and for other personal expenses.
 ",0
-989883,"para invertir en su negocio en la compra de una mayor cantidad de cajas de cervezas,de paquetes de gaseosas as� como para realizar algunos arreglos en su local. ",0
+989883,"para invertir en su negocio en la compra de una mayor cantidad de cajas de cervezas,de paquetes de gaseosas as��_��__��_��___��_��__��_��____ como para realizar algunos arreglos en su local. ",0
 990614,to invest in various types of agricultural work for his crops and to buy fertilizer.,0
 990633,to buy merchandise and buy a shop.,0
 990665,"to invest in the maintenance of a hectare of coffee, ensuring a good 2016 season.  ",0
-989826,to pay for dental treatment.,0
-989833,to pay for dental treatment.,0
 990873,to pay university tuition for BSc. degrees in Chemistry and Psychology.,0
 991177,to purchase fertilizers and pay for irrigation.,0
 989306,to buy more coconuts wholesale,0
-989527,to increase the stock of meat and to buy supportive working equipment for his butcher shop.,0
 990281,to buy clothing and perfume wholesale.,0
 990334,"to buy beauty products like dyes, body waves, coloring, straighteners, and highlights.",0
 991096,to buy wholesale potatoes and vegetables.,0
@@ -5988,7 +5737,6 @@ id,description,value
 990811,"to purchase more milk, sugar, salt, cake, and general items to resell.",0
 991145,to buy three calves.,1
 989708,to purchase needed construction materials.,0
-990378,to pay for ophthalmic treatment.,0
 990387,"to purchase new collections of clothes: blouses, dresses, jeans, bermudas, etc.",0
 990494,to buy three heifers in order to increase her herd,1
 990709,to buy warm clothing for her clothes selling business from her home.,0
@@ -6045,7 +5793,6 @@ id,description,value
 991033,to buy more cattle for selling.,1
 990800,to purchase fish to resell,0
 990820,to purchase calves to raise and sell in the future.,1
-990835,"to buy a new fridge, pots, stove and pans.",0
 990896,to purchase animal fodder for his cattle for long winter months,1
 990920,for passing a medical exam and also a course of treatment at the hospital for the control of his health state.,0
 991125,to buy fertilizer and pay for labor and irrigation.,0
@@ -6077,7 +5824,6 @@ id,description,value
 987205,to buy more shellfish and sell them in the neighbouring communities.,0
 987227,"para comprar redes de pesca, para mejorar la pesca artesanal. ",1
 988256,to buy more dried fish and eggs to sell to customers.,0
-988299,"to buy cattle, goats, and sheep.",0
 988304,to purchase charcoal and milk.,0
 988345,"to buy more stock of flour, oil, beans, etc.",0
 988498,"to purchase stock of wheat flour, maize flour, sugar, rice and firewood.",0
@@ -6091,9 +5837,7 @@ id,description,value
 987618,"to buy bread, flour, sugar and other items.",0
 988228,"to buy chips, candies, biscuits, coffee, powdered chocolate drinks, sugar, salt, canned goods, noodles, spices, eggs and drinks; dried fish",0
 985174,"to purchase stock for her fruit and vegetable stall, including sweet potatoes, paw paw and pumpkins.",0
-989830,to buy necessary construction materials.,0
 989894,"to buy flour, bags, corn, gas, chairs and tables.",0
-990756,to purchase a new motor for his car,0
 990718,"to buy more stock of local brew, beers, sodas, spirits, sugar, rice, soap and cooking oil for selling",0
 986662,To boost his retail trade business,0
 990804,to purchase fish to resell,0
@@ -6137,7 +5881,6 @@ id,description,value
 990509,to buy a new collection of women's clothing to sell from his stall.,0
 990511,to buy a new collection of women's clothing to sell from his stall.,0
 990512,to buy a new collection of women's clothing to sell at his stall.,0
-989772,to buy quintals of corn and lime.,0
 990094,to increase her merchandise with new collection of items and offers for the upcoming Christmas season,0
 990538,"to buy a new hair dryer, new tools for nails and new makeup.",0
 987055,to buy merchandise at wholesale. ,0
@@ -6168,7 +5911,6 @@ id,description,value
 987028,to buy wholesale borjo fruits and pineapples,0
 987010,to buy hair washing equipment. hair-cutting chairs and supplies like dye and treatments amongst others.,0
 987011,to do remodeling in her kitchen to have more space to work.,0
-987033,to buy more wholesale clothing,0
 987004,to renovate her store and buy chemicals for hair dying and straightening. ,0
 986708,to increase her merchandise with new items and offers for the upcoming Christmas season,0
 987602,to buy new special traditional costumes to provide his customers with diversified wedding-themed cultures.,0
@@ -6201,14 +5943,11 @@ id,description,value
 990183,to buy a heating boiler and of course she will finally settle the heating system in her flat ,0
 990186,"to buy a new, fashionable, and elegant assortment of jewelry and attract a lot of customers for purchases",0
 990220,to pay for a new stock of winter clothing to resell to customers.,0
-989319,to pay for dental treatment.,0
-989321,to pay for dental treatment.,0
 989121,to expand her business by purchasing a large quantity of beans to sell.,0
 990194,to purchase more food products such as potatoes and bananas.,0
 990258,to buy more clothes to sell.,0
 989252,To purchase a car and start serving people as a taxi driver,0
 989214,To purchase a motorcycle for a transportation business and hopes this will enable him to serve more customers and make more income to educate his children.,0
-989302,"to buy flour, sugar, flavored jellies, molds, tins, etc.",0
 989304,"to purchase pork rinds, fresh cheese, beans, corn and other ingredients.",0
 988799,to purchase women's and men's clothing at wholesale.,0
 989163,to complete his house.,0
@@ -6220,7 +5959,6 @@ id,description,value
 989354,"to buy rice, sugar, butter, soap, flour, spaghetti, sauce, limes and more for her business.",1
 990838,to strengthen her inventory of items like spices and vegetable oils.,0
 986898,to buy the necessary construction materials.,0
-986902,to install electricity,0
 986926,to buy more propane gas tanks wholesale.,0
 988753,"to buy four pigs, soft drinks, staples (like rice, oil, sugar), and Maggi soups.",1
 988761,"to buy high-quality and low-quality bananas and fuel, which will be used for transportation.",0
@@ -6228,7 +5966,6 @@ id,description,value
 989294,to buy supplies for his product and increase his stock.,0
 989360,to buy candies wholesale for his business.,0
 987315,"to buy stainless steel necklaces, rings, earrings, and second-hand clothing.",0
-988734,purchase larger quantities of cheese.,0
 988748,"to buy plastic, aluminium and steel products",0
 988752,to buy urea and diesel.,0
 988765,to purchase various products for a grocery store and banana plantation. ,0
@@ -6237,7 +5974,7 @@ id,description,value
 989331,to construct a wall to expand the atmosphere of her neighborhood store and to give her security.,0
 989325,to finish his studies in Mechanical Production.,0
 990018,to pay for tuition fees and school supplies.,0
-990033,to cover the cost of his son�s tuition and school supplies.,0
+990033,to cover the cost of his son��_��__��_��___��_��__��_��____s tuition and school supplies.,0
 990286,to buy sheep and feed and then sell them on.,1
 987040,"to purchase beer, soft drinks, spirits, sweets and provisions.",0
 988792,"to buy more clothing like pants, sports jerseys, stockings, etc. wholesale.",0
@@ -6264,7 +6001,6 @@ id,description,value
 989574,to pay for her husband's hospital treatment.,0
 990116,to harrow the land until the harvest.,0
 988675,"to buy groceries and canned products for Christmas dinners, and products such as clothing, shoes, and more cosmetics.",0
-989594,to buy snow tires for his taxi,0
 989575,to buy wedding dresses for increasing working capital.,0
 990081,to buy a sheep to feed and resell.,1
 989110,"to purchase a wholesale stock of rice, pulses, ?snacks and cleaning materials.",0
@@ -6294,7 +6030,7 @@ id,description,value
 989454,to buy shoes for the new season.,0
 986969,to buy more food items so he can prepare and sell them in his eatery.,0
 987005,"to buy an overlock sewing machine and supplies wholesale (fabric, thread, trim, and buttons, among others).",0
-988407,pay for the allowances of her son�s employment application abroad.,0
+988407,pay for the allowances of her son��_��__��_��___��_��__��_��____s employment application abroad.,0
 988706,to start his own construction company.,0
 987234,to buy livestock to pasture land.,1
 987884,"to purchase basic grains, drinks, eggs, sugar, oil, and other products to fulfill the daily demands of her customers.",0
@@ -6312,10 +6048,8 @@ id,description,value
 987949,to buy vegetables at wholesale.,0
 987958,to buy baby clothing in bulk.,0
 989233,to purchase more charcoal to sell.,0
-989258,"to buy more rice, beans and maize flour to sell.",0
 986955,to buy a new line of infant's clothing.,0
 987132,to purchase construction materials to repair her house.,0
-987930,to buy balanced animal feed in bulk.,0
 987946,to buy clothing wholesale.,0
 987960,buy cattle,1
 989114,"to purchase all the required tools, and open an auto repair center.",0
@@ -6333,23 +6067,19 @@ id,description,value
 989209,"to pay for new products, such as food supplies ?and snacks, and new coffee machine to increase his income. ",0
 985372,to purchase a variety of wholesale women's bags to supply her business for the Christmas holiday.,0
 987916,to buy wool and thread in bulk.,0
-987924,to buy milk in bulk.,0
-987927,to buy potatoes at wholesale.,0
 987928,"to buy more products to sell such as bracelets, rings, earrings and chains as she does not have many products to sell.",0
 988980,to buy a special land space measuring machine to start his own business.,0
 989172,to increase her capital to buy jewelry and sell to customers.,0
 989239,to buy up-to-date curtains to meet customer requirements.,0
 988320,to pay for her husband's medical treatment.,0
 989312,to buy sheep for fattening and resale.,1
-987876,"to buy more products for his shop, such as: ladies�, gents� and childrens shoes and to buy sandals for both sexes.",0
-987905,to purchase soy beans wholesale.,0
+987876,"to buy more products for his shop, such as: ladies��_��__��_��___��_��__��_��____, gents��_��__��_��___��_��__��_��____ and childrens shoes and to buy sandals for both sexes.",0
 988549,to increase her business merchandise with a special newly released winter collection.,0
 989351,"to buy threads, needles, a variety of fabrics, buttons and elastics etc.",0
 987897,"to purchase jams, groceries, and soda in bulk.",0
 987900,to buy wholesale fabric and thread.,0
 989090,to increase her business merchandise with a special Christmas and winter season collection.,0
 989119,with selling shoes.,0
-989058,"to buy more rice, banana, cassava for sale.",0
 989308,to sell peanuts.,0
 976512,Elevage de moutons pour la vente pendant six mois.,1
 987249,for the development of a half-hectare of land to produce grape vines and in this way generate greater economic earnings for herself.,0
@@ -6357,14 +6087,12 @@ id,description,value
 988719,to buy beauty products.,0
 985866,to buy warm clothes for both herself as well as for her husband to cope with the increasing demand.,0
 987850,"to buy rice, sugar, coffee, eggs, cheese, milk, bread, flour, and cooking oil, etc. for her business.",0
-987092,"to buy sweets, drinks, rice, sugar, beans, and Christmas merchandise",0
 988242,to invest in stock for his electrical supplies store.,0
 988625,to add more variety to the sandwiches stuffing,0
 988763,to fix his car,0
 988775,to buy cattle.,1
 988525,for the purchase of a cow and also fodder for all his farm cattle,1
 988715,to buy merchandise.,0
-988630,"to expand her project by adding more food items such as rice, sugar, canned food, etc. to serve households as well as children.",0
 988634,to support her husband by increasing his quantity of ?fruits and vegetables and paying for maintenance on the truck.,0
 987824,"to prepare his land and buy pesticides, fertilizers and manure.",0
 988912,to open a bakery and bake Georgian national bread,0
@@ -6406,7 +6134,6 @@ id,description,value
 988449,to increase her business merchandise with special newly-released winter collections.,0
 988580,to increase her business merchandise with a newly released winter collection.,0
 987097,to pay for his degree and post grad courses.,0
-987212,to pay medical expenses for his wife so that he can return to work.,0
 987221,to buy machinery and special equipment to make her products and improve the family's income.,0
 987225,"to buy five milk-producing heifers to increase production and sales, and to earn a higher income for his family.",1
 988473,to buy necessary furniture for her house.,0
@@ -6419,8 +6146,6 @@ id,description,value
 988159,invest in his clothing business.,0
 987666,to increase her business merchandise with special Autumn and Winter newly released collections.,0
 987705,to buy beers and sodas for selling.,0
-987915,"to purchase more soups, eggs, basic grains, sodas, candies, pastries, etc.
-",0
 988014,to buy pigs and to improve her pigsty.,1
 988071,buy agricultural inputs and materials for the farm maintenance,0
 987649,"to pay for 6 cows, walnut seeds, cover autumn cultivation costs of workers",1
@@ -6453,13 +6178,11 @@ id,description,value
 987678,to increase her business merchandise with special offer products for winter to increase her selling.,0
 986595,to increase and diversify her merchandise with new items and offers for the upcoming Christmas season,0
 986606,to increase her merchandise with new lingerie items and cotton wear to better satisfy her customers' demands,0
-986709,to open a food market,0
 987008,"to purchase meat, basic food staples, perishables and fruits.",0
 987812,to buy more clothes to sell.,0
 987647,"to pay for wires needed for the improvement of grape orchard, forage for feeding the livestock and cover salary of workers helping her with the cultivation of land",1
 987752,to pay for three sows and forage for feeding the cattle.,1
 987793,to buy more phones and their accessories to sell.,0
-987801,"to buy more maize flour, bananas, and cassava to sell.",0
 987804,"to buy more millet, g-nuts, and beans to sell.",0
 987677,to make some sort of repairs to their home.,0
 983773,"to buy shirts, pants, shoes and sandals.",0
@@ -6475,7 +6198,6 @@ id,description,value
 987401,to help her buy more ready clothes to ?sell and purchase more blankets.,0
 980154,to pay for his son's wedding.,0
 987577,to pay for visiting sacred and holistic regions travel expenses.,0
-986933,to pay for ophthalmic treatment.,0
 987422,to cover his tuition for this semester.,0
 986593,to increase on building materials and meet his customers' demand.,0
 986707,to purchase a truck and work on transportation in order to increase family income,0

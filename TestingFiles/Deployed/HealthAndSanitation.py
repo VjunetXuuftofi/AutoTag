@@ -19,11 +19,8 @@ This testing file is no longer necessary (the system has been deployed).
 """
 
 import csv
-import re
+
 from Other import auxilary
-import json
-
-
 
 ids = []
 

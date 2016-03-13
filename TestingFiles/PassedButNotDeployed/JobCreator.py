@@ -20,11 +20,8 @@ Despite passing tests, the system has not yet been deployed.
 """
 
 import csv
-import re
+
 from Other import auxilary
-import json
-
-
 
 ids = []
 

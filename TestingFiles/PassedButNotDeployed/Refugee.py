@@ -20,9 +20,8 @@ Despite passing tests, the system has not yet been deployed.
 
 import csv
 import re
-from Other import auxilary
-import json
 
+from Other import auxilary
 
 looking = ["IDP", "Internally Displaced Person", "internally displaced person", "Refugee", "refugee"]
 

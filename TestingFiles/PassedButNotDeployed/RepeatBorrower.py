@@ -19,11 +19,11 @@ Despite passing tests, the system has not been deployed.
 """
 
 import csv
+
 import requests
-from Other import auxilary
 from bs4 import BeautifulSoup
 
-
+from Other import auxilary
 
 ids = []
 

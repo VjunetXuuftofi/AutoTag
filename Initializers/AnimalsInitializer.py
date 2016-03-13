@@ -13,27 +13,31 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan uses to whether or not the loan should receive #Animals. This is useful for the Bag of Words
-approach.
+Creates a csv relating loan uses to whether or not the loan should receive #Animals. Then feeds this data to the
+initializer in Analysis.py and saves the results to pickle files.
 """
 
 import csv
 from Other import Analysis
 import pickle
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv", "w+"))
+writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/ABagOfWords.csv", "w+"))
 writer.writerow(["id", "description", "value"])
 
 correct = 0
 total = 0
 
 ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
+loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_combined.csv"))
 for loan in loans:
+    if loan["Activity"] == "Butcher Shop" or loan["Activity"] == "Food Market" or loan["Activity"] == "Veterinary Sales" \
+            or loan["Activity"] == "General Store":
+        continue
     if "#Animals" in loan["Tags"]:
         writer.writerow([loan["Loan ID"], loan["Use"], 1])
     else:
         writer.writerow([loan["Loan ID"], loan["Use"], 0])
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/AnimalBagOfWords.csv")
+forest, vectorizer, selector = Analysis.initialize("A", [150, 2])
 pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/AForest", "wb+"))
 pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/AVectorizer", "wb+"))
+pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/ASelector", "wb+"))

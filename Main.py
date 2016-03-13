@@ -15,11 +15,12 @@ limitations under the License.
 
 Runs all of the implemented systems
 """
-from Other import auxilary
 import time
-from datetime import timedelta
 from datetime import datetime
-from tqdm import tqdm
+from datetime import timedelta
+
+from Other import auxilary
+
 while True:
     lasttried = open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/time.txt", "r")
     for line in lasttried:

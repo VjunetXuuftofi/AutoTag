@@ -18,10 +18,10 @@ Testing 1/31 success @ 100%
 This testing file is no longer necessary (the system has been deployed).
 """
 
-import json
 import csv
-from Other import auxilary
 import re
+from Other import auxilary
+
 
 def tagElderly():
     ids = []
@@ -65,11 +65,25 @@ def tagElderly():
     print(correct, total)
 
 def GetAge(description):
-    match = re.findall(" ([1-9][1-9]) (years old|years of age|year old|year\-old)", description)
+    match = re.findall(" ([1-9][0-9])( |\-)(years old|years of age|year old|year\-old)", description)
     if len(match) == 0:
-        return None
-    try:
-        return int(match[0][0])
-    except:
-        return None
-tagElderly()
+        match = re.findall(" (is|aged) ([1-9][0-9])", description)
+        if len(match) == 0:
+            match = re.findall("(, )([1-9][0-9])(, )", description)
+            if len(match) == 0:
+                return None
+            else:
+                try:
+                    return int(match[0][1])
+                except:
+                    return None
+        else:
+            try:
+                return int(match[0][1])
+            except:
+                return None
+    else:
+        try:
+            return int(match[0][0])
+        except:
+            return None

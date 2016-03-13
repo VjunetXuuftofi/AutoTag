@@ -13,21 +13,17 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan uses to whether or not the loan should receive #Eco-friendly. This is useful for the Bag of
-Words approach.
+Creates a csv relating loan uses to whether or not the loan should receive #Eco-Friendly. Then feeds this data to the
+initializer in Analysis.py and saves the results to pickle files.
 """
 
 import csv
 from Other import Analysis
 import pickle
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EcoFriendlyBagOfWords.csv", "w+"))
+loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions.csv"))
+writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EFBagOfWords.csv", "w+"))
 writer.writerow(["id", "description", "value"])
-correct = 0
-total = 0
-
-ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
 for loan in loans:
     if loan["Partner Name"] == "One Acre Fund":
         continue
@@ -36,6 +32,8 @@ for loan in loans:
     else:
         writer.writerow([loan["Loan ID"], loan["Use"], 0])
 
-forest, vectorizer = Analysis.initialize("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EcoFriendlyBagOfWords.csv")
+
+forest, vectorizer, selector = Analysis.initialize("EF",[50, 2])
 pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/EFForest", "wb+"))
 pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/EFVectorizer", "wb+"))
+pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/EFSelector", "wb+"))

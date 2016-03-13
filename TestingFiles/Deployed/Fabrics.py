@@ -31,7 +31,7 @@ total = 0
 
 ids = []
 
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
+loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_new.csv"))
 for loan in loans:
     use = loan["Use"]
     escape = True
@@ -46,5 +46,5 @@ for loan in loans:
     else:
         print(loan["Raw Link"], use)
     total += 1
-print(correct, total)
+    print(correct, total)
 

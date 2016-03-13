@@ -20,38 +20,32 @@ Testing 1/31 failed @ 85.7%
 import csv
 from Other import Analysis
 import pickle
-import numpy as np
+from tqdm import tqdm
 
 forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/EFForest", "rb"))
 vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/EFVectorizer", "rb"))
+selector = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/EFSelector", "rb"))
 correct = 0
 total = 0
 
 ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging.csv"))
-probabilities = []
-for loan in loans:
+loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_new.csv"))
+for loan in tqdm(loans):
     if loan["Partner Name"] == "One Acre Fund":
         continue
     modified = [Analysis.modify(loan["Use"])]
     if modified != [None]:
-        modified = vectorizer.transform(modified).toarray()
-        prediction = forest.predict_proba(modified)
-        if np.mean(probabilities) > 0.0095:
-            if prediction[0][0] > 0.01:
-                continue
-            else:
-                probabilities.append(prediction[0][0])
-        else:
-            if prediction[0][0] > 0.02:
-                continue
-            else:
-                probabilities.append(prediction[0][0])
+        modified = vectorizer.transform(modified)
+        modified_and_selected = selector.transform(modified).toarray()
+        prediction = forest.predict_proba(modified_and_selected)
+        if prediction[0][1] < .6:
+            continue
     else:
         continue
     if "#Eco-friendly" in loan["Tags"]:
         correct += 1
     else:
-        print("wrong")
+        print(total, loan["Raw Link"])
     total += 1
     print(correct, total)
+    print(correct/total)
