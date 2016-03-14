@@ -20,25 +20,43 @@ Some tags are operational (see "Implemented"). Testing results from 1/31 can be 
 
 ###Implemented:
 One Acre Fund- tags #SustainableAg, #Eco-friendly, #Technology on loans from the One Acre Fund partner.
+
 Elderly (just a parser for "xx years old" etc.)
+
 Schooling (Currently only used for all loans in the Education sector)
+
 HealthAndSanitation (Currently used for all loans in the Health sector along with a Random Forest for other loans)
+
 Fabrics (Currently searches for common types of fabric)
+
 Widowed (Currently searches for "widow" without the word "husband")
+
 Eco-Friendly (Currently searches for loans for solar, used clothing, and used shoes)
+
 Technology (Currently searches for loans for solar)
 
 ###Tags that have failed tests (testing results):
+
 FirstLoan (74%)
+
 IncomeProducingDurableAsset (identified too few loans)
+
 Parent (97%)
+
 WomanOwnedBiz (95%)
+
 JobCreator (found too few loans)
+
 RepeatBorrower (95%)
 
 ### Tags that will be updated soon:
+
 Random Forest for HealthAndSanitation
+
 Random Forest for Fabrics
+
 Random Forest for Schooling
+
 Random Forest for Widowed
+
 Random Forest for Technology (hopefully)
