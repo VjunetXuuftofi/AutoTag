@@ -25,7 +25,7 @@ Elderly (just a parser for "xx years old" etc.)
 
 Schooling (Currently only used for all loans in the Education sector)
 
-HealthAndSanitation (Currently used for all loans in the Health sector along with a Random Forest for other loans)
+HealthAndSanitation (Currently used for all loans in the Health sector)
 
 Fabrics (Currently searches for common types of fabric)
 
