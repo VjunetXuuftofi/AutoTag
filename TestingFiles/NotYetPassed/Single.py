@@ -17,21 +17,29 @@ System and testing for tagging loans with #WomanOwnedBiz.
 Testing 1/31 failed @ 97.3%
 Switched to Bag of Words approach.
 """
-from tqdm import tqdm
 import csv
-from Other import Analysis
 import pickle
-from TestingFiles.Deployed import GetAge
+
+from tqdm import tqdm
+
+from Other import Analysis
 
 correct = 0
 total = 0
 ids = []
 
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions.csv"))
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions.csv"))
 
-pforest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/SForest", "rb"))
-pvectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/SVectorizer", "rb"))
-pselector = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/SSelector", "rb"))
+pforest = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/SForest",
+    "rb"))
+pvectorizer = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/SVectorizer",
+    "rb"))
+pselector = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/SSelector",
+    "rb"))
 
 for loan in tqdm(loans):
     modified = [Analysis.modify(loan["Description"])]
@@ -50,6 +58,6 @@ for loan in tqdm(loans):
     total += 1
     print(correct, total)
     try:
-        print(correct/total)
+        print(correct / total)
     except:
         pass

@@ -13,39 +13,57 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-System and testing for tagging loans with #WomanOwnedBiz.
-Testing 1/31 failed @ 97.3%
-Switched to Bag of Words approach.
+System for testing machine learning tools for #Widowed.
 """
-from tqdm import tqdm
 import csv
-from Other import Analysis
 import pickle
+from tqdm import tqdm
+from Other import Modify
 
 correct = 0
 total = 0
 
-ids = []
+ids = [
+]
 
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_new.csv"))
-forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/WForest", "rb"))
-print(forest.best_params_)
-vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/WVectorizer", "rb"))
-selector = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/WSelector", "rb"))
-for loan in tqdm(loans):
-    modified = [Analysis.modify(loan["Description"])]
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+forest = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/WForest",
+    "rb"))
+vectorizer = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
+    "WVectorizer",
+    "rb"))
+selector = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
+    "WSelector",
+    "rb"))
+features_train = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions_combined2"
+    "featuresDescription",
+    "rb"))
+badloans = set()
+for i, loan in enumerate(tqdm(loans)):
+    modified = [features_train[i]]
     if modified != [None]:
         modified = vectorizer.transform(modified)
         modified_and_selected = selector.transform(modified).toarray()
         prediction = forest.predict_proba(modified_and_selected)
-        if prediction[0][1] < .55:
+        if prediction[0][1] < .5:
             continue
+        print(prediction[0][1])
     else:
         continue
     if "#Widowed" in loan["Tags"]:
         correct += 1
     else:
-        print(loan["Raw Link"])
+        if loan["Raw Link"] not in ids:
+            badloans.add(loan["Raw Link"])
     total += 1
     print(correct, total)
-    print(correct/total)
+    print(correct / total)
+
+Modify.startManualCleaning(badloans)

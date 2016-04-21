@@ -13,31 +13,40 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan uses to whether or not the loan should receive #Animals. Then feeds this data to the
-initializer in Analysis.py and saves the results to pickle files.
+Initializes machine learning tools to help tag #Animals.
 """
 
 import csv
-from Other import Analysis
 import pickle
+from Other import Analysis
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/ABagOfWords.csv", "w+"))
-writer.writerow(["id", "description", "value"])
-
-correct = 0
-total = 0
-
-ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_combined.csv"))
-for loan in loans:
-    if loan["Activity"] == "Butcher Shop" or loan["Activity"] == "Food Market" or loan["Activity"] == "Veterinary Sales" \
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+labels = []
+toremove = []
+for i, loan in enumerate(loans):
+    if loan["Activity"] == "Butcher Shop" \
+            or loan["Activity"] == "Food Market" \
+            or loan["Activity"] == "Veterinary Sales" \
             or loan["Activity"] == "General Store":
+        toremove.append(i)
         continue
     if "#Animals" in loan["Tags"]:
-        writer.writerow([loan["Loan ID"], loan["Use"], 1])
+        labels.append(1)
     else:
-        writer.writerow([loan["Loan ID"], loan["Use"], 0])
-forest, vectorizer, selector = Analysis.initialize("A", [150, 2])
-pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/AForest", "wb+"))
-pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/AVectorizer", "wb+"))
-pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/ASelector", "wb+"))
+        labels.append(0)
+forest, vectorizer, selector = Analysis.initialize(
+    "loans_assigned_for_tagging_with_descriptions_combined2", labels,
+    "Use", toremove, 150)
+pickle.dump(forest, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/AForest",
+    "wb+"))
+pickle.dump(vectorizer, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
+    "AVectorizer",
+    "wb+"))
+pickle.dump(selector, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
+    "ASelector",
+    "wb+"))

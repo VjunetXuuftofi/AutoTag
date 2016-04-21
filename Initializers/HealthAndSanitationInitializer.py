@@ -13,29 +13,44 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan uses to whether or not the loan should receive #HealthAndSanitation. Then feeds this data to
-the initializer in Analysis.py and saves the results to pickle files.
+Initializes machine learning tools for use in tagging #HealthAndSanitation.
 """
 
 import csv
-from Other import Analysis
 import pickle
+from Other import Analysis
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/HASBagOfWords.csv", "w+"))
+writer = csv.writer(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords"
+    "/HASBagOfWords.csv",
+    "w+"))
 writer.writerow(["id", "description", "value"])
 
 correct = 0
 total = 0
 
 ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions.csv"))
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions.csv"))
 for loan in loans:
+    if loan["Sector"] == "Health":
+        continue
     if "#HealthAndSanitation" in loan["Tags"]:
         writer.writerow([loan["Loan ID"], loan["Use"], 1])
     else:
         writer.writerow([loan["Loan ID"], loan["Use"], 0])
 
-forest, vectorizer, selector = Analysis.initialize("HAS", [150, 2])
-pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/HASForest", "wb+"))
-pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/HASVectorizer", "wb+"))
-pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/HASSelector", "wb+"))
+forest, vectorizer, selector = Analysis.initialize("HAS")
+pickle.dump(forest, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/"
+    "HASForest",
+    "wb+"))
+pickle.dump(vectorizer, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
+    "HASVectorizer",
+    "wb+"))
+pickle.dump(selector, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
+    "HASSelector",
+    "wb+"))

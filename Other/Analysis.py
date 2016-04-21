@@ -15,25 +15,26 @@ limitations under the License.
 
 Provides tools for machine learning new autotags.
 """
+import re
+import pickle
 import pandas as pd
+import numpy as np
 import nltk
+from nltk.stem.snowball import SnowballStemmer
 from tqdm import tqdm
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
-from nltk.stem.snowball import SnowballStemmer
-from sklearn.feature_selection import SelectPercentile, f_classif
-import re
+from sklearn.feature_selection import SelectPercentile
 from sklearn.grid_search import GridSearchCV
 
-stemmer = SnowballStemmer("english")  # This is done in the main body to avoid redundancy
+stemmer = SnowballStemmer(
+    "english")  # This is done in the main body to avoid redundancy
 
 
 def modify(description):
     """
-    Takes in a text description and returns the description in a format that is readily interpretable by a Vectorizer.
-    Also stems words in the description.
-    :param description:
-    :return cleaned description:
+    :param description: Text description of loan.
+    :return: Cleaned description ready to be vectorized.
 """
     words = ""
     description = nltk.wordpunct_tokenize(description)
@@ -45,71 +46,94 @@ def modify(description):
     return words
 
 
-def convert(filename):
+def initializefeatures(filename, toread):
     """
-    Converts a file containing features and labels into two pandas dataframes.
-    :param filename:
-    :return features:
-    :return labels:
+    Write a csv containing numpy arrays of the cleaned descriptions.
+    :param filename: The name of the file to initialize the features from.
+    :param toread: The type of description to initialize features from. Either
+    "Description" or "Use"
     """
     data = pd.read_csv(filename)
-    data = data[data.description.notnull()]
-    features = data["description"]
-    labels = data["value"]
+    print(data)
+    data = data[data.Description.notnull()]
+    data = data[data.Use.notnull()]
+    features = data[toread]
     for index in tqdm(range(0, len(features))):
         try:
             features[index] = modify(features[index])
         except:
-            print(features[index-1])
-    return features, labels
+            print(features[index - 1])
+    pickle.dump(features, open(filename[:-4] + "features" + toread, "wb+"))
 
-def initialize(name, params = None):
+
+def initialize(filename, labels_train, typetoread, toexclude=None,
+               n_estimators=None, estimators_to_test=None,
+               class_weight=None):
     """
-    Reads a csv file with text descriptions and information about whether that loan deserved the tag, puts the
-    description through the modify function, and returns a vectorizer, random forest classifier, and selector for use
-    in making predictions about new loans.
-    :param name: The tag's identifier. All relevant files should begin with this identifier.
-    :return forest: A fitted random forest classifier for this tag.
-    :return vectorizer: A fitted TFIDF vectorizer for this tag.
-    :return selector: A fitted selector for this tag.
+    Takes in features and labels pertaining to a tag and fits and returns a
+    TfidfVectorizer, SelectPercentile, and RandomForestClassifier
+    :param filename: The base file location where information about the dataset
+     can be found.
+    :param labels_train: The labels to use when classifying.
+    :param typetoread: The features list to use ("Use" or "Description")
+    :param toexclude: A list of indices of the features list to exclude from
+    classification. Useful to exclude values known to be positive or
+    negative without classifier use. If not given, assumes all features are
+    valid.
+    :param n_estimators: The number of trees to use in the Random Forest
+    Classifier as per the sklearn documentation. If not given, GridSearchCV
+    will select between 50, 150, and 250.
+    :param estimators_to_test: A list of different numbers of estimators to
+    test using GridSearch CV as per the sklearn documentation. If not given,
+    GridSearchCV will select between 50, 150, and 250.
+    :param class_weight: The weightings to use for the various classes as
+    per the sklearn documentation. If not given, all classes have equal weight
+    :return forest: A fitted RandomForestVectorizer.
+    :return vectorizer: A fitted TfidfVectorizer.
+    :return selector: A fitted Selector at 10%.
     """
-    features_train, labels_train = convert("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/" + name + "BagOfWords.csv")
+
+    features_train = pickle.load(open(
+        "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/" + filename +
+        "features" + typetoread,
+        "rb"))
+    labels_train = pd.Series(labels_train)
+    if toexclude:
+        features_train = pd.Series(
+            np.delete(np.array(features_train), toexclude, axis=0))
     print("Creating Vectorizer")
-    vectorizer = TfidfVectorizer(stop_words = "english",
-                                 max_df = .5,
-                                 ngram_range = (1,3))
+    vectorizer = TfidfVectorizer(stop_words="english",
+                                 max_df=.5,
+                                 ngram_range=(1, 3))
     print("Fitting Vectorizer")
     features_train_transformed = vectorizer.fit_transform(features_train)
     print("Creating Selector")
-    selector = SelectPercentile(f_classif,
-                                percentile=10)
+    selector = SelectPercentile()
     print("Fitting Selector")
     selector.fit(features_train_transformed,
                  labels_train)
     print("Transforming data")
-    features_train_transformed_selected = selector.transform(features_train_transformed).toarray()
+    features_train_transformed_selected = selector.transform(
+        features_train_transformed).toarray()
     print("Creating Forest")
-    if not params:
-        forest = RandomForestClassifier()
-        parameters = {
-            "n_estimators" : [50, 150, 250],
-            "min_samples_leaf" : [2, 5, 7, 10]
-        }
+    if not n_estimators:
+        forest = RandomForestClassifier(min_samples_leaf=2,
+                                        class_weight=class_weight)
+        if not estimators_to_test:
+            parameters = {
+                "n_estimators": [50, 150, 250],
+            }
+        else:
+            parameters = {
+                "n_estimators": estimators_to_test,
+            }
         forest = GridSearchCV(forest,
                               parameters)
     else:
-        forest = RandomForestClassifier(n_estimators=params[0],
-                                        min_samples_leaf=params[1])
+        forest = RandomForestClassifier(n_estimators=n_estimators,
+                                        min_samples_leaf=2,
+                                        class_weight=class_weight)
     print("Fitting Forest")
     forest.fit(features_train_transformed_selected,
-                        labels_train)
+               labels_train)
     return forest, vectorizer, selector
-
-
-
-
-
-
-
-
-

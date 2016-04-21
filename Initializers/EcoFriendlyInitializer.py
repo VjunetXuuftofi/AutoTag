@@ -13,27 +13,48 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan uses to whether or not the loan should receive #Eco-Friendly. Then feeds this data to the
-initializer in Analysis.py and saves the results to pickle files.
+Initializes machine learning tools to help tag #Eco-friendly.
 """
 
 import csv
-from Other import Analysis
 import pickle
+from Other import Analysis
 
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions.csv"))
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/EFBagOfWords.csv", "w+"))
-writer.writerow(["id", "description", "value"])
-for loan in loans:
-    if loan["Partner Name"] == "One Acre Fund":
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+labels = []
+toremove = []
+for i, loan in enumerate(loans):
+    activity = loan["Activity"]
+    if loan["Partner Name"] == "One Acre Fund" or (
+                (loan["Partner Name"] == "iDE Cambodia"
+                 or loan["Partner Name"] == "TerraClear Development")
+            and "water filter" in loan["Use"]):
+        toremove.append(i)
+        continue
+    if activity == "Used Clothing" or activity == "Used Shoes" \
+            or activity == "Bicycle Sales" \
+            or activity == "Renewable Energy Products" \
+            or activity == "Recycled Materials" \
+            or activity == "Recycling":
+        toremove.append(i)
         continue
     if "#Eco-friendly" in loan["Tags"]:
-        writer.writerow([loan["Loan ID"], loan["Use"], 1])
+        labels.append(1)
     else:
-        writer.writerow([loan["Loan ID"], loan["Use"], 0])
-
-
-forest, vectorizer, selector = Analysis.initialize("EF",[50, 2])
-pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/EFForest", "wb+"))
-pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/EFVectorizer", "wb+"))
-pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/EFSelector", "wb+"))
+        labels.append(0)
+forest, vectorizer, selector = Analysis.initialize(
+    "loans_assigned_for_tagging_with_descriptions_combined2", labels,
+    "Use", toremove, 250, class_weight="balanced")
+pickle.dump(forest, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/EFForest",
+    "wb+"))
+pickle.dump(vectorizer, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
+    "EFVectorizer",
+    "wb+"))
+pickle.dump(selector, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
+    "EFSelector",
+    "wb+"))

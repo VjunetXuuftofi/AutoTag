@@ -13,25 +13,34 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan descriptions to whether or not the loan should receive #Refugee. Then feeds this data to
-the initializer in Analysis.py and saves the results to pickle files.
+Initializes machine learning tools for helping to tag #Refugee.
 """
 
 import csv
 from Other import Analysis
 import pickle
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/RBagOfWords.csv", "w+"))
-writer.writerow(["id", "description", "value"])
-ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_combined.csv"))
-for loan in loans:
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+labels = []
+toremove = []
+for i, loan in enumerate(loans):
     if "#Refugee" in loan["Tags"]:
-        writer.writerow([loan["Loan ID"], loan["Description"], 1])
+        labels.append(1)
     else:
-        writer.writerow([loan["Loan ID"], loan["Description"], 0])
-
-forest, vectorizer, selector = Analysis.initialize("R", [150, 2])
-pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/RForest", "wb+"))
-pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/RVectorizer", "wb+"))
-pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/RSelector", "wb+"))
+        labels.append(0)
+forest, vectorizer, selector = Analysis.initialize(
+    "loans_assigned_for_tagging_with_descriptions_combined2", labels,
+    "Description", toremove, 75)
+pickle.dump(forest, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/RForest",
+    "wb+"))
+pickle.dump(vectorizer, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
+    "RVectorizer",
+    "wb+"))
+pickle.dump(selector, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
+    "RSelector",
+    "wb+"))

@@ -27,18 +27,27 @@ total = 0
 
 ids = []
 
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_new.csv"))
-forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/HASForest", "rb"))
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions_new.csv"))
+forest = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/HASForest",
+    "rb"))
 print(forest.best_params_)
-vectorizer = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/HASVectorizer", "rb"))
-selector = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/HASSelector", "rb"))
+vectorizer = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/HASVectorizer",
+    "rb"))
+selector = pickle.load(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/HASSelector",
+    "rb"))
 for loan in tqdm(loans):
+    if loan["Sector"] == "Health":
+        continue
     modified = [Analysis.modify(loan["Use"])]
     if modified != [None]:
         modified = vectorizer.transform(modified)
         modified_and_selected = selector.transform(modified).toarray()
         prediction = forest.predict_proba(modified_and_selected)
-        if prediction[0][1] < .55:
+        if prediction[0][1] < .6:  # 0.6
             continue
     else:
         continue
@@ -48,4 +57,4 @@ for loan in tqdm(loans):
         print(total, loan["Raw Link"])
     total += 1
     print(correct, total)
-    print(correct/total)
+    print(correct / total)

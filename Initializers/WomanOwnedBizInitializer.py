@@ -13,38 +13,58 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Creates a csv relating loan descriptions to whether or not the loan should receive #WomanOwnedBiz. Then feeds this data to
-the initializer in Analysis.py and saves the results to pickle files.
+Initializes machine learning tools for helping to tag #WomanOwnedBiz.
+
 """
 
 import csv
 from Other import Analysis
 import pickle
 
-writer = csv.writer(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/WOBBagOfWords.csv", "w+"))
-writer.writerow(["id", "description", "value"])
-ids = []
-loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/loans_assigned_for_tagging_with_descriptions.csv"))
-for loan in loans:
-    if loan["Women"] == 0:
+loans = csv.DictReader(open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
+    "loans_assigned_for_tagging_with_descriptions.csv"))
+labels = []
+toremove = []
+for i, loan in enumerate(loans):
+    if loan["Women"] != "1" or loan["Sector"] in ["Education", "Housing",
+                                                  "Personal Use", "Health",
+                                                  "Construction"]:
+        toremove.append(i)
         continue
-    if loan["Partner Name"] == "Emprender" or loan["Partner Name"] == "Paglaum Multi-Purpose Cooperative (PMPC)" \
-            or loan["Partner Name"] == "Interactuar" \
-            or loan["Partner Name"] == "Urwego Opportunity Bank, a partner of Opportunity International and HOPE International"\
-            or loan["Partner Name"] == "Apoyo Integral"\
-            or loan["Partner Name"] == "Thanh Hoa Microfinance Institution Limited Liability"\
-            or loan["Partner Name"] == "Vision Finance Company s.a. (VFC), a partner of World Vision International"\
-            or "Pro Mujer" in loan["Partner Name"]:
-        continue
-    if loan["Activity"] == "Personal Medical Expenses" or loan["Sector"] == "Personal Use" or loan["Sector"] == "Education"\
-            or loan["Activity"] == "Personal Housing Expenses":
+    if loan["Partner Name"] in ["Ibdaa Microfinance SAL", "ID Ghana",
+                                "Thanh Hoa Microfinance Institution Limited Liability",
+                                "Hekima, a partner of World Relief",
+                                "Interactuar",
+                                "Community Economic Ventures, Inc. (CEVI), a partner of VisionFund International",
+                                "Accion San Diego", "CIDRE",
+                                "Vision Finance Company s.a. (VFC), a partner of World Vision International",
+                                "Urwego Opportunity Bank, a partner of Opportunity International and HOPE International",
+                                "SMEP Microfinance Bank", "Kashf Foundation",
+                                "National Microfinance Bank",
+                                "Apoyo Integral", "Edpyme Alternativa",
+                                "Cooperativa San Jose",
+                                "Association for Rural Development (ARD)",
+                                "MDO Humo and Partners",
+                                "Organizacion de Desarrollo Empresarial Femenino (ODEF)"
+                                ]:
+        toremove.append(i)
         continue
     if "#WomanOwnedBiz" in loan["Tags"]:
-        writer.writerow([loan["Loan ID"], loan["Description"], 1])
+        labels.append(1)
     else:
-        writer.writerow([loan["Loan ID"], loan["Description"], 0])
-
-forest, vectorizer, selector = Analysis.initialize("WOB", [250, 2])
-pickle.dump(forest, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/WOBForest", "wb+"))
-pickle.dump(vectorizer, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/WOBVectorizer", "wb+"))
-pickle.dump(selector, open("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/WOBSelector", "wb+"))
+        labels.append(0)
+forest, vectorizer, selector = Analysis.initialize(
+    "loans_assigned_for_tagging_with_descriptions", labels,
+    "Description", toremove, 50)
+pickle.dump(forest, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/WOBForest",
+    "wb+"))
+pickle.dump(vectorizer, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
+    "WOBVectorizer",
+    "wb+"))
+pickle.dump(selector, open(
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
+    "WOBSelector",
+    "wb+"))

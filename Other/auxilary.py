@@ -13,58 +13,23 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Two useful methods to pull data from the Kiva API.
+Helps to pull data from the Kiva API.
 """
 
-import requests
 import json
 import time
-from collections import defaultdict
-import re
-from tqdm import tqdm
-from datetime import timedelta
-from datetime import datetime
+import requests
 
 
 def getinfo(IDs):
     """
     Pulls and returns data about specific loans from the Kiva API.
     Includes a time sleep to ensure that usage limits aren't exceeded.
-    No more than 100 loan ID
-    :param IDs:
-    :return loans:
+    :param IDs: A list of up to 100 loan ids to get info for.
+    :return loans: A list of dictionaries containing the full information.
     """
     response = requests.get("http://api.kivaws.org/v1/loans/" + IDs + ".json",
-                 params = {"appid" : "com.woodside.autotag"})
-    time.sleep(60/55)
+                            params={"appid": "com.woodside.autotag"})
+    time.sleep(60 / 55)
     loans = json.loads(response.text)["loans"]
     return loans
-
-def getquery(form, lasttime = None):
-    """
-    Takes in an HTTP form and submits this form with the Kiva API. All data from the form is returned as a list of
-    dictionaries. Optionally, a datetime object can be included to stop getting more information once that data is older
-    than the query.
-    :param form:
-    :param lasttime:
-    :return queryresults:
-    """
-    queryresults = []
-    info = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form).text
-    info = json.loads(info)
-    for i in range(1, int(info["paging"]["pages"])):
-        form["page"] = str(i)
-        response = requests.get("http://api.kivaws.org/v1/loans/search.json", params=form)
-        time.sleep(60/55)
-        loans = json.loads(response.text)["loans"]
-        queryresults.append(loans)
-        if (lasttime):
-            out = False
-            for loan in loans:
-                postedtime = datetime.fromtimestamp(time.mktime(time.strptime(loan["posted_date"], "%Y-%m-%dT%H:%M:%SZ")))
-                if lasttime - postedtime > timedelta(microseconds = 1):
-                    out = True
-                    break
-            if out:
-                break
-    return queryresults
