@@ -24,12 +24,14 @@ correct = 0
 total = 0
 
 ids = ['http://kiva.org/lend/1036651', 'http://kiva.org/lend/1036653',
-       'http://kiva.org/lend/1034941', 'http://kiva.org/lend/998192'
+       'http://kiva.org/lend/1034941', 'http://kiva.org/lend/998192',
+       'http://kiva.org/lend/998908', 'http://kiva.org/lend/1026817',
+       'http://kiva.org/lend/1026820'
        ]
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 forest = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/RForest",
     "rb"))
@@ -44,7 +46,7 @@ selector = pickle.load(open(
     "rb"))
 features_train = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2"
+    "loans_assigned_for_tagging_with_descriptions_combined3"
     "featuresDescription",
     "rb"))
 badloans = set()

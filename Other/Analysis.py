@@ -54,16 +54,18 @@ def initializefeatures(filename, toread):
     "Description" or "Use"
     """
     data = pd.read_csv(filename)
-    print(data)
     data = data[data.Description.notnull()]
     data = data[data.Use.notnull()]
-    features = data[toread]
-    for index in tqdm(range(0, len(features))):
+    print(data)
+    features = []
+    for index in tqdm(range(0, len(data))):
+        thisfeature = data.iloc[index]
         try:
-            features[index] = modify(features[index])
+            features.append(modify(thisfeature[toread]))
         except:
             print(features[index - 1])
-    pickle.dump(features, open(filename[:-4] + "features" + toread, "wb+"))
+    pickle.dump(pd.Series(features), open(filename[:-4] + "features" + toread,
+                                    "wb+"))
 
 
 def initialize(filename, labels_train, typetoread, toexclude=None,
@@ -137,3 +139,11 @@ def initialize(filename, labels_train, typetoread, toexclude=None,
     forest.fit(features_train_transformed_selected,
                labels_train)
     return forest, vectorizer, selector
+
+if __name__ == "__main__":
+    initializefeatures("/Users/thomaswoodside/PycharmProjects/AutoTag/"
+                       "DataFiles/loans_assigned_for_tagging_with_descriptions"
+                       "_new4.csv", "Use")
+    initializefeatures("/Users/thomaswoodside/PycharmProjects/AutoTag/"
+                       "DataFiles/loans_assigned_for_tagging_with_descriptions"
+                       "_new4.csv", "Description")

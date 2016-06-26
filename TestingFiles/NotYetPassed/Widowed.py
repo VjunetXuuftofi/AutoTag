@@ -23,15 +23,16 @@ from Other import Modify
 correct = 0
 total = 0
 
-ids = [
+ids = ['http://kiva.org/lend/1062278'
 ]
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 forest = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/WForest",
     "rb"))
+print(forest.best_params_)
 vectorizer = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
     "WVectorizer",
@@ -42,7 +43,7 @@ selector = pickle.load(open(
     "rb"))
 features_train = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2"
+    "loans_assigned_for_tagging_with_descriptions_combined3"
     "featuresDescription",
     "rb"))
 badloans = set()

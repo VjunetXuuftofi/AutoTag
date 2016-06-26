@@ -22,13 +22,15 @@ import pickle
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 labels = []
 toremove = []
 for i, loan in enumerate(loans):
     if (loan["Partner Name"] == "One Acre Fund" and "solar light" in loan[
         "Description"]) \
-            or loan["Partner Name"] == "PT Rekan Usaha Mikro Anda (Ruma)" \
+            or loan["Partner Name"] in ["PT Rekan Usaha Mikro Anda (Ruma)",
+                                        "African Clean Energy(ACE)",
+                                        "iSmart Kenya"] \
             or (loan["Partner Name"] in ["iDE Cambodia",
                                          "TerraClear Development"] and
                 "water filter" in loan["Use"]) \
@@ -40,8 +42,8 @@ for i, loan in enumerate(loans):
     else:
         labels.append(0)
 forest, vectorizer, selector = Analysis.initialize(
-    "loans_assigned_for_tagging_with_descriptions_combined2", labels,
-    "Use", toremove, 50)
+    "loans_assigned_for_tagging_with_descriptions_combined3", labels,
+    "Use", toremove, n_estimators=75)
 pickle.dump(forest, open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/TForest",
     "wb+"))

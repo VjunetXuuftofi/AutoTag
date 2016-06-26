@@ -23,11 +23,12 @@ from Other import Modify
 correct = 0
 total = 0
 
-ids = ['http://kiva.org/lend/1042898', 'http://kiva.org/lend/1045121']
+ids = ['http://kiva.org/lend/1042898', 'http://kiva.org/lend/1045121',
+       'http://kiva.org/lend/1035908']
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 forest = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/TrForest",
     "rb"))
@@ -37,11 +38,11 @@ vectorizer = pickle.load(open(
     "rb"))
 selector = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Selectors/"
-    "\TrSelector",
+    "TrSelector",
     "rb"))
 features_train = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2featuresUse",
+    "loans_assigned_for_tagging_with_descriptions_combined3featuresUse",
     "rb"))
 badloans = set()
 for i, loan in enumerate(tqdm(loans)):

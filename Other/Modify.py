@@ -103,12 +103,15 @@ def startManualCleaning(badloans):
 if __name__ == "__main__":
     addtags([
         "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-        "loans_assigned_for_tagging_with_descriptions_combined.csv",
-        "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-        "loans_assigned_for_tagging_with_descriptions_combined2.csv"
+        "loans_assigned_for_tagging_with_descriptions_new4.csv"
     ],
-        ['994028', '989820', '1012452', '1022247', '1018717', '1028531',
-         '1024696', '987764', '1026512'],
-        "#Schooling")
+        ['1077292', '1077322',
+         '1077627', '1077467', 
+         '1073869', '1072224',
+         '1092138', '1093281',
+         '1072423', '1068524', 
+         '1093021', '1077762'],
+        "#Animals")
 
 #"Loan ID","Name","Raw Link","Loan Link For Excel","Popularity","Loan Amount","Funded Amount","Amount Needed","Percent Funded","Lars Ratio","Time Left (Seconds)","Funding Rate Per Hour","Posted Date (UTC)","Planned Expiration Date (UTC)","Disbursed Date (UTC)","Posted Date (US/Pacific)","Planned Expiration Date (US/Pacific)","Disbursal Date (US/Pacific)","Time Left","Partner Name","Partner Link","Partner Delinquency Rate","Partner Default Rate","Partner Total Amount Raised","Partner No. of Loans Posted","Partner Loans At Risk Rate","Partner Currency Exchange Loss Rate","Partner Portfolio Yield","Partner Rating","Partner Secular Rating","Partner Social Rating","Partner Religious Affiliation","Country","Sector","Activity","Use","Tags","Repayment Interval","Repayment Term","Translator Byline","Themes","Ray Number","Ray Total","Ray Array","Loan Tagger","Assigned On (UTC)","Description","Women","RB"
+# NOT '1018138'

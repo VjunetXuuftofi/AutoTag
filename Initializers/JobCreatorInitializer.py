@@ -13,31 +13,30 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-Initializes machine learning tools for tagging #JobCreator.
+Initializes machine learning tools for helping to tag
+#IncomeProducingDurableAsset
 """
 
 import csv
 import pickle
 from Other import Analysis
 
-writer = csv.writer(open(
-    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/BagOfWords/"
-    "JCBagOfWords.csv",
-    "w+"))
-writer.writerow(["id", "description", "value"])
-ids = []
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions.csv"))
-for loan in loans:
+    "loans_assigned_for_tagging_with_descriptions_combined.csv"))
+labels = []
+toremove = []
+for i, loan in enumerate(loans):
     if "#JobCreator" in loan["Tags"]:
-        writer.writerow([loan["Loan ID"], loan["Use"], 1])
+        labels.append(1)
     else:
-        writer.writerow([loan["Loan ID"], loan["Use"], 0])
-
-forest, vectorizer, selector = Analysis.initialize("JC")
+        labels.append(0)
+forest, vectorizer, selector = Analysis.initialize(
+    "loans_assigned_for_tagging_with_descriptions_combined", labels,
+    "Use", toremove, class_weight="balanced", n_estimators=150)
 pickle.dump(forest, open(
-    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/JCForest",
+    "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/"
+    "JCForest",
     "wb+"))
 pickle.dump(vectorizer, open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"

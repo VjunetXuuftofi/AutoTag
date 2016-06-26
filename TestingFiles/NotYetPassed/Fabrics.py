@@ -27,15 +27,18 @@ ids = ['http://kiva.org/lend/1046241', 'http://kiva.org/lend/1035213',
        'http://kiva.org/lend/1044384',
        'http://kiva.org/lend/1044259', 'http://kiva.org/lend/1026871',
        'http://kiva.org/lend/1004811',
-       "http://kiva.org/lend/1012051"
+       "http://kiva.org/lend/1012051",
+       'http://kiva.org/lend/1054808', 'http://kiva.org/lend/1060099',
+       'http://kiva.org/lend/1051109'
        ]
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 forest = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/FForest",
     "rb"))
+print(forest.best_params_)
 vectorizer = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Vectorizers/"
     "FVectorizer",
@@ -46,7 +49,7 @@ selector = pickle.load(open(
     "rb"))
 features_train = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2featuresUse",
+    "loans_assigned_for_tagging_with_descriptions_combined3featuresUse",
     "rb"))
 badloans = set()
 for i, loan in enumerate(tqdm(loans)):

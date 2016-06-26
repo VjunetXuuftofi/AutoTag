@@ -110,12 +110,27 @@ ids = ["http://kiva.org/lend/1014045", "http://kiva.org/lend/1011785",
        'http://kiva.org/lend/1036491',
        'http://kiva.org/lend/1011761',
        'http://kiva.org/lend/1006315', 'http://kiva.org/lend/1027356',
-       'http://kiva.org/lend/1026653']
+       'http://kiva.org/lend/1026653',
+       'http://kiva.org/lend/1052479', 'http://kiva.org/lend/1052808',
+       'http://kiva.org/lend/1052812', 'http://kiva.org/lend/1053036',
+       'http://kiva.org/lend/1054082', 'http://kiva.org/lend/1052450',
+       'http://kiva.org/lend/1054137', 'http://kiva.org/lend/1052349',
+       'http://kiva.org/lend/1052435',
+       'http://kiva.org/lend/1006352',
+       'http://kiva.org/lend/1055916', 'http://kiva.org/lend/1055897',
+       'http://kiva.org/lend/1052456', 'http://kiva.org/lend/1012446',
+       'http://kiva.org/lend/1020746', 'http://kiva.org/lend/1039286',
+       'http://kiva.org/lend/1020099',
+       'http://kiva.org/lend/1037278', 'http://kiva.org/lend/1048357',
+       'http://kiva.org/lend/1042262',
+       'http://kiva.org/lend/1051222',
+       'http://kiva.org/lend/992844',
+       'http://kiva.org/lend/1027886', 'http://kiva.org/lend/996429']
 
 loans = csv.DictReader(open("/Users/thomaswoodside/PycharmProjects/AutoTag/"
                             "DataFiles/"
                             "loans_assigned_for_tagging"
-                            "_with_descriptions_combined2.csv"))
+                            "_with_descriptions_combined3.csv"))
 
 forest = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/"
                           "DataFiles/Forests/ScForest", "rb"))
@@ -129,7 +144,7 @@ selector = pickle.load(open("/Users/thomaswoodside/PycharmProjects/AutoTag/"
 features_train = pickle.load(open("/Users/thomaswoodside/PycharmProjects/"
                                   "AutoTag/DataFiles/"
                                   "loans_assigned_for_tagging"
-                                  "_with_descriptions_combined2"
+                                  "_with_descriptions_combined3"
                                   "featuresDescription",
                                   "rb"))
 badloans = set()
@@ -141,7 +156,7 @@ for i, loan in enumerate(tqdm(loans)):
         modified = vectorizer.transform(modified)
         modified_and_selected = selector.transform(modified).toarray()
         prediction = forest.predict_proba(modified_and_selected)
-        if prediction[0][1] < .7:
+        if prediction[0][1] < .5:
             continue
         print(prediction[0][1])
     else:

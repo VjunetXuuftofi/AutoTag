@@ -22,7 +22,7 @@ import pickle
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 labels = []
 toremove = []
 for i, loan in enumerate(loans):
@@ -31,8 +31,8 @@ for i, loan in enumerate(loans):
     else:
         labels.append(0)
 forest, vectorizer, selector = Analysis.initialize(
-    "loans_assigned_for_tagging_with_descriptions_combined2", labels,
-    "Description", toremove, 75)
+    "loans_assigned_for_tagging_with_descriptions_combined3", labels,
+    "Description", toremove, n_estimators=75)
 pickle.dump(forest, open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/RForest",
     "wb+"))

@@ -23,17 +23,21 @@ from Other import Analysis
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 labels = []
 toremove = []
 for i, loan in enumerate(loans):
+    if loan["Sector"] == "Personal Use":
+        toremove.append(i)
+        continue
     if "#IncomeProducingDurableAsset" in loan["Tags"]:
         labels.append(1)
     else:
         labels.append(0)
 forest, vectorizer, selector = Analysis.initialize(
-    "loans_assigned_for_tagging_with_descriptions_combined", labels,
-    "Use", toremove, 250, class_weight="balanced")
+    "loans_assigned_for_tagging_with_descriptions_combined3", labels,
+    "Use", toremove, n_estimators=125,
+    class_weight="balanced")
 pickle.dump(forest, open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/"
     "IPDAForest",

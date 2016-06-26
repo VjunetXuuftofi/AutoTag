@@ -27,7 +27,7 @@ ids = []
 
 loans = csv.DictReader(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2.csv"))
+    "loans_assigned_for_tagging_with_descriptions_combined3.csv"))
 forest = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/Forests/TForest",
     "rb"))
@@ -41,13 +41,15 @@ selector = pickle.load(open(
     "rb"))
 features_train = pickle.load(open(
     "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-    "loans_assigned_for_tagging_with_descriptions_combined2featuresUse",
+    "loans_assigned_for_tagging_with_descriptions_combined3featuresUse",
     "rb"))
 badloans = set()
 for i, loan in enumerate(tqdm(loans)):
     if (loan["Partner Name"] == "One Acre Fund" and "solar light" in loan[
         "Description"]) \
-            or loan["Partner Name"] == "PT Rekan Usaha Mikro Anda (Ruma)" \
+            or loan["Partner Name"] in ["PT Rekan Usaha Mikro Anda (Ruma)",
+                                        "African Clean Energy(ACE)",
+                                        "iSmart Kenya"] \
             or (loan["Partner Name"] in ["iDE Cambodia",
                                          "TerraClear Development"] and
                 "water filter" in loan["Use"]) or "solar" in loan["Use"]:
