@@ -20,6 +20,7 @@ batches of loans.
 import csv
 from selenium import webdriver
 from tqdm import tqdm
+import os
 
 
 def addtags(filenames, ids, tag):
@@ -85,7 +86,7 @@ def startManualCleaning(badloans):
     allowing the user to mark loans for modification by the modify function.
     :param badloans: A list of possibly mistagged loans.
     """
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome("/Users/thomaswoodside/Dropbox/chromedriver 3")
     goodlist = []
     badlist = []
     print(badloans)
@@ -100,18 +101,20 @@ def startManualCleaning(badloans):
         print(badlist)
     driver.quit()
 
+def saveBadLoans(badloans, key, info):
+    file = open(os.path.abspath("./DataFiles/Badloans/" + key), "w+")
+    file.writelines(info)
+    file.writelines(str(badloans))
+
 if __name__ == "__main__":
+    #startManualCleaning({'1113532', 
+    # '1101153', '1100973', '1064842', '1123606', '1126538', '1104027', '1074480', '1091295', '1120560', '1077424', '1108960', '1106025', '1095985'})
     addtags([
         "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/"
-        "loans_assigned_for_tagging_with_descriptions_new4.csv"
+        "loans_assigned_for_tagging_with_descriptions_combined6.csv"
     ],
-        ['1077292', '1077322',
-         '1077627', '1077467', 
-         '1073869', '1072224',
-         '1092138', '1093281',
-         '1072423', '1068524', 
-         '1093021', '1077762'],
-        "#Animals")
+        ['1126538', '1104027',
+         '1074480', '1077424'],
+        "#Repair Renew Replace")
 
 #"Loan ID","Name","Raw Link","Loan Link For Excel","Popularity","Loan Amount","Funded Amount","Amount Needed","Percent Funded","Lars Ratio","Time Left (Seconds)","Funding Rate Per Hour","Posted Date (UTC)","Planned Expiration Date (UTC)","Disbursed Date (UTC)","Posted Date (US/Pacific)","Planned Expiration Date (US/Pacific)","Disbursal Date (US/Pacific)","Time Left","Partner Name","Partner Link","Partner Delinquency Rate","Partner Default Rate","Partner Total Amount Raised","Partner No. of Loans Posted","Partner Loans At Risk Rate","Partner Currency Exchange Loss Rate","Partner Portfolio Yield","Partner Rating","Partner Secular Rating","Partner Social Rating","Partner Religious Affiliation","Country","Sector","Activity","Use","Tags","Repayment Interval","Repayment Term","Translator Byline","Themes","Ray Number","Ray Total","Ray Array","Loan Tagger","Assigned On (UTC)","Description","Women","RB"
-# NOT '1018138'

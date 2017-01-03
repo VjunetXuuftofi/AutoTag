@@ -16,6 +16,7 @@ limitations under the License.
 Provides tools for machine learning new autotags.
 """
 import re
+import os
 import pickle
 import pandas as pd
 import numpy as np
@@ -24,7 +25,7 @@ from nltk.stem.snowball import SnowballStemmer
 from tqdm import tqdm
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_selection import SelectPercentile
+from sklearn.feature_selection import SelectKBest
 from sklearn.grid_search import GridSearchCV
 
 stemmer = SnowballStemmer(
@@ -96,8 +97,9 @@ def initialize(filename, labels_train, typetoread, toexclude=None,
     """
 
     features_train = pickle.load(open(
-        "/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles/" + filename +
-        "features" + typetoread,
+        os.path.abspath(
+        "../DataFiles/" + filename +
+        "features" + typetoread),
         "rb"))
     labels_train = pd.Series(labels_train)
     if toexclude:
@@ -109,14 +111,17 @@ def initialize(filename, labels_train, typetoread, toexclude=None,
                                  ngram_range=(1, 3))
     print("Fitting Vectorizer")
     features_train_transformed = vectorizer.fit_transform(features_train)
+    features_train = None
     print("Creating Selector")
-    selector = SelectPercentile()
+    selector = SelectKBest(k = 18000)
     print("Fitting Selector")
     selector.fit(features_train_transformed,
                  labels_train)
     print("Transforming data")
     features_train_transformed_selected = selector.transform(
-        features_train_transformed).toarray()
+        features_train_transformed)
+    features_train_transformed = None
+    features_train_transformed_selected = features_train_transformed_selected.toarray()
     print("Creating Forest")
     if not n_estimators:
         forest = RandomForestClassifier(min_samples_leaf=2,
@@ -140,10 +145,11 @@ def initialize(filename, labels_train, typetoread, toexclude=None,
                labels_train)
     return forest, vectorizer, selector
 
+
 if __name__ == "__main__":
-    initializefeatures("/Users/thomaswoodside/PycharmProjects/AutoTag/"
+    initializefeatures("../"
                        "DataFiles/loans_assigned_for_tagging_with_descriptions"
-                       "_new4.csv", "Use")
-    initializefeatures("/Users/thomaswoodside/PycharmProjects/AutoTag/"
+                       "_combined6.csv", "Use")
+    initializefeatures("../"
                        "DataFiles/loans_assigned_for_tagging_with_descriptions"
-                       "_new4.csv", "Description")
+                       "_combined6.csv", "Description")

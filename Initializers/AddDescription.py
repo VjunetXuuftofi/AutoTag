@@ -19,10 +19,10 @@ and whether the borrower has borrowed from Kiva before.
 """
 
 import csv
-import requests
 from tqdm import tqdm
-from bs4 import BeautifulSoup
 from Other import auxilary
+from bs4 import BeautifulSoup
+import requests
 
 
 def addInformation(filename):
@@ -38,7 +38,6 @@ def addInformation(filename):
     total = 0
     everyloan = []
     for loan in tqdm(loans):
-        print(loan)
         if loan["Name"] == "Anonymous":
             continue
         loanstowrite.append(loan)
@@ -71,19 +70,29 @@ def addInformation(filename):
                     loanstowrite[i * 100 + a]["Women"] = 1
                 else:
                     loanstowrite[i * 100 + a]["Women"] = 0
-                loanstowrite[i * 100 + a]["RB"] = -1
+                soup = BeautifulSoup(requests.get(
+                    "https://www.kiva.org/lend/" + str(everyloan[i][a][
+                                                           "id"])).text,
+                                     "html.parser")
+                if soup.select("p.show-previous-loan-details"):
+                    loanstowrite[i * 100 + a]["RB"] = 1
+                else:
+                    loanstowrite[i * 100 + a]["RB"] = 0
             except:
                 break
 
     loanstowriteedited = []
     for loan in loanstowrite:
-        if loan["Description"] != '':
-            loanstowriteedited.append(loan)
+        try:
+            if loan["Description"] != '':
+                loanstowriteedited.append(loan)
+        except:
+            pass
 
     towrite = csv.DictWriter(open("/Users/thomaswoodside/PycharmProjects"
                                   "/AutoTag/DataFiles/"
                                   "loans_assigned_for_tagging"
-                                  "_with_descriptions_new4.csv",
+                                  "_with_descriptions_new8.csv",
                                   "w+"),
                              fieldnames=["Loan ID", "Name", "Raw Link",
                                          "Loan Link For Excel", "Popularity",
@@ -124,5 +133,5 @@ def addInformation(filename):
     towrite.writerows(loanstowriteedited)
 
 addInformation("/Users/thomaswoodside/PycharmProjects/AutoTag/DataFiles"
-               "/loans_assigned_for_tagging_new4.csv")
+               "/loans_assigned_for_tagging.csv")
 # "Loan ID","Name","Raw Link","Loan Link For Excel","Popularity","Loan Amount","Funded Amount","Amount Needed","Percent Funded","Lars Ratio","Time Left (Seconds)","Funding Rate Per Hour","Posted Date (UTC)","Planned Expiration Date (UTC)","Disbursed Date (UTC)","Posted Date (US/Pacific)","Planned Expiration Date (US/Pacific)","Disbursal Date (US/Pacific)","Time Left","Partner Name","Partner Link","Partner Delinquency Rate","Partner Default Rate","Partner Total Amount Raised","Partner No. of Loans Posted","Partner Loans At Risk Rate","Partner Currency Exchange Loss Rate","Partner Portfolio Yield","Partner Rating","Partner Secular Rating","Partner Social Rating","Partner Religious Affiliation","Country","Sector","Activity","Use","Tags","Repayment Interval","Repayment Term","Translator Byline","Themes","Ray Number","Ray Total","Ray Array","Loan Tagger","Assigned On (UTC)","Description","Women","RB"

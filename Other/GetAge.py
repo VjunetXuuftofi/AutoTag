@@ -26,14 +26,21 @@ def GetAge(description):
     :return: The borrower's age as an int, if not found, returns None.
     """
     match = re.findall(
-        " ([1-9][0-9])( |\-)(years old|years of age|year old|year\-old)",
+        "([1-9][0-9])( |\-)(years old|years of age|year old|year\-old)",
         description)
     if len(match) == 0:
-        match = re.findall(" (is|aged) ([1-9][0-9])", description)
+        match = re.findall(" (is|aged?) ([1-9][0-9])", description)
         if len(match) == 0:
             match = re.findall("(, )([1-9][0-9])(, )", description)
             if len(match) == 0:
-                return None
+                match = re.findall("(born in) (19[0-9][0-9])", description)
+                if len(match) == 0:
+                    return None
+                else:
+                    try:
+                        return 2016 - int(match[0][1])
+                    except:
+                        return None
             else:
                 try:
                     return int(match[0][1])
