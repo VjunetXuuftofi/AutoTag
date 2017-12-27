@@ -9,7 +9,7 @@ For testing, the project currently uses the csv of assigned loans from Kivatools
 All of the testing and implementation are done in Python 3.4.
 All new development is being done using scikit-learn's random forest
 classifier. This has proven very effective for many loans.
-The system currently is running on an AWS EC2 server.
+The system currently is running on an GCP Compute server.
 
 ## Requirements:
 All systems must be 99% accurate. This is tested using the assigned loans list using a list of loans the earliest of which was posted later than the latest-posted loan used for testing.
